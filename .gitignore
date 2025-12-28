@@ -1,0 +1,5 @@
+node_modules/
+backend/data/gtfs-raw/
+backend/data/*.zip
+backend/data/*.db
+.DS_Store

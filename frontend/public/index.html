@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>BusPlanner Pro</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+
+<body>
+
+    <header class="app-header">
+        <h1>BusPlanner</h1>
+    </header>
+
+    <main id="app-content">
+        <section class="dashboard-card">
+            <h2>40/52 Doel</h2>
+            <p id="tracker-status">Laden...</p>
+            <div class="progress-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+        </section>
+
+        <section class="action-card">
+            <button id="btn-checkin" class="btn-checkin">
+                <span class="icon">🚌</span>
+                Check-in Rit
+            </button>
+        </section>
+    </main>
+
+    <nav class="bottom-nav">
+        <div class="nav-item active">🏠<small>Home</small></div>
+        <div class="nav-item">📅<small>Planner</small></div>
+        <div class="nav-item">📍<small>Lijnen</small></div>
+    </nav>
+
+    <script src="js/api.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+{
+    "short_name": "BusPlanner",
+    "name": "Persoonlijke Reisplanner",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#f5f5f5",
+    "theme_color": "#007b7f"
+}
