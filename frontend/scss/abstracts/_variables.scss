@@ -1,6 +1,16 @@
-// Kleuren
-$primary-color: #007b7f;
-$accent-color: #e6007e;
-$color-text: #1e1e1e;
-$color-muted: #7a7a7a;
-$bg-color: #f5f5f5;
+// Brand Colors
+$color-primary: #007b7f;
+$color-accent: #e6007e;
+$color-bg-light: #f5f5f5;
+$color-white: #ffffff;
+
+// Text Colors
+$color-text-main: #1e1e1e;
+$color-text-muted: #7a7a7a;
+
+// Fonts
+$font-main: 'Ubuntu', sans-serif;
+
+// Spacing & UI
+$border-radius-card: 2px;
+$shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);

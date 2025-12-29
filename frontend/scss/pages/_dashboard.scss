@@ -1,0 +1,20 @@
+#tracker-status {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+// Progress Bar
+.progress-container {
+    background: #e9e9eb;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, $primary-color, lighten($primary-color, 10%));
+    height: 100%;
+    transition: width 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}

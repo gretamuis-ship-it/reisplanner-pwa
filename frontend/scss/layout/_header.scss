@@ -1,0 +1,48 @@
+@use '../abstracts' as a;
+
+.app-header {
+    background-color: a.$color-primary;
+    color: a.$color-white;
+    padding: 20px 15px;
+    text-align: center;
+    box-shadow: a.$shadow-sm;
+
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+}
+
+// Navigatie onderaan
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: env(safe-area-inset-bottom);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: space-around;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+    height: calc(65px + env(safe-area-inset-bottom));
+}
+
+.nav-item {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-muted;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    small {
+        font-size: 0.65rem;
+        font-weight: 500;
+        margin-top: 4px;
+    }
+
+    &.active {
+        color: $primary-color;
+    }
+}

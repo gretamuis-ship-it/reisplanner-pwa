@@ -1,143 +1,15 @@
-// 1. Laden van abstracts (geen CSS output, alleen variabelen/mixins beschikbaar maken)
+// 1. Abstracts (Variabelen laden)
 @use 'abstracts';
 
-// 2. CSS genererende mappen laden
+// 2. Base (Reset en Fonts)
 @use 'base';
+
+// 3. Layout (De grote blokken zoals de teal header)
 @use 'layout';
+
+// 4. Components (Knoppen en kaarten)
 @use 'components';
 
-// 3. Specifieke pagina's
+// 5. Pages (Specifieke pagina-onderdelen)
 @use 'pages/dashboard';
 @use 'pages/planner';
-
-
-
-* {
-    box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent; // Verwijdert de blauwe gloed bij klikken op iPhone
-}
-
-body {
-    font-family: $font-main;
-    background-color: $bg-color;
-    color: $color-text;
-    margin: 0;
-    padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom) 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.app-header {
-    padding: 20px;
-    background: $bg-color;
-
-    h1 {
-        margin: 0;
-        font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: -1px;
-    }
-}
-
-// Kaarten (iOS stijl: afgerond en zacht)
-.dashboard-card,
-.action-card {
-    background: white;
-    margin: 0 15px 15px;
-    padding: 20px;
-    border-radius: 24px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-
-    h2 {
-        margin-top: 0;
-        font-size: 1.1rem;
-        color: $color-muted;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
-}
-
-#tracker-status {
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin: 10px 0;
-}
-
-// Progress Bar
-.progress-container {
-    background: #e9e9eb;
-    height: 8px;
-    border-radius: 4px;
-    overflow: hidden;
-    margin-top: 15px;
-}
-
-.progress-bar {
-    background: linear-gradient(90deg, $primary-color, lighten($primary-color, 10%));
-    height: 100%;
-    transition: width 0.8s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-// Grote Check-in knop
-.btn-checkin {
-    width: 100%;
-    aspect-ratio: 1 / 0.5; // Maakt de knop mooi rechthoekig
-    border: none;
-    border-radius: 20px;
-    background: white;
-    border: 2px solid $primary-color;
-    color: $primary-color;
-    font-size: 1.2rem;
-    font-weight: 700;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    transition: all 0.2s ease;
-
-    .icon {
-        font-size: 2.5rem;
-    }
-
-    &:active {
-        transform: scale(0.96);
-        background: $primary-color;
-        color: white;
-    }
-}
-
-// Navigatie onderaan
-.bottom-nav {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding-bottom: env(safe-area-inset-bottom);
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(20px);
-    display: flex;
-    justify-content: space-around;
-    border-top: 0.5px solid rgba(0, 0, 0, 0.1);
-    height: calc(65px + env(safe-area-inset-bottom));
-}
-
-.nav-item {
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: $color-muted;
-    text-decoration: none;
-    font-size: 1.2rem;
-
-    small {
-        font-size: 0.65rem;
-        font-weight: 500;
-        margin-top: 4px;
-    }
-
-    &.active {
-        color: $primary-color;
-    }
-}
