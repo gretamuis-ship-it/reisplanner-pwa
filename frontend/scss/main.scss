@@ -1,31 +1,16 @@
-@use 'abstracts/variables';
-@use 'abstracts/functions';
-@use 'abstracts/mixins';
+// 1. Laden van abstracts (geen CSS output, alleen variabelen/mixins beschikbaar maken)
+@use 'abstracts';
 
-@use 'base/reset';
-@use 'base/typography';
+// 2. CSS genererende mappen laden
+@use 'base';
+@use 'layout';
+@use 'components';
 
-@use 'components/card';
-@use 'components/button';
-@use 'components/form';
-@use 'components/carousel';
+// 3. Specifieke pagina's
+@use 'pages/dashboard';
+@use 'pages/planner';
 
-@use 'layout/grid';
-@use 'layout/header';
-@use 'layout/navigation';
-@use 'layout/sidebar';
 
-@use 'pages/about';
-@use 'pages/auth';
-@use 'pages/contact';
-
-// Variabelen
-$primary-color: #007b7f;
-$accent-color: #e6007e;
-$color-text: #1e1e1e;
-$color-muted: #7a7a7a;
-$bg-color: #f5f5f5;
-$font-main: 'Ubuntu', sans-serif;
 
 * {
     box-sizing: border-box;

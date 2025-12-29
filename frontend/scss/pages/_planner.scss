@@ -1,0 +1,7 @@
+// We laden de map 'abstracts'. Sass zoekt automatisch naar de _index.scss daar.
+@use '../abstracts' as a;
+
+.planner-container {
+    background-color: a.$card-bg;
+    padding: 20px;
+}
