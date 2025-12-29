@@ -7,8 +7,8 @@
 
 body {
     font-family: a.$font-main;
-    background-color: a.$bg-color;
-    color: a.$color-text;
+    background-color: a.$color-bg-light;
+    color: a.$color-text-main;
     margin: 0;
     padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom) 0;
     display: flex;

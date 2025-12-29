@@ -1,3 +1,6 @@
+@use "sass:color";
+@use '../abstracts/' as a;
+
 #tracker-status {
     font-size: 1.4rem;
     font-weight: 700;
@@ -6,7 +9,7 @@
 
 // Progress Bar
 .progress-container {
-    background: #e9e9eb;
+    background: a.$color-bg-light;
     height: 8px;
     border-radius: 4px;
     overflow: hidden;
@@ -14,7 +17,9 @@
 }
 
 .progress-bar {
-    background: linear-gradient(90deg, $primary-color, lighten($primary-color, 10%));
+    background: linear-gradient(90deg, a.$color-primary, color.adjust(a.$color-primary, $lightness: 10%));
     height: 100%;
     transition: width 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
+
+//Test

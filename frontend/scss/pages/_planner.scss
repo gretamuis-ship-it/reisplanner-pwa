@@ -1,7 +1,6 @@
-// Je linkt naar de MAP abstracts. Sass pakt daar automatisch de _index.scss
 @use '../abstracts' as a;
 
 .planner-container {
-    background-color: a.$card-bg; // Gebruik de prefix 'a.' voor je variabelen
+    background-color: a.$color-bg-light;
     margin: a.$spacing-medium;
 }
