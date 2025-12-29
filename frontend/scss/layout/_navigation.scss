@@ -1,1 +1,44 @@
-@use '../abstracts/' as a;
+@use '../abstracts' as a;
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-color: white;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1rem; // Jouw gewenste 1rem zij-margin
+    z-index: 1000;
+
+    .nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #888;
+        cursor: pointer;
+        transition: color 0.2s;
+
+        i {
+            width: 24px;
+            height: 24px;
+            margin-bottom: 4px;
+        }
+
+        small {
+            font-size: 0.75rem;
+        }
+
+        &.active {
+            color: a.$color-primary; // Gebruikt je Teal variabele
+        }
+    }
+}
+
+// Zorg dat de content niet achter de nav verdwijnt
+body {
+    padding-bottom: 80px;
+}

@@ -1,25 +1,29 @@
 @use "sass:color";
-@use '../abstracts/' as a;
+@use "../abstracts" as a;
 
 #tracker-status {
     font-size: 1.4rem;
-    font-weight: 700;
+    font-weight: a.$font-weight-bold;
     margin: 10px 0;
 }
 
-// Progress Bar
-.progress-container {
-    background: a.$color-bg-light;
-    height: 8px;
-    border-radius: 4px;
-    overflow: hidden;
-    margin-top: 15px;
+.progress-section {
+    .progress-container {
+        background-color: a.$color-bg-light;
+        border-radius: a.$border-radius-main;
+        height: 20px;
+        overflow: hidden;
+        margin: 15px 0;
+    }
+
+    #progress-bar {
+        background-color: a.$color-primary;
+        width: 0%;
+        height: 100%;
+        transition: width 0.5s ease;
+    }
 }
 
-.progress-bar {
-    background: linear-gradient(90deg, a.$color-primary, color.adjust(a.$color-primary, $lightness: 10%));
-    height: 100%;
-    transition: width 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+.dashboard-card {
+    margin: 0 1rem;
 }
-
-//Test

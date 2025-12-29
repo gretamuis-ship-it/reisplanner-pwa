@@ -1,6 +1,26 @@
 @use '../abstracts' as a;
 
-.planner-container {
-    background-color: a.$color-bg-light;
-    margin: a.$spacing-medium;
+.planner-section {
+    .planner-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .input-group {
+        position: relative;
+
+        input {
+            width: 100%;
+            padding: 15px;
+            border-radius: a.$border-radius-main;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+            outline: none;
+
+            &:focus {
+                border-color: a.$color-primary;
+            }
+        }
+    }
 }

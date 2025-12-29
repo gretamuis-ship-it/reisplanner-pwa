@@ -139,3 +139,18 @@ document.addEventListener('DOMContentLoaded', () => {
     setupSuggesties('van-input', 'van-suggesties');
     setupSuggesties('naar-input', 'naar-suggesties');
 });
+
+function updateProgress(percentage, statusText) {
+    const statusEl = document.getElementById('tracker-status');
+    const barEl = document.getElementById('progress-bar');
+
+    if (statusEl && barEl) {
+        statusEl.textContent = statusText;
+        barEl.style.width = percentage + '%';
+    } else {
+        console.error("Voortgangs-elementen niet gevonden in de HTML!");
+    }
+}
+
+// Test dit door onderaan je bestand handmatig aan te roepen:
+// updateProgress(65, "65% voltooid deze week");

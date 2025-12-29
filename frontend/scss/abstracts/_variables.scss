@@ -10,6 +10,9 @@ $color-text-muted: #7a7a7a;
 
 // Fonts
 $font-main: 'Ubuntu', sans-serif;
+$font-weight-standard: 400;
+$font-weight-bold: 500;
+$font-weight-extra-bold: 600;
 
 // Spacing (Deze misten!)
 $spacing-small: 8px;
@@ -17,5 +20,11 @@ $spacing-medium: 16px;
 $spacing-large: 24px;
 
 // UI Elements
-$border-radius-card: 2px;
+$border-radius-main: 2px;
+$border-radius-round: 50%;
 $shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+// Breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-wide: 1200px;

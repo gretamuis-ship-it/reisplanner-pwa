@@ -1,0 +1,29 @@
+@use 'variables' as v;
+
+// Media Query Mixin
+@mixin mq($size) {
+    @if $size ==tablet {
+        @media (min-width: v.$breakpoint-tablet) {
+            @content;
+        }
+    }
+
+    @else if $size ==desktop {
+        @media (min-width: v.$breakpoint-desktop) {
+            @content;
+        }
+    }
+
+    @else if $size ==wide {
+        @media (min-width: v.$breakpoint-wide) {
+            @content;
+        }
+    }
+}
+
+// Handige extra mixin voor Flexbox center (scheelt typewerk)
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

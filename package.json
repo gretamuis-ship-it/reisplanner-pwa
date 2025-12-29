@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js",
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
     "sass-watch": "sass frontend/scss/main.scss frontend/public/css/main.css --watch"
   },
   "dependencies": {

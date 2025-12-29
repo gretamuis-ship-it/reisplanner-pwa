@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>BusPlanner Pro</title>
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="manifest" href="manifest.json">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
@@ -19,45 +20,50 @@
     </header>
 
     <main id="app-content">
-        <section class="dashboard-card">
-            <h2>Mijn Voortgang</h2>
-            <p id="tracker-status">Laden...</p>
-            <div class="progress-container"
-                style="background: #eee; border-radius: 10px; height: 20px; overflow: hidden;">
-                <div id="progress-bar" style="background: #2ecc71; width: 0%; height: 100%; transition: width 0.5s;">
-                </div>
-            </div>
-            <button id="btn-checkin" class="btn-checkin" style="margin-top: 15px;">Week Afvinken</button>
-        </section>
-
-        <section class="dashboard-card" style="margin-top: 20px; padding: 20px;">
+        <section class="dashboard-card planner-section">
             <h2>Reis plannen</h2>
-            <div style="display: flex; flex-direction: column; gap: 10px;">
-                <div style="position: relative;">
-                    <input type="text" id="van-input" placeholder="Van: Halte of station"
-                        style="width: 100%; padding: 15px; border-radius: 12px; border: 1px solid #ddd; font-size: 1rem;">
+            <div class="planner-form">
+                <div class="input-group">
+                    <input type="text" id="van-input" placeholder="Van: Halte of station">
                     <div id="van-suggesties" class="suggesties-lijst"></div>
                 </div>
 
-                <div style="position: relative;">
-                    <input type="text" id="naar-input" placeholder="Naar: Halte of station"
-                        style="width: 100%; padding: 15px; border-radius: 12px; border: 1px solid #ddd; font-size: 1rem;">
+                <div class="input-group">
+                    <input type="text" id="naar-input" placeholder="Naar: Halte of station">
                     <div id="naar-suggesties" class="suggesties-lijst"></div>
                 </div>
 
-                <button id="btn-plan"
-                    style="width: 100%; padding: 15px; background: #007aff; color: white; border: none; border-radius: 12px; font-weight: bold; font-size: 1.1rem; margin-top: 10px;">
-                    Plan je reis
-                </button>
+                <button id="btn-plan" class="btn-plan">Plan je reis</button>
             </div>
+        </section>
+        <section class="dashboard-card progress-section">
+            <h2>Mijn Voortgang</h2>
+            <p id="tracker-status">Laden...</p>
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+            <button id="btn-checkin" class="btn-primary">Week Afvinken</button>
         </section>
     </main>
 
     <nav class="bottom-nav">
-        <div class="nav-item active">🏠<small>Home</small></div>
-        <div class="nav-item">📅<small>Planner</small></div>
-        <div class="nav-item">📍<small>Lijnen</small></div>
+        <div class="nav-item active">
+            <i data-lucide="house"></i>
+            <small>Home</small>
+        </div>
+        <div class="nav-item">
+            <i data-lucide="calendar"></i>
+            <small>Planner</small>
+        </div>
+        <div class="nav-item">
+            <i data-lucide="map-pin"></i>
+            <small>Lijnen</small>
+        </div>
     </nav>
+
+    <script>
+        lucide.createIcons();
+    </script>
 
     <script src="js/api.js"></script>
     <script src="js/ui.js"></script>

@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #f5f5f5;
+  color: #1e1e1e;
+  margin: 0;
+  padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom) 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  background-color: #007b7f;
+  color: #ffffff;
+  padding: 20px 15px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.app-header h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: env(safe-area-inset-bottom);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: space-around;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+  height: calc(65px + env(safe-area-inset-bottom));
+}
+
+.nav-item {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #007b7f;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.nav-item small {
+  font-size: 0.65rem;
+  font-weight: 500;
+  margin-top: 4px;
+}
+.nav-item.active {
+  color: #007b7f;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background-color: white;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1rem;
+  z-index: 1000;
+}
+.bottom-nav .nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.bottom-nav .nav-item i {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+}
+.bottom-nav .nav-item small {
+  font-size: 0.75rem;
+}
+.bottom-nav .nav-item.active {
+  color: #007b7f;
+}
+
+body {
+  padding-bottom: 80px;
+}
+
+.btn-primary,
+.btn-plan {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.btn-primary:active,
+.btn-plan:active {
+  opacity: 0.8;
+}
+
+.btn-plan {
+  background-color: #007b7f;
+  color: white;
+  margin-top: 10px;
+}
+
+#tracker-status {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.progress-section .progress-container {
+  background-color: #f5f5f5;
+  border-radius: 2px;
+  height: 20px;
+  overflow: hidden;
+  margin: 15px 0;
+}
+.progress-section #progress-bar {
+  background-color: #007b7f;
+  width: 0%;
+  height: 100%;
+  transition: width 0.5s ease;
+}
+
+.dashboard-card {
+  margin: 0 1rem;
+}
+
+.planner-section .planner-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.planner-section .input-group {
+  position: relative;
+}
+.planner-section .input-group input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  outline: none;
+}
+.planner-section .input-group input:focus {
+  border-color: #007b7f;
+}/*# sourceMappingURL=main.css.map */
