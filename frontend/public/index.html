@@ -20,18 +20,36 @@
 
     <main id="app-content">
         <section class="dashboard-card">
-            <h2>40/52 Doel</h2>
+            <h2>Mijn Voortgang</h2>
             <p id="tracker-status">Laden...</p>
-            <div class="progress-container">
-                <div id="progress-bar" class="progress-bar"></div>
+            <div class="progress-container"
+                style="background: #eee; border-radius: 10px; height: 20px; overflow: hidden;">
+                <div id="progress-bar" style="background: #2ecc71; width: 0%; height: 100%; transition: width 0.5s;">
+                </div>
             </div>
+            <button id="btn-checkin" class="btn-checkin" style="margin-top: 15px;">Week Afvinken</button>
         </section>
 
-        <section class="action-card">
-            <button id="btn-checkin" class="btn-checkin">
-                <span class="icon">🚌</span>
-                Check-in Rit
-            </button>
+        <section class="dashboard-card" style="margin-top: 20px; padding: 20px;">
+            <h2>Reis plannen</h2>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <div style="position: relative;">
+                    <input type="text" id="van-input" placeholder="Van: Halte of station"
+                        style="width: 100%; padding: 15px; border-radius: 12px; border: 1px solid #ddd; font-size: 1rem;">
+                    <div id="van-suggesties" class="suggesties-lijst"></div>
+                </div>
+
+                <div style="position: relative;">
+                    <input type="text" id="naar-input" placeholder="Naar: Halte of station"
+                        style="width: 100%; padding: 15px; border-radius: 12px; border: 1px solid #ddd; font-size: 1rem;">
+                    <div id="naar-suggesties" class="suggesties-lijst"></div>
+                </div>
+
+                <button id="btn-plan"
+                    style="width: 100%; padding: 15px; background: #007aff; color: white; border: none; border-radius: 12px; font-weight: bold; font-size: 1.1rem; margin-top: 10px;">
+                    Plan je reis
+                </button>
+            </div>
         </section>
     </main>
 

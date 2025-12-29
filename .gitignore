@@ -1,4 +1,5 @@
 node_modules/
+backend/data/reizen.db
 backend/data/gtfs-raw/
 backend/data/*.zip
 backend/data/*.db

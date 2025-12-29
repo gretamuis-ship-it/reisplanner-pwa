@@ -133,6 +133,7 @@ app.get('/api/live/:stop_id', async (req, res) => {
     }
 });
 
+// Zoek suggesties voor haltenamen (voor de Van/Naar velden)
 app.get('/api/suggesties/:zoekterm', async (req, res) => {
     try {
         const db = await openDb();
@@ -141,7 +142,8 @@ app.get('/api/suggesties/:zoekterm', async (req, res) => {
             SELECT DISTINCT stop_name, stop_id 
             FROM stops 
             WHERE stop_name LIKE ? 
-            LIMIT 5
+            ORDER BY stop_name ASC
+            LIMIT 6
         `, [term]);
         res.json(resultaten);
     } catch (err) {
