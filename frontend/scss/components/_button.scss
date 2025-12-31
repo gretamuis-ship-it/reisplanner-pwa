@@ -6,6 +6,9 @@
     padding: 15px;
     border: none;
     border-radius: a.$border-radius-main;
+    background-color: a.$color-accent;
+    color: white;
+    margin-top: 10px;
     font-weight: a.$font-weight-bold;
     font-size: 1.1rem;
     cursor: pointer;
@@ -14,10 +17,9 @@
     &:active {
         opacity: 0.8;
     }
-}
 
-.btn-plan {
-    background-color: a.$color-primary;
-    color: white;
-    margin-top: 10px;
+    &:hover {
+        background-color: a.$color-hover;
+        transition: color .15s, background .15s, border-color .15s, fill .15s;
+    }
 }

@@ -1,26 +1,171 @@
 @use '../abstracts' as a;
 
-.planner-section {
-    .planner-form {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+.planner-card-modern {
+    padding: a.$spacing-large 0;
+    text-align: center;
+
+    h2 {
+        font-family: a.$font-main;
+        font-weight: a.$font-weight-bold; // Dit is nu 500
+        color: a.$color-text-main;
+        margin-bottom: a.$spacing-medium;
+        font-size: 1.3rem;
     }
 
-    .input-group {
+    .planner-box {
+        background: a.$color-white;
+        border-radius: a.$border-radius-main; // Nu 2px voor een strakke look
+        box-shadow: a.$shadow-sm;
+        padding: a.$spacing-small a.$spacing-medium;
+        border: 1px solid #f0f0f0;
+        text-align: left;
+    }
+
+    .input-row {
+        display: flex;
+        align-items: center;
+        gap: a.$spacing-medium;
+        padding: 0.7rem 0;
         position: relative;
 
-        input {
-            width: 100%;
-            padding: 15px;
-            border-radius: a.$border-radius-main;
-            border: 1px solid #ddd;
-            font-size: 1rem;
-            outline: none;
+        i {
+            width: 20px;
+            color: a.$color-primary;
+            flex-shrink: 0;
+        }
 
-            &:focus {
-                border-color: a.$color-primary;
+        .lucide {
+            color: a.$color-primary;
+        }
+
+        input {
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 1rem;
+            font-family: a.$font-main;
+            font-weight: a.$font-weight-standard; // 400 voor de invoer
+            background: transparent;
+
+            &::placeholder {
+                color: a.$color-text-muted;
             }
         }
+    }
+
+    .planner-divider {
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 1px;
+
+        .line {
+            flex-grow: 1;
+            height: 1px;
+            background: #eee;
+            margin-left: 36px; // Uitgelijnd onder het begin van de tekst
+        }
+
+        .btn-switch {
+            background: a.$color-white;
+            border: 1px solid #eee;
+            border-radius: a.$border-radius-round;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: 0;
+            cursor: pointer;
+            color: a.$color-primary;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease;
+
+            &:active {
+                transform: scale(0.9) rotate(180deg);
+            }
+
+            i {
+                width: 14px;
+            }
+        }
+    }
+}
+
+.btn-plan-main {
+    width: 100%;
+    margin-top: a.$spacing-large;
+    padding: 1rem;
+    border-radius: a.$border-radius-main;
+    background: a.$color-accent;
+    color: a.$color-white;
+    font-family: a.$font-main;
+    font-weight: a.$font-weight-bold;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+
+    &:hover {
+        background: a.$color-hover;
+    }
+}
+
+.results-container {
+    display: none; // Standaard verborgen
+    margin-top: a.$spacing-large;
+    text-align: left;
+
+    &.active {
+        display: block;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+        color: a.$color-text-muted;
+        text-transform: uppercase;
+        margin-bottom: a.$spacing-medium;
+        font-weight: a.$font-weight-bold; // 500
+    }
+}
+
+.bus-result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: a.$color-white;
+    padding: a.$spacing-medium;
+    border-radius: a.$border-radius-main;
+    margin-bottom: a.$spacing-small;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+
+    .bus-meta {
+        display: flex;
+        align-items: center;
+        gap: a.$spacing-medium;
+
+        .line-badge {
+            background: a.$color-primary; // Teal voor de lijn
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: a.$font-weight-bold;
+            font-size: 0.85rem;
+            min-width: 38px;
+            text-align: center;
+        }
+
+        .destination {
+            font-size: 1rem;
+            color: a.$color-text-main;
+        }
+    }
+
+    .bus-time {
+        font-weight: a.$font-weight-bold;
+        color: #2ecc71; // Groen voor de tijd
+        font-size: 1.1rem;
     }
 }

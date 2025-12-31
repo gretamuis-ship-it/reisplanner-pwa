@@ -31,10 +31,20 @@ async function init() {
 init();
 
 // --- API ROUTES VOOR 40/52 DOEL ---
-
 app.get('/api/stats', async (req, res) => {
-    const history = await fs.readJson(HISTORY_PATH);
-    res.json(history);
+    try {
+        const history = await fs.readJson(HISTORY_PATH);
+        const doel = 40; // Jouw doel van 40 weken
+        const aantal = history.length;
+        const percentage = Math.min(Math.round((aantal / doel) * 100), 100);
+
+        res.json({
+            percentage: percentage,
+            message: `${aantal} van de ${doel} weken afgevinkt (${percentage}%)`
+        });
+    } catch (err) {
+        res.status(500).json({ error: "Kon stats niet laden" });
+    }
 });
 
 app.post('/api/checkin', async (req, res) => {
@@ -89,6 +99,44 @@ app.get('/api/lijn/:nummer', async (req, res) => {
     }
 });
 
+// --- DE NIEUWE SLIMME PLANNER ROUTE ---
+app.get('/api/plan', async (req, res) => {
+    try {
+        const db = await openDb();
+        const { from, to } = req.query; // Pakt ?from=...&to=... uit de URL
+
+        if (!from || !to) {
+            return res.status(400).json({ error: "Vertrek en bestemming zijn verplicht." });
+        }
+
+        // Tijd van nu in HH:mm:ss formaat
+        const nu = new Date().toLocaleTimeString('nl-NL', { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' });
+
+        const resultaten = await db.all(`
+            SELECT 
+                s_van.arrival_time AS vertrektijd,
+                s_naar.arrival_time AS aankomsttijd,
+                trips.trip_headsign,
+                routes.route_short_name
+            FROM stop_times AS s_van
+            JOIN stop_times AS s_naar ON s_van.trip_id = s_naar.trip_id
+            JOIN trips ON s_van.trip_id = trips.trip_id
+            JOIN routes ON trips.route_id = routes.route_id
+            WHERE s_van.stop_id = ? 
+              AND s_naar.stop_id = ?
+              AND s_van.stop_sequence < s_naar.stop_sequence -- Moet de juiste richting op gaan
+              AND s_van.arrival_time > ?                    -- Alleen vanaf NU
+            ORDER BY s_van.arrival_time ASC
+            LIMIT 5
+        `, [from, to, nu]);
+
+        res.json(resultaten);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: "Fout bij het plannen van de reis" });
+    }
+});
+
 app.listen(PORT, () => console.log(`BusPlanner draait op http://localhost:${PORT}`));
 
 // Haal de eerstvolgende 5 bussen op voor een specifieke halte
@@ -138,11 +186,16 @@ app.get('/api/suggesties/:zoekterm', async (req, res) => {
     try {
         const db = await openDb();
         const term = `%${req.params.zoekterm}%`;
+        // We voegen een JOIN toe om alleen haltes te tonen waar jouw bussen (CXX) stoppen
         const resultaten = await db.all(`
-            SELECT DISTINCT stop_name, stop_id 
-            FROM stops 
-            WHERE stop_name LIKE ? 
-            ORDER BY stop_name ASC
+            SELECT DISTINCT s.stop_name, s.stop_id 
+            FROM stops s
+            JOIN stop_times st ON s.stop_id = st.stop_id
+            JOIN trips t ON st.trip_id = t.trip_id
+            JOIN routes r ON t.route_id = r.route_id
+            WHERE s.stop_name LIKE ? 
+              AND r.agency_id = 'CXX' -- Filter op Connexxion
+            ORDER BY s.stop_name ASC
             LIMIT 6
         `, [term]);
         res.json(resultaten);

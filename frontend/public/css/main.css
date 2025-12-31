@@ -14,10 +14,25 @@ body {
   min-height: 100vh;
 }
 
+.container {
+  padding: 0 1rem;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+}
+
+.page {
+  display: none;
+  min-height: calc(100vh - 140px);
+}
+.page.active {
+  display: block;
+}
+
 .app-header {
   background-color: #007b7f;
   color: #ffffff;
-  padding: 20px 15px;
+  padding: 10px 15px;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -101,6 +116,9 @@ body {
   padding: 15px;
   border: none;
   border-radius: 2px;
+  background-color: #e20070;
+  color: white;
+  margin-top: 10px;
   font-weight: 500;
   font-size: 1.1rem;
   cursor: pointer;
@@ -110,11 +128,30 @@ body {
 .btn-plan:active {
   opacity: 0.8;
 }
+.btn-primary:hover,
+.btn-plan:hover {
+  background-color: #1d1f20;
+  transition: color 0.15s, background 0.15s, border-color 0.15s, fill 0.15s;
+}
 
-.btn-plan {
-  background-color: #007b7f;
-  color: white;
-  margin-top: 10px;
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+.suggesties-lijst {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  z-index: 1000;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
 }
 
 #tracker-status {
@@ -137,26 +174,153 @@ body {
   transition: width 0.5s ease;
 }
 
-.dashboard-card {
-  margin: 0 1rem;
+.planner-card-modern {
+  padding: 24px 0;
+  text-align: center;
 }
-
-.planner-section .planner-form {
+.planner-card-modern h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  color: #1e1e1e;
+  margin-bottom: 16px;
+  font-size: 1.3rem;
+}
+.planner-card-modern .planner-box {
+  background: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 8px 16px;
+  border: 1px solid #f0f0f0;
+  text-align: left;
+}
+.planner-card-modern .input-row {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.planner-section .input-group {
+  align-items: center;
+  gap: 16px;
+  padding: 0.7rem 0;
   position: relative;
 }
-.planner-section .input-group input {
-  width: 100%;
-  padding: 15px;
-  border-radius: 2px;
-  border: 1px solid #ddd;
-  font-size: 1rem;
-  outline: none;
+.planner-card-modern .input-row i {
+  width: 20px;
+  color: #007b7f;
+  flex-shrink: 0;
 }
-.planner-section .input-group input:focus {
-  border-color: #007b7f;
+.planner-card-modern .input-row .lucide {
+  color: #007b7f;
+}
+.planner-card-modern .input-row input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  background: transparent;
+}
+.planner-card-modern .input-row input::placeholder {
+  color: #7a7a7a;
+}
+.planner-card-modern .planner-divider {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 1px;
+}
+.planner-card-modern .planner-divider .line {
+  flex-grow: 1;
+  height: 1px;
+  background: #eee;
+  margin-left: 36px;
+}
+.planner-card-modern .planner-divider .btn-switch {
+  background: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  color: #007b7f;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+.planner-card-modern .planner-divider .btn-switch:active {
+  transform: scale(0.9) rotate(180deg);
+}
+.planner-card-modern .planner-divider .btn-switch i {
+  width: 14px;
+}
+
+.btn-plan-main {
+  width: 100%;
+  margin-top: 24px;
+  padding: 1rem;
+  border-radius: 2px;
+  background: #e20070;
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-plan-main:hover {
+  background: #1d1f20;
+}
+
+.results-container {
+  display: none;
+  margin-top: 24px;
+  text-align: left;
+}
+.results-container.active {
+  display: block;
+}
+.results-container h3 {
+  font-size: 0.9rem;
+  color: #7a7a7a;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.bus-result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 2px;
+  margin-bottom: 8px;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+.bus-result-item .bus-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.bus-result-item .bus-meta .line-badge {
+  background: #007b7f;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  min-width: 38px;
+  text-align: center;
+}
+.bus-result-item .bus-meta .destination {
+  font-size: 1rem;
+  color: #1e1e1e;
+}
+.bus-result-item .bus-time {
+  font-weight: 500;
+  color: #2ecc71;
+  font-size: 1.1rem;
 }/*# sourceMappingURL=main.css.map */

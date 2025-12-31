@@ -1,1 +1,21 @@
 @use '../abstracts/' as a;
+
+.input-group {
+    position: relative; // Dit zorgt dat de lijst aan dit vak plakt
+    width: 100%;
+}
+
+.suggesties-lijst {
+    position: absolute;
+    top: 100%; // Direct onder de input
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 1000;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+}

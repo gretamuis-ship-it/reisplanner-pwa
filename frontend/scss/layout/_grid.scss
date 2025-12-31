@@ -1,1 +1,19 @@
-@use '../abstracts/' as a;
+@use '../abstracts' as a;
+
+.container {
+    padding: 0 1rem;
+    width: 100%;
+    margin: 0 auto;
+    // Voorkom dat content tegen de onderkant van de header aanplakt
+    padding-top: 1.5rem;
+}
+
+.page {
+    display: none;
+    // Zorg dat de pagina altijd de volledige hoogte vult voor de bottom nav
+    min-height: calc(100vh - 140px);
+
+    &.active {
+        display: block;
+    }
+}

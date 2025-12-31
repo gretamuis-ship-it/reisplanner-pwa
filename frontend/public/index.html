@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="manifest" href="manifest.json">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -16,57 +16,121 @@
 <body>
 
     <header class="app-header">
-        <h1>BusPlanner</h1>
+        <div class="header-container">
+            <h1>BusPlanner</h1>
+        </div>
     </header>
 
     <main id="app-content">
-        <section class="dashboard-card planner-section">
-            <h2>Reis plannen</h2>
-            <div class="planner-form">
-                <div class="input-group">
-                    <input type="text" id="van-input" placeholder="Van: Halte of station">
-                    <div id="van-suggesties" class="suggesties-lijst"></div>
-                </div>
 
-                <div class="input-group">
-                    <input type="text" id="naar-input" placeholder="Naar: Halte of station">
-                    <div id="naar-suggesties" class="suggesties-lijst"></div>
-                </div>
+        <div id="page-home" class="page active">
+            <div class="container">
+                <section class="planner-card-modern">
+                    <div class="planner-box">
+                        <div class="planner-inputs">
+                            <div class="input-row">
+                                <i data-lucide="circle-dot" class="icon-source"></i>
+                                <input type="text" id="van-input" placeholder="Vertrekhalte">
+                                <div id="van-suggesties" class="suggesties-lijst"></div>
+                            </div>
 
-                <button id="btn-plan" class="btn-plan">Plan je reis</button>
+                            <div class="planner-divider">
+                                <div class="line"></div>
+                                <button class="btn-switch" title="Wissel richting">
+                                    <i data-lucide="arrow-up-down"></i>
+                                </button>
+                            </div>
+
+                            <div class="input-row">
+                                <i data-lucide="map-pin" class="icon-destination"></i>
+                                <input type="text" id="naar-input" placeholder="Bestemming">
+                                <div id="naar-suggesties" class="suggesties-lijst"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="btn-plan" class="btn-plan-main">Plan mijn reis</button>
+                </section>
+
+                <div id="rit-resultaten" class="results-container"></div>
             </div>
-        </section>
-        <section class="dashboard-card progress-section">
-            <h2>Mijn Voortgang</h2>
-            <p id="tracker-status">Laden...</p>
-            <div class="progress-container">
-                <div id="progress-bar"></div>
+        </div>
+
+        <div id="page-diensten" class="page">
+            <div class="container">
+                <section class="dashboard-card">
+                    <h2>Mijn Diensten</h2>
+                    <p>Je hebt vandaag geen geplande diensten.</p>
+                </section>
             </div>
-            <button id="btn-checkin" class="btn-primary">Week Afvinken</button>
-        </section>
+        </div>
+
+        <div id="page-progress" class="page">
+            <div class="container">
+                <section class="dashboard-card progress-card">
+                    <h2>OV-Tracker</h2>
+                    <div class="stats-box">
+                        <p id="tracker-status">Data ophalen...</p>
+                        <div class="progress-container">
+                            <div id="progress-bar"></div>
+                        </div>
+                    </div>
+                    <button id="btn-checkin" class="btn-primary">Week afvinken (40/52 doel)</button>
+                </section>
+            </div>
+        </div>
+
+        <div id="page-monitor" class="page">
+            <div class="container">
+                <section class="dashboard-card">
+                    <h2>OV-Monitor</h2>
+                    <p>Live storingen en vertragingen in jouw regio.</p>
+                </section>
+            </div>
+        </div>
+
+        <div id="page-settings" class="page">
+            <div class="container">
+                <section class="dashboard-card">
+                    <h2>Instellingen</h2>
+                    <ul class="settings-list">
+                        <li>Meldingen beheren</li>
+                        <li>Accountgegevens</li>
+                        <li>Over deze app</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
     </main>
 
     <nav class="bottom-nav">
-        <div class="nav-item active">
-            <i data-lucide="house"></i>
-            <small>Home</small>
-        </div>
-        <div class="nav-item">
-            <i data-lucide="calendar"></i>
+        <div class="nav-item active" data-target="page-home">
+            <i data-lucide="search"></i>
             <small>Planner</small>
         </div>
-        <div class="nav-item">
-            <i data-lucide="map-pin"></i>
-            <small>Lijnen</small>
+        <div class="nav-item" data-target="page-diensten">
+            <i data-lucide="briefcase"></i>
+            <small>Diensten</small>
+        </div>
+        <div class="nav-item" data-target="page-progress">
+            <i data-lucide="chart-column-increasing"></i>
+            <small>40/52 Tracker</small>
+        </div>
+        <div class="nav-item" data-target="page-monitor">
+            <i data-lucide="bus-front"></i>
+            <small>BusMonitor</small>
+        </div>
+        <div class="nav-item" data-target="page-settings">
+            <i data-lucide="settings"></i>
+            <small>Instellingen</small>
         </div>
     </nav>
 
+    <script src="js/api.js"></script>
+    <script src="js/ui.js"></script>
     <script>
         lucide.createIcons();
     </script>
-
-    <script src="js/api.js"></script>
-    <script src="js/ui.js"></script>
 </body>
 
 </html>
