@@ -136,6 +136,8 @@ body {
 
 .input-group {
   position: relative;
+  display: flex;
+  align-items: center;
   width: 100%;
 }
 
@@ -144,14 +146,23 @@ body {
   top: 100%;
   left: 0;
   right: 0;
-  background: white;
+  background: #ffffff;
   z-index: 1000;
   border: 1px solid #ddd;
-  border-top: none;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   max-height: 200px;
   overflow-y: auto;
+}
+.suggesties-lijst div {
+  padding: 10px 15px;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  border-bottom: 1px solid #f0f0f0;
+}
+.suggesties-lijst div:hover {
+  background-color: #f9f9f9;
+  color: #007b7f;
 }
 
 #tracker-status {
