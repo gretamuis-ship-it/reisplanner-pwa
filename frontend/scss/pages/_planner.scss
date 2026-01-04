@@ -6,7 +6,7 @@
 
     h2 {
         font-family: a.$font-main;
-        font-weight: a.$font-weight-bold; // Dit is nu 500
+        font-weight: a.$font-weight-bold;
         color: a.$color-text-main;
         margin-bottom: a.$spacing-medium;
         font-size: 1.3rem;
@@ -14,7 +14,7 @@
 
     .planner-box {
         background: a.$color-white;
-        border-radius: a.$border-radius-main; // Nu 2px voor een strakke look
+        border-radius: a.$border-radius-main;
         box-shadow: a.$shadow-sm;
         padding: a.$spacing-small a.$spacing-medium;
         border: 1px solid #f0f0f0;
@@ -28,14 +28,11 @@
         padding: 0.7rem 0;
         position: relative;
 
-        i {
+        i,
+        .lucide {
             width: 20px;
             color: a.$color-primary;
             flex-shrink: 0;
-        }
-
-        .lucide {
-            color: a.$color-primary;
         }
 
         input {
@@ -44,7 +41,7 @@
             width: 100%;
             font-size: 1rem;
             font-family: a.$font-main;
-            font-weight: a.$font-weight-standard; // 400 voor de invoer
+            font-weight: a.$font-weight-standard;
             background: transparent;
 
             &::placeholder {
@@ -63,7 +60,7 @@
             flex-grow: 1;
             height: 1px;
             background: #eee;
-            margin-left: 36px; // Uitgelijnd onder het begin van de tekst
+            margin-left: 36px;
         }
 
         .btn-switch {
@@ -80,7 +77,8 @@
             cursor: pointer;
             color: a.$color-primary;
             box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-            transition: transform 0.2s ease;
+            transition: transform 0.5s ease;
+            z-index: 1000;
 
             &:active {
                 transform: scale(0.9) rotate(180deg);
@@ -113,7 +111,7 @@
 }
 
 .results-container {
-    display: none; // Standaard verborgen
+    display: none;
     margin-top: a.$spacing-large;
     text-align: left;
 
@@ -126,46 +124,97 @@
         color: a.$color-text-muted;
         text-transform: uppercase;
         margin-bottom: a.$spacing-medium;
-        font-weight: a.$font-weight-bold; // 500
+        font-weight: a.$font-weight-bold;
     }
 }
 
-.bus-result-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.trip-card {
     background: a.$color-white;
+    margin-bottom: a.$spacing-medium;
     padding: a.$spacing-medium;
     border-radius: a.$border-radius-main;
-    margin-bottom: a.$spacing-small;
+    box-shadow: a.$shadow-sm;
     border: 1px solid #f0f0f0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+    gap: 12px; // Iets meer ruimte tussen de twee regels voor balans
+    cursor: pointer;
+    transition: background 0.2s ease;
 
-    .bus-meta {
+    &:active {
+        background: #f9f9f9;
+    }
+
+    // Regel 1: Tijd (links) en Meta (rechts) op dezelfde hoogte
+    .card-header-row {
         display: flex;
-        align-items: center;
-        gap: a.$spacing-medium;
+        justify-content: space-between;
+        align-items: baseline; // Lijn de tekstlijnen perfect uit
 
-        .line-badge {
-            background: a.$color-primary; // Teal voor de lijn
-            color: white;
-            padding: 4px 8px;
-            border-radius: 4px;
+        .time-container {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 1.05rem;
             font-weight: a.$font-weight-bold;
-            font-size: 0.85rem;
-            min-width: 38px;
-            text-align: center;
+            color: a.$color-text-main;
+
+            .time-separator {
+                color: a.$color-text-muted;
+                font-weight: normal;
+            }
         }
 
-        .destination {
-            font-size: 1rem;
-            color: a.$color-text-main;
+        .meta-info {
+            display: flex;
+            align-items: center;
+            gap: a.$spacing-medium;
+            color: a.$color-text-muted;
+            font-size: 0.85rem;
+
+            .meta-item {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+
+                svg {
+                    width: 14px;
+                    height: 14px;
+                }
+            }
         }
     }
 
-    .bus-time {
-        font-weight: a.$font-weight-bold;
-        color: #2ecc71; // Groen voor de tijd
-        font-size: 1.1rem;
+    // Regel 2: De vervoersmiddelen
+    .card-transport-row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        svg {
+            width: 16px;
+            height: 16px;
+            color: a.$color-text-main;
+        }
+
+        .line-badge {
+            background: a.$color-primary; // Teal
+            color: white;
+            padding: 2px 6px;
+            border-radius: 2px;
+            font-weight: a.$font-weight-bold;
+            font-size: 0.8rem;
+            min-width: 35px;
+            text-align: center;
+
+            &.mat-badge {
+                background: a.$color-accent; // Roze
+            }
+        }
+
+        .plus-sign {
+            font-size: 0.8rem;
+            color: a.$color-text-muted;
+        }
     }
 }

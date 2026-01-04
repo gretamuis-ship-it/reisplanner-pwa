@@ -1,12 +1,19 @@
-const axios = require('axios');
-const fs = require('fs-extra');
-const path = require('path');
-const unzipper = require('unzipper');
+import axios from 'axios';
+import fs from 'fs-extra';
+import path from 'path';
+import unzipper from 'unzipper';
+import { fileURLToPath } from 'url';
 
-async function downloadGTFS() {
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+export async function downloadGTFS() {
     const url = "https://gtfs.ovapi.nl/nl/gtfs-nl.zip";
-    const outputPath = path.join(__dirname, '../data/gtfs.zip');
-    const extractPath = path.join(__dirname, '../data/gtfs-raw');
+    // We gaan één map omhoog naar /backend/ en dan naar /data/
+    const dataDir = path.join(__dirname, '../data');
+    const outputPath = path.join(dataDir, 'gtfs.zip');
+    const extractPath = path.join(dataDir, 'gtfs-raw');
+
+    await fs.ensureDir(dataDir);
 
     console.log("Start download van landelijke GTFS (ca. 200MB)...");
 
@@ -21,7 +28,7 @@ async function downloadGTFS() {
                 fs.createReadStream(outputPath)
                     .pipe(unzipper.Extract({ path: extractPath }))
                     .on('close', () => {
-                        console.log("Uitgepakt in /data/gtfs-raw/");
+                        console.log("Uitgepakt in backend/data/gtfs-raw/");
                         resolve();
                     });
             });
@@ -31,5 +38,3 @@ async function downloadGTFS() {
         console.error("Fout bij downloaden:", error.message);
     }
 }
-
-module.exports = { downloadGTFS };

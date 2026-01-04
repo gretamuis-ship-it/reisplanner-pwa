@@ -1,4 +1,7 @@
 {
+  "name": "reisplanner-pwa",
+  "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "start": "node backend/server.js",
     "dev": "nodemon backend/server.js",
@@ -7,6 +10,7 @@
   "dependencies": {
     "axios": "^1.13.2",
     "csv-parse": "^6.1.0",
+    "csv-parser": "^3.2.0",
     "express": "^5.2.1",
     "fs-extra": "^11.3.3",
     "sqlite": "^5.1.1",

@@ -3,6 +3,8 @@ const fs = require('fs-extra');
 const path = require('path');
 const sqlite3 = require('sqlite3');
 const { open } = require('sqlite');
+const axios = require('axios');
+const csv = require('csv-parser');
 
 const app = express();
 const PORT = 3000;
@@ -12,6 +14,7 @@ app.use(express.static(path.join(__dirname, '../frontend/public')));
 
 const HISTORY_PATH = path.join(__dirname, 'data/historie.json');
 const DB_PATH = path.join(__dirname, 'data/reizen.db');
+const CSV_PATH = path.join(__dirname, 'data/data.csv');
 
 // Hulpfunctie om de database te openen
 async function openDb() {
@@ -21,186 +24,136 @@ async function openDb() {
     });
 }
 
-// Initialisatie van mappen
+// Hulpfunctie om dienst-info uit CSV te halen op basis van omloop
+async function haalDienstInfo(omloopNummer) {
+    return new Promise((resolve) => {
+        const resultaten = [];
+        if (!fs.existsSync(CSV_PATH)) return resolve(null);
+
+        fs.createReadStream(CSV_PATH)
+            .pipe(csv({ separator: ';' }))
+            .on('data', (data) => resultaten.push(data))
+            .on('end', () => {
+                const info = resultaten.find(r => r.Omloop === omloopNummer);
+                resolve(info || null);
+            });
+    });
+}
+
+// Initialisatie van mappen en database indexen
 async function init() {
     await fs.ensureDir(path.join(__dirname, 'data'));
     if (!await fs.pathExists(HISTORY_PATH)) {
         await fs.outputJson(HISTORY_PATH, []);
     }
+
+    try {
+        const db = await openDb();
+        console.log("Database indexen controleren...");
+        await db.exec('CREATE INDEX IF NOT EXISTS idx_stops_name ON stops(stop_name)');
+        await db.exec('CREATE INDEX IF NOT EXISTS idx_st_trip ON stop_times(trip_id)');
+        await db.exec('CREATE INDEX IF NOT EXISTS idx_st_stop ON stop_times(stop_id)');
+        console.log("✅ Alle database indexen zijn gereed.");
+        await db.close();
+    } catch (err) {
+        console.error("❌ Fout bij database optimalisatie:", err);
+    }
 }
 init();
 
-// --- API ROUTES VOOR 40/52 DOEL ---
-app.get('/api/stats', async (req, res) => {
-    try {
-        const history = await fs.readJson(HISTORY_PATH);
-        const doel = 40; // Jouw doel van 40 weken
-        const aantal = history.length;
-        const percentage = Math.min(Math.round((aantal / doel) * 100), 100);
+// --- API ROUTES ---
 
-        res.json({
-            percentage: percentage,
-            message: `${aantal} van de ${doel} weken afgevinkt (${percentage}%)`
-        });
+// De Slimme Planner met Overstap en Chauffeursinfo
+app.get('/api/plan', async (req, res) => {
+    const { fromName, toName, inputTime, mode } = req.query; // mode = 'DEPART' of 'ARRIVE'
+    let db;
+    try {
+        db = await openDb();
+
+        // 1. Bepaal de dag van de week (bijv. 'monday')
+        const dagen = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+        const vandaag = dagen[new Date().getDay()];
+
+        // 2. Gebruik de gekozen tijd of de tijd van NU
+        const planTijd = inputTime || new Date().toLocaleTimeString('nl-NL', { hour12: false });
+
+        // We voegen een JOIN met 'trips' en 'calendar' toe om alleen ritten van VANDAAG te zien
+        const dagFilter = `AND c.${vandaag} = 1`;
+        const tijdFilter = mode === 'ARRIVE'
+            ? `AND st_naar.arrival_time < ? ORDER BY st_naar.arrival_time DESC`
+            : `AND st_van.arrival_time > ? ORDER BY st_van.arrival_time ASC`;
+
+        const query = `
+            SELECT 
+                r.route_short_name AS lijn1,
+                st_van.arrival_time AS vertrek1,
+                st_naar.arrival_time AS aankomst_eind,
+                0 AS overstappen
+            FROM stop_times st_van
+            JOIN trips t ON st_van.trip_id = t.trip_id
+            JOIN calendar c ON t.service_id = c.service_id
+            JOIN routes r ON t.route_id = r.route_id
+            JOIN stop_times st_naar ON st_van.trip_id = st_naar.trip_id
+            JOIN stops s_van ON st_van.stop_id = s_van.stop_id
+            JOIN stops s_naar ON st_naar.stop_id = s_naar.stop_id
+            WHERE s_van.stop_name = ? 
+              AND s_naar.stop_name = ?
+              AND st_van.stop_sequence < st_naar.stop_sequence
+              ${dagFilter}
+              ${tijdFilter}
+            LIMIT 5
+        `;
+
+        const ritten = await db.all(query, [fromName, toName, planTijd]);
+        res.json(ritten);
     } catch (err) {
-        res.status(500).json({ error: "Kon stats niet laden" });
+        res.status(500).json({ error: err.message });
+    } finally {
+        if (db) await db.close();
     }
+});
+
+// Suggesties voor haltenamen
+app.get('/api/suggesties/:zoekterm', async (req, res) => {
+    let db;
+    try {
+        db = await openDb();
+        const term = `%${req.params.zoekterm}%`;
+        const resultaten = await db.all(`
+            SELECT stop_name, MIN(stop_id) as stop_id
+            FROM stops
+            WHERE stop_name LIKE ?
+            GROUP BY stop_name
+            ORDER BY 
+                CASE 
+                    WHEN stop_name LIKE 'Julianapark%' THEN 1 
+                    WHEN stop_name LIKE 'Station Haarlem%' THEN 2
+                    WHEN stop_name LIKE 'Zeewijkplein%' THEN 3
+                    ELSE 4 
+                END, stop_name ASC
+            LIMIT 10
+        `, [term]);
+        res.json(resultaten || []);
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    } finally {
+        if (db) await db.close();
+    }
+});
+
+// Stats en Checkin (40/52 doel)
+app.get('/api/stats', async (req, res) => {
+    const history = await fs.readJson(HISTORY_PATH);
+    const doel = 40;
+    const aantal = history.length;
+    res.json({ percentage: Math.min(Math.round((aantal / doel) * 100), 100), count: aantal });
 });
 
 app.post('/api/checkin', async (req, res) => {
     const history = await fs.readJson(HISTORY_PATH);
-    const today = new Date();
-
-    // Weeknummer berekening (ISO)
-    const target = new Date(today.valueOf());
-    const dayNr = (today.getDay() + 6) % 7;
-    target.setDate(target.getDate() - dayNr + 3);
-    const firstThursday = target.valueOf();
-    target.setMonth(0, 1);
-    if (target.getDay() !== 4) {
-        target.setMonth(0, 1 + ((4 - target.getDay()) + 7) % 7);
-    }
-    const weekNumber = 1 + Math.ceil((firstThursday - target) / 604800000);
-    const year = today.getFullYear();
-
-    const alreadyExists = history.some(e => e.week === weekNumber && e.year === year);
-    if (alreadyExists) {
-        return res.status(400).json({ message: "Deze week is al geregistreerd!" });
-    }
-
-    history.push({ week: weekNumber, year: year, date: today });
+    history.push({ date: new Date() });
     await fs.writeJson(HISTORY_PATH, history);
-    res.json({ message: `Succes! Week ${weekNumber} staat erin.`, count: history.length });
+    res.json({ message: "Ingecheckt!" });
 });
 
-// --- API ROUTES VOOR DE REISPLANNER (GTFS) ---
-
-// Zoek alle haltes van een specifieke lijn (bijv. 385)
-app.get('/api/lijn/:nummer', async (req, res) => {
-    try {
-        const db = await openDb();
-        const lijn = req.params.nummer;
-
-        const haltes = await db.all(`
-            SELECT DISTINCT stop_name, MIN(stops.stop_id) as stop_id
-            FROM stops
-            JOIN stop_times ON stops.stop_id = stop_times.stop_id
-            JOIN trips ON stop_times.trip_id = trips.trip_id
-            JOIN routes ON trips.route_id = routes.route_id
-            WHERE routes.route_short_name = ? 
-            AND routes.agency_id = 'CXX'
-            GROUP BY stop_name
-            ORDER BY stop_name ASC
-        `, [lijn]);
-
-        res.json(haltes);
-    } catch (err) {
-        res.status(500).json({ error: err.message });
-    }
-});
-
-// --- DE NIEUWE SLIMME PLANNER ROUTE ---
-app.get('/api/plan', async (req, res) => {
-    try {
-        const db = await openDb();
-        const { fromName, toName } = req.query; // We gaan nu zoeken op naam
-        const nu = new Date().toLocaleTimeString('nl-NL', { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' });
-
-        const ritten = await db.all(`
-            SELECT 
-                s_van.arrival_time AS vertrektijd,
-                s_naar.arrival_time AS aankomsttijd,
-                trips.trip_headsign,
-                routes.route_short_name
-            FROM stop_times AS s_van
-            JOIN stops AS stops_van ON s_van.stop_id = stops_van.stop_id
-            JOIN stop_times AS s_naar ON s_van.trip_id = s_naar.trip_id
-            JOIN stops AS stops_naar ON s_naar.stop_id = stops_naar.stop_id
-            JOIN trips ON s_van.trip_id = trips.trip_id
-            JOIN routes ON trips.route_id = routes.route_id
-            WHERE stops_van.stop_name = ? 
-              AND stops_naar.stop_name = ?
-              AND s_van.stop_sequence < s_naar.stop_sequence
-              AND s_van.arrival_time > ?
-            GROUP BY s_van.arrival_time, routes.route_short_name
-            ORDER BY s_van.arrival_time ASC
-            LIMIT 5
-        `, [fromName, toName, nu]);
-
-        res.json(ritten);
-    } catch (err) {
-        res.status(500).json({ error: "Fout bij plannen" });
-    }
-});
-
-app.listen(PORT, () => console.log(`BusPlanner draait op http://localhost:${PORT}`));
-
-// Haal de eerstvolgende 5 bussen op voor een specifieke halte
-app.get('/api/vertrektijden/:stop_id', async (req, res) => {
-    try {
-        const db = await openDb();
-        const stopId = req.params.stop_id;
-
-        // We pakken de tijd van NU (bijv. 21:35:00)
-        const nu = new Date().toLocaleTimeString('nl-NL', { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' });
-
-        const tijden = await db.all(`
-            SELECT DISTINCT arrival_time, trips.trip_headsign, routes.route_short_name
-            FROM stop_times
-            JOIN trips ON stop_times.trip_id = trips.trip_id
-            JOIN routes ON trips.route_id = routes.route_id
-            WHERE stop_times.stop_id = ? 
-            AND stop_times.arrival_time > ?
-            GROUP BY arrival_time, trip_headsign -- Dit haalt exact dezelfde tijden voor dezelfde bus weg
-            ORDER BY stop_times.arrival_time ASC
-            LIMIT 5
-        `, [stopId, nu]);
-
-        res.json(tijden);
-    } catch (err) {
-        res.status(500).json({ error: err.message });
-    }
-});
-
-const axios = require('axios'); // Je moet 'npm install axios' doen in de terminal
-
-app.get('/api/live/:stop_id', async (req, res) => {
-    try {
-        const stopId = req.params.stop_id;
-        // We gebruiken de OVapi interface, die koppelt direct met de bussen
-        const response = await axios.get(`https://v0.ovapi.nl/stopareacode/${stopId}`);
-
-        // De data van OVapi is erg diep genest, we filteren de relevante ritten eruit
-        res.json(response.data);
-    } catch (err) {
-        res.status(500).json({ error: "Kon live data niet ophalen" });
-    }
-});
-
-// Zoek suggesties voor haltenamen (voor de Van/Naar velden)
-app.get('/api/suggesties/:zoekterm', async (req, res) => {
-    const start = Date.now();
-    try {
-        const db = await openDb();
-        const term = `%${req.params.zoekterm}%`;
-
-        const resultaten = await db.all(`
-            SELECT stop_name, MIN(s.stop_id) as stop_id
-            FROM stops s
-            JOIN stop_times st ON s.stop_id = st.stop_id
-            JOIN trips t ON st.trip_id = t.trip_id
-            JOIN routes r ON t.route_id = r.route_id
-            WHERE s.stop_name LIKE ? 
-              AND r.agency_id = 'CXX'
-            GROUP BY stop_name
-            ORDER BY stop_name ASC
-            LIMIT 10
-        `, [term]);
-
-        console.log(`[DB] Zoekopdracht "${req.params.zoekterm}" duurde ${Date.now() - start}ms`);
-        res.json(resultaten);
-    } catch (err) {
-        console.error(`[DB FOUT] ${err.message}`);
-        res.status(500).json({ error: err.message });
-    }
-});
+app.listen(PORT, () => console.log(`🚀 BusPlanner draait op http://localhost:${PORT}`));
