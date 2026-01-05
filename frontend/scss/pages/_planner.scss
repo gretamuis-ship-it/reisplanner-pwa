@@ -4,14 +4,6 @@
     padding: a.$spacing-large 0;
     text-align: center;
 
-    h2 {
-        font-family: a.$font-main;
-        font-weight: a.$font-weight-bold;
-        color: a.$color-text-main;
-        margin-bottom: a.$spacing-medium;
-        font-size: 1.3rem;
-    }
-
     .planner-box {
         background: a.$color-white;
         border-radius: a.$border-radius-main;
@@ -41,12 +33,7 @@
             width: 100%;
             font-size: 1rem;
             font-family: a.$font-main;
-            font-weight: a.$font-weight-standard;
             background: transparent;
-
-            &::placeholder {
-                color: a.$color-text-muted;
-            }
         }
     }
 
@@ -76,17 +63,7 @@
             right: 0;
             cursor: pointer;
             color: a.$color-primary;
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-            transition: transform 0.5s ease;
-            z-index: 1000;
-
-            &:active {
-                transform: scale(0.9) rotate(180deg);
-            }
-
-            i {
-                width: 14px;
-            }
+            z-index: 10;
         }
     }
 }
@@ -96,38 +73,24 @@
     margin-top: a.$spacing-large;
     padding: 1rem;
     border-radius: a.$border-radius-main;
-    background: a.$color-accent;
+    background: a.$color-accent; // De roze kleur
     color: a.$color-white;
     font-family: a.$font-main;
     font-weight: a.$font-weight-bold;
     border: none;
     font-size: 1rem;
     cursor: pointer;
-    transition: background 0.2s;
-
-    &:hover {
-        background: a.$color-hover;
-    }
 }
 
 .results-container {
     display: none;
-    margin-top: a.$spacing-large;
-    text-align: left;
 
     &.active {
         display: block;
     }
-
-    h3 {
-        font-size: 0.9rem;
-        color: a.$color-text-muted;
-        text-transform: uppercase;
-        margin-bottom: a.$spacing-medium;
-        font-weight: a.$font-weight-bold;
-    }
 }
 
+// De kaartjes (jouw rechter screenshot)
 .trip-card {
     background: a.$color-white;
     margin-bottom: a.$spacing-medium;
@@ -137,84 +100,125 @@
     border: 1px solid #f0f0f0;
     display: flex;
     flex-direction: column;
-    gap: 12px; // Iets meer ruimte tussen de twee regels voor balans
-    cursor: pointer;
-    transition: background 0.2s ease;
+    gap: 12px;
 
-    &:active {
-        background: #f9f9f9;
-    }
-
-    // Regel 1: Tijd (links) en Meta (rechts) op dezelfde hoogte
     .card-header-row {
         display: flex;
         justify-content: space-between;
-        align-items: baseline; // Lijn de tekstlijnen perfect uit
+        align-items: center;
 
         .time-container {
             display: flex;
             align-items: center;
-            gap: 6px;
-            font-size: 1.05rem;
+            gap: 8px;
+            font-size: 1.1rem;
             font-weight: a.$font-weight-bold;
-            color: a.$color-text-main;
 
-            .time-separator {
-                color: a.$color-text-muted;
-                font-weight: normal;
+            .lucide {
+                color: a.$color-primary;
             }
         }
 
-        .meta-info {
+        .meta-item {
             display: flex;
             align-items: center;
-            gap: a.$spacing-medium;
-            color: a.$color-text-muted;
-            font-size: 0.85rem;
+            gap: 6px;
 
-            .meta-item {
-                display: flex;
-                align-items: center;
-                gap: 4px;
-
-                svg {
-                    width: 14px;
-                    height: 14px;
-                }
+            svg {
+                width: 20px;
+                height: 20px;
             }
+        }
+
+        .duration,
+        .transfer-count {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: a.$color-text-muted;
+            font-size: 0.9rem;
         }
     }
 
-    // Regel 2: De vervoersmiddelen
     .card-transport-row {
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 10px;
 
         svg {
-            width: 16px;
-            height: 16px;
-            color: a.$color-text-main;
+            width: 20px;
+            height: 20px;
+            min-width: 20px;
+            flex-shrink: 0;
         }
 
         .line-badge {
-            background: a.$color-primary; // Teal
+            background: a.$color-primary;
             color: white;
-            padding: 2px 6px;
-            border-radius: 2px;
+            padding: 2px 8px;
+            border-radius: a.$border-radius-main;
             font-weight: a.$font-weight-bold;
-            font-size: 0.8rem;
-            min-width: 35px;
-            text-align: center;
-
-            &.mat-badge {
-                background: a.$color-accent; // Roze
-            }
+            font-size: 0.9rem;
         }
 
-        .plus-sign {
-            font-size: 0.8rem;
-            color: a.$color-text-muted;
+        .dest {
+            font-size: 0.9rem;
+            font-weight: a.$font-weight-standard;
         }
     }
+}
+
+/* Detail modal */
+#trip-details-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 1000;
+    display: none;
+    overflow-y: auto;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px;
+    list-style: none;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    bottom: 20px;
+    width: 4px;
+    background: #e0e0e0;
+    /* De grijze lijn */
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 40px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -14px;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border: 3px solid #007D8C;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.bus-segment {
+    background: #f1f3f4;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 5px solid #007D8C;
 }

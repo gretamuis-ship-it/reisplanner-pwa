@@ -189,13 +189,6 @@ body {
   padding: 24px 0;
   text-align: center;
 }
-.planner-card-modern h2 {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
-  color: #1e1e1e;
-  margin-bottom: 16px;
-  font-size: 1.3rem;
-}
 .planner-card-modern .planner-box {
   background: #ffffff;
   border-radius: 2px;
@@ -223,11 +216,7 @@ body {
   width: 100%;
   font-size: 1rem;
   font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
   background: transparent;
-}
-.planner-card-modern .input-row input::placeholder {
-  color: #7a7a7a;
 }
 .planner-card-modern .planner-divider {
   display: flex;
@@ -254,15 +243,7 @@ body {
   right: 0;
   cursor: pointer;
   color: #007b7f;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-  transition: transform 0.5s ease;
-  z-index: 1000;
-}
-.planner-card-modern .planner-divider .btn-switch:active {
-  transform: scale(0.9) rotate(180deg);
-}
-.planner-card-modern .planner-divider .btn-switch i {
-  width: 14px;
+  z-index: 10;
 }
 
 .btn-plan-main {
@@ -277,26 +258,13 @@ body {
   border: none;
   font-size: 1rem;
   cursor: pointer;
-  transition: background 0.2s;
-}
-.btn-plan-main:hover {
-  background: #1d1f20;
 }
 
 .results-container {
   display: none;
-  margin-top: 24px;
-  text-align: left;
 }
 .results-container.active {
   display: block;
-}
-.results-container h3 {
-  font-size: 0.9rem;
-  color: #7a7a7a;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-  font-weight: 500;
 }
 
 .trip-card {
@@ -309,69 +277,114 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-.trip-card:active {
-  background: #f9f9f9;
 }
 .trip-card .card-header-row {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 .trip-card .card-header-row .time-container {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 1.05rem;
+  gap: 8px;
+  font-size: 1.1rem;
   font-weight: 500;
-  color: #1e1e1e;
 }
-.trip-card .card-header-row .time-container .time-separator {
-  color: #7a7a7a;
-  font-weight: normal;
+.trip-card .card-header-row .time-container .lucide {
+  color: #007b7f;
 }
-.trip-card .card-header-row .meta-info {
+.trip-card .card-header-row .meta-item {
   display: flex;
   align-items: center;
-  gap: 16px;
-  color: #7a7a7a;
-  font-size: 0.85rem;
+  gap: 6px;
 }
-.trip-card .card-header-row .meta-info .meta-item {
+.trip-card .card-header-row .meta-item svg {
+  width: 20px;
+  height: 20px;
+}
+.trip-card .card-header-row .duration,
+.trip-card .card-header-row .transfer-count {
   display: flex;
   align-items: center;
-  gap: 4px;
-}
-.trip-card .card-header-row .meta-info .meta-item svg {
-  width: 14px;
-  height: 14px;
+  gap: 6px;
+  color: #7a7a7a;
+  font-size: 0.9rem;
 }
 .trip-card .card-transport-row {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 .trip-card .card-transport-row svg {
-  width: 16px;
-  height: 16px;
-  color: #1e1e1e;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  flex-shrink: 0;
 }
 .trip-card .card-transport-row .line-badge {
   background: #007b7f;
   color: white;
-  padding: 2px 6px;
+  padding: 2px 8px;
   border-radius: 2px;
   font-weight: 500;
-  font-size: 0.8rem;
-  min-width: 35px;
-  text-align: center;
+  font-size: 0.9rem;
 }
-.trip-card .card-transport-row .line-badge.mat-badge {
-  background: #e20070;
+.trip-card .card-transport-row .dest {
+  font-size: 0.9rem;
+  font-weight: 400;
 }
-.trip-card .card-transport-row .plus-sign {
-  font-size: 0.8rem;
-  color: #7a7a7a;
+
+/* Detail modal */
+#trip-details-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 1000;
+  display: none;
+  overflow-y: auto;
+}
+
+.timeline {
+  position: relative;
+  padding: 20px;
+  list-style: none;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  bottom: 20px;
+  width: 4px;
+  background: #e0e0e0;
+  /* De grijze lijn */
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 40px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -14px;
+  width: 12px;
+  height: 12px;
+  background: white;
+  border: 3px solid #007D8C;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.bus-segment {
+  background: #f1f3f4;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 0;
+  border-left: 5px solid #007D8C;
 }/*# sourceMappingURL=main.css.map */

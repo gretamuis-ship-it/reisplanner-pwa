@@ -1,16 +1,16 @@
 ﻿Dienst;Dagtype;Lijn;Omloop;Rit;Start;Van;Naar;Einde;Stalling;PakketType
 W903;Doordeweeks;MAT;610801;;07:20:00;Haarlem Garage;IJmuiden Dennekoplaan;07:42:00;Haarlem;Normaal
-W903;Doordeweeks;385;610306;28;07:45:00;IJmuiden Dennekoplaan;Haarlem Station;08:22:00;Haarlem;Normaal
+L1068;Doordeweeks;385;610304;182;23:47:00;IJmuiden Dennekoplaan;Haarlem Station;00:15:00;Haarlem;Normaal
 W903;Doordeweeks;385;610306;31;08:24:00;Haarlem Station;IJmuiden Dennekoplaan;08:56:00;Haarlem;Normaal
-W903;Doordeweeks;385;610301;44;09:08:00;IJmuiden Dennekoplaan;Haarlem Station;09:42:00;Haarlem;Normaal
+L1074;Doordeweeks;385;610307;180;23:32:00;IJmuiden Dennekoplaan;Haarlem Station;00:00:00;Haarlem;Normaal
 W903;Doordeweeks;385;610301;47;09:44:00;Haarlem Station;IJmuiden Dennekoplaan;10:15:00;Haarlem;Normaal
-W903;Doordeweeks;385;610361;60;10:53:00;IJmuiden Dennekoplaan;Haarlem Station;11:27:00;Haarlem;Normaal
+L1522;Doordeweeks;385;610312;178;23:16:00;IJmuiden Dennekoplaan;Haarlem Station;23:44:00;Haarlem;Normaal
 W903;Doordeweeks;385;610361;61;11:29:00;Haarlem Station;IJmuiden Dennekoplaan;12:03:00;Haarlem;Normaal
 W903;Doordeweeks;MAT;610801;;12:05:00;IJmuiden Dennekoplaan;Haarlem Garage;12:27:00;Haarlem;Normaal
 V1001;Doordeweeks;MAT;610341;;04:53:00;Haarlem Garage;IJmuiden Dennekoplaan;05:14:00;Haarlem;Normaal
 V1001;Doordeweeks;382;610341;1;05:14:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;05:54:00;Haarlem;Normaal
 V1001;Doordeweeks;382;610341;4;05:57:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;06:33:00;Haarlem;Normaal
-V1001;Doordeweeks;385;610305;20;07:06:00;IJmuiden Dennekoplaan;Haarlem Station;07:42:00;Haarlem;Normaal
+L1058;Doordeweeks;385;610302;176;23:01:00;IJmuiden Dennekoplaan;Haarlem Station;23:29:00;Haarlem;Normaal
 V1001;Doordeweeks;385;610305;23;07:44:00;Haarlem Station;Haarlem Delftplein;07:54:00;Haarlem;Normaal
 V1001;Doordeweeks;73;610541;25;08:00:00;Haarlem Delftplein;Castricum Station;08:45:00;Haarlem;Normaal
 V1001;Doordeweeks;73;610541;50;09:09:00;Castricum Station;Schalkwijk Centrum;10:32:00;Haarlem;Normaal
@@ -22,9 +22,9 @@ L1002;Doordeweeks;382;610305;89;13:52:00;IJmuiden Dennekoplaan;Amsterdam Sloterd
 L1002;Doordeweeks;382;610305;94;14:36:00;Amsterdam Sloterdijk;IJmuiden Seaport;15:26:00;Haarlem;Normaal
 L1002;Doordeweeks;382;610305;109;15:28:00;IJmuiden Seaport;Amsterdam Sloterdijk;16:18:00;Haarlem;Normaal
 L1002;Doordeweeks;382;610305;114;16:21:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;17:05:00;Haarlem;Normaal
-L1002;Doordeweeks;385;610333;128;17:40:00;IJmuiden Dennekoplaan;Haarlem Station;18:11:00;Haarlem;Normaal
+L1050;Doordeweeks;385;610332;174;22:46:00;IJmuiden Dennekoplaan;Haarlem Station;23:14:00;Haarlem;Normaal
 L1002;Doordeweeks;385;610333;129;18:14:00;Haarlem Station;IJmuiden Dennekoplaan;18:46:00;Haarlem;Normaal
-L1002;Doordeweeks;385;610333;142;18:51:00;IJmuiden Dennekoplaan;Haarlem Station;19:21:00;Haarlem;Normaal
+L1074;Doordeweeks;385;610307;172;22:31:00;IJmuiden Dennekoplaan;Haarlem Station;22:59:00;Haarlem;Normaal
 L1002;Doordeweeks;385;610333;143;19:24:00;Haarlem Station;Haarlem Delftplein;19:33:00;Haarlem;Normaal
 L1002;Doordeweeks;73;610513;141;19:51:00;Haarlem Delftplein;Beverwijk Station;20:06:00;Haarlem;Normaal
 L1002;Doordeweeks;MAT;610513;;20:06:00;Beverwijk Station;Haarlem Station;20:24:00;Haarlem;Normaal
@@ -44,15 +44,15 @@ V1003;Doordeweeks;MAT;610520;;12:35:00;Schalkwijk Centrum;Haarlem Garage;12:52:0
 L1004;Doordeweeks;MAT;610808;;13:24:00;Haarlem Garage;Haarlem Delftplein;13:33:00;Haarlem;Normaal
 L1004;Doordeweeks;MAT;610301;;13:35:00;Haarlem Delftplein;Haarlem Station;13:44:00;Haarlem;Normaal
 L1004;Doordeweeks;385;610301;79;13:44:00;Haarlem Station;IJmuiden Dennekoplaan;14:18:00;Haarlem;Normaal
-L1004;Doordeweeks;385;610301;90;14:27:00;IJmuiden Dennekoplaan;Haarlem Station;15:01:00;Haarlem;Normaal
+L1522;Doordeweeks;385;610312;170;22:15:00;IJmuiden Dennekoplaan;Haarlem Station;22:43:00;Haarlem;Normaal
 L1004;Doordeweeks;385;610301;91;15:04:00;Haarlem Station;IJmuiden Dennekoplaan;15:38:00;Haarlem;Normaal
 L1004;Doordeweeks;382;610301;115;16:03:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;16:48:00;Haarlem;Normaal
 L1004;Doordeweeks;382;610301;120;16:51:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;17:28:00;Haarlem;Normaal
 L1004;Doordeweeks;382;610301;131;17:30:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;18:07:00;Haarlem;Normaal
 L1004;Doordeweeks;382;610301;136;18:11:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;18:47:00;Haarlem;Normaal
-L1004;Doordeweeks;385;610301;146;19:12:00;IJmuiden Dennekoplaan;Haarlem Station;19:42:00;Haarlem;Normaal
+L1024;Doordeweeks;385;610302;168;22:00:00;IJmuiden Dennekoplaan;Haarlem Station;22:28:00;Haarlem;Normaal
 L1004;Doordeweeks;385;610301;147;19:44:00;Haarlem Station;IJmuiden Dennekoplaan;20:14:00;Haarlem;Normaal
-L1004;Doordeweeks;385;610309;156;20:27:00;IJmuiden Dennekoplaan;Haarlem Station;20:57:00;Haarlem;Normaal
+L1070;Doordeweeks;385;610309;164;21:47:00;Haarlem Delftplein;Haarlem Station;21:58:00;Haarlem;Normaal
 L1004;Doordeweeks;385;610309;157;20:59:00;Haarlem Station;IJmuiden Dennekoplaan;21:28:00;Haarlem;Normaal
 L1004;Doordeweeks;385;610309;164;21:30:00;IJmuiden Dennekoplaan;Haarlem Delftplein;21:46:00;Haarlem;Normaal
 L1004;Doordeweeks;MAT;610802;;21:48:00;Haarlem Delftplein;Haarlem Garage;21:57:00;Haarlem;Normaal
@@ -70,7 +70,7 @@ L1006;Doordeweeks;MAT;610806;;13:29:00;Haarlem Garage;Haarlem Delftplein;13:38:0
 L1006;Doordeweeks;385;610309;77;13:40:00;Haarlem Delftplein;IJmuiden Dennekoplaan;14:03:00;Haarlem;Normaal
 L1006;Doordeweeks;382;610311;93;14:17:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;14:57:00;Haarlem;Normaal
 L1006;Doordeweeks;382;610311;98;15:00:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;15:44:00;Haarlem;Normaal
-L1006;Doordeweeks;385;610311;112;16:17:00;IJmuiden Dennekoplaan;Haarlem Station;16:51:00;Haarlem;Normaal
+L1050;Doordeweeks;385;610332;166;21:45:00;IJmuiden Dennekoplaan;Haarlem Station;22:13:00;Haarlem;Normaal
 L1006;Doordeweeks;73;610502;104;16:54:00;Haarlem Station;Schalkwijk Centrum;17:21:00;Haarlem;Normaal
 L1006;Doordeweeks;73;610517;125;17:26:00;Schalkwijk Centrum;Beverwijk Station;18:21:00;Haarlem;Normaal
 L1006;Doordeweeks;73;920544;131;18:54:00;Beverwijk Station;Castricum Station;19:17:00;Haarlem;Normaal
@@ -104,7 +104,7 @@ L1008;Doordeweeks;MAT;610461;;20:02:00;Beverwijk Station;Haarlem Garage;20:20:00
 L1008;Doordeweeks;MAT;610804;;20:22:00;Haarlem Garage;Schalkwijk Centrum;20:35:00;Haarlem;Normaal
 L1008;Doordeweeks;MAT;610804;;20:35:00;Schalkwijk Centrum;Haarlem Garage;20:48:00;Haarlem;Normaal
 V1009;Vrijdag;MAT;610301;;05:21:00;Haarlem Garage;IJmuiden Dennekoplaan;05:42:00;Haarlem;Normaal
-V1009;Vrijdag;385;610301;2;05:42:00;IJmuiden Dennekoplaan;Haarlem Station;06:12:00;Haarlem;Normaal
+L1072;Doordeweeks;385;610303;162;21:14:00;IJmuiden Dennekoplaan;Haarlem Station;21:42:00;Haarlem;Normaal
 V1009;Vrijdag;385;610301;5;06:14:00;Haarlem Station;IJmuiden Dennekoplaan;06:42:00;Haarlem;Normaal
 V1009;Vrijdag;382;610301;25;07:01:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;07:41:00;Haarlem;Normaal
 V1009;Vrijdag;382;610301;30;07:44:00;Amsterdam Sloterdijk;IJmuiden Seaport;08:35:00;Haarlem;Normaal
@@ -117,7 +117,7 @@ V1009;Vrijdag;14;610102;;11:21:00;Haarlem Delftplein;Heemstede Station;12:00:00;
 V1009;Vrijdag;14;610102;15;12:02:00;Heemstede Station;Haarlem Delftplein;12:41:00;Haarlem;Normaal
 V1009;Vrijdag;MAT;610102;;12:41:00;Haarlem Delftplein;Haarlem Garage;12:50:00;Haarlem;Normaal
 V1009;Maandag t/m donderdag;MAT;610301;;05:21:00;Haarlem Garage;IJmuiden Dennekoplaan;05:42:00;Haarlem;Normaal
-V1009;Maandag t/m donderdag;385;610301;2;05:42:00;IJmuiden Dennekoplaan;Haarlem Station;06:12:00;Haarlem;Normaal
+L1054;Doordeweeks;385;610307;160;20:59:00;IJmuiden Dennekoplaan;Haarlem Station;21:27:00;Haarlem;Normaal
 V1009;Maandag t/m donderdag;385;610301;5;06:14:00;Haarlem Station;IJmuiden Dennekoplaan;06:42:00;Haarlem;Normaal
 V1009;Maandag t/m donderdag;382;610301;25;07:01:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;07:41:00;Haarlem;Normaal
 V1009;Maandag t/m donderdag;382;610301;30;07:44:00;Amsterdam Sloterdijk;IJmuiden Seaport;08:35:00;Haarlem;Normaal
@@ -135,27 +135,27 @@ L1010;Doordeweeks;73;610501;95;14:49:00;Schalkwijk Centrum;Castricum Station;16:
 L1010;Doordeweeks;73;610501;110;16:38:00;Castricum Station;Schalkwijk Centrum;18:02:00;Haarlem;Normaal
 L1010;Doordeweeks;3;610516;107;18:48:00;Schalkwijk Centrum;Haarlem Delftplein;19:30:00;Haarlem;Normaal
 L1010;Doordeweeks;385;610333;143;19:34:00;Haarlem Delftplein;IJmuiden Dennekoplaan;19:54:00;Haarlem;Normaal
-L1010;Doordeweeks;385;610333;152;19:57:00;IJmuiden Dennekoplaan;Haarlem Station;20:27:00;Haarlem;Normaal
+L1074;Doordeweeks;385;610304;158;20:42:00;IJmuiden Dennekoplaan;Haarlem Station;21:12:00;Haarlem;Normaal
 L1010;Doordeweeks;385;610333;153;20:29:00;Haarlem Station;IJmuiden Dennekoplaan;20:59:00;Haarlem;Normaal
 L1010;Doordeweeks;MAT;610333;;20:59:00;IJmuiden Dennekoplaan;Haarlem Garage;21:20:00;Haarlem;Normaal
 V1011;Doordeweeks;MAT;610502;;05:23:00;Haarlem Garage;Velserbroek Centrum;05:35:00;Haarlem;Normaal
 V1011;Doordeweeks;3;610502;2;05:35:00;Velserbroek Centrum;Schalkwijk Centrum;06:22:00;Haarlem;Normaal
 V1011;Doordeweeks;73;920741;13;06:27:00;Schalkwijk Centrum;Haarlem Delftplein;07:01:00;Haarlem;Normaal
-V1011;Doordeweeks;385;610304;18;07:18:00;Haarlem Delftplein;Haarlem Station;07:31:00;Haarlem;Normaal
+L1034;Doordeweeks;385;610312;154;20:31:00;Haarlem Delftplein;Haarlem Station;20:42:00;Haarlem;Normaal
 V1011;Doordeweeks;385;610304;21;07:34:00;Haarlem Station;IJmuiden Dennekoplaan;08:04:00;Haarlem;Normaal
-V1011;Doordeweeks;385;610304;32;08:07:00;IJmuiden Dennekoplaan;Haarlem Station;08:42:00;Haarlem;Normaal
+L1004;Doordeweeks;385;610309;156;20:27:00;IJmuiden Dennekoplaan;Haarlem Station;20:57:00;Haarlem;Normaal
 V1011;Doordeweeks;385;610304;35;08:44:00;Haarlem Station;IJmuiden Dennekoplaan;09:16:00;Haarlem;Normaal
-V1011;Doordeweeks;385;610312;52;09:53:00;IJmuiden Dennekoplaan;Haarlem Station;10:27:00;Haarlem;Normaal
+L1010;Doordeweeks;385;610333;152;19:57:00;IJmuiden Dennekoplaan;Haarlem Station;20:27:00;Haarlem;Normaal
 V1011;Doordeweeks;385;610312;53;10:29:00;Haarlem Station;Haarlem Delftplein;10:39:00;Haarlem;Normaal
 V1011;Doordeweeks;3;610702;50;10:45:00;Haarlem Delftplein;Schalkwijk Centrum;11:31:00;Haarlem;Normaal
 V1011;Doordeweeks;3;610702;47;11:40:00;Schalkwijk Centrum;Haarlem Delftplein;12:27:00;Haarlem;Normaal
 V1011;Doordeweeks;MAT;610702;;12:27:00;Haarlem Delftplein;Haarlem Garage;12:36:00;Haarlem;Normaal
 L1012;Doordeweeks;MAT;610331;;13:45:00;Haarlem Garage;IJmuiden Dennekoplaan;14:07:00;Haarlem;Normaal
-L1012;Doordeweeks;385;610331;86;14:07:00;IJmuiden Dennekoplaan;Haarlem Station;14:41:00;Haarlem;Normaal
+L1036;Doordeweeks;385;610332;150;19:42:00;IJmuiden Dennekoplaan;Haarlem Station;20:12:00;Haarlem;Normaal
 L1012;Doordeweeks;385;610331;87;14:44:00;Haarlem Station;IJmuiden Dennekoplaan;15:18:00;Haarlem;Normaal
-L1012;Doordeweeks;385;610307;102;15:27:00;IJmuiden Dennekoplaan;Haarlem Station;16:01:00;Haarlem;Normaal
+L1074;Doordeweeks;385;610310;148;19:27:00;IJmuiden Dennekoplaan;Haarlem Station;19:57:00;Haarlem;Normaal
 L1012;Doordeweeks;385;610307;103;16:04:00;Haarlem Station;IJmuiden Dennekoplaan;16:38:00;Haarlem;Normaal
-L1012;Doordeweeks;385;610302;120;16:57:00;IJmuiden Dennekoplaan;Haarlem Station;17:31:00;Haarlem;Normaal
+L1004;Doordeweeks;385;610301;146;19:12:00;IJmuiden Dennekoplaan;Haarlem Station;19:42:00;Haarlem;Normaal
 L1012;Doordeweeks;73;610519;121;17:41:00;Haarlem Station;Beverwijk Station;18:06:00;Haarlem;Normaal
 L1012;Doordeweeks;MAT;610519;;18:06:00;Beverwijk Station;Haarlem Delftplein;18:25:00;Haarlem;Normaal
 L1012;Doordeweeks;MAT;610504;;18:54:00;Haarlem Delftplein;Beverwijk Station;19:12:00;Haarlem;Normaal
@@ -169,9 +169,9 @@ V1013;Doordeweeks;MAT;610504;;05:25:00;Haarlem Garage;Schalkwijk Centrum;05:39:0
 V1013;Doordeweeks;73;610504;5;05:39:00;Schalkwijk Centrum;Beverwijk Station;06:28:00;Haarlem;Normaal
 V1013;Doordeweeks;73;920543;14;06:36:00;Beverwijk Station;Schalkwijk Centrum;07:29:00;Haarlem;Normaal
 V1013;Doordeweeks;73;610542;33;07:58:00;Schalkwijk Centrum;Haarlem Delftplein;08:39:00;Haarlem;Normaal
-V1013;Doordeweeks;385;610302;36;08:48:00;Haarlem Delftplein;Haarlem Station;09:02:00;Haarlem;Normaal
+L1062;Doordeweeks;385;610312;144;19:01:00;IJmuiden Dennekoplaan;Haarlem Station;19:31:00;Haarlem;Normaal
 V1013;Doordeweeks;385;610302;39;09:04:00;Haarlem Station;IJmuiden Dennekoplaan;09:35:00;Haarlem;Normaal
-V1013;Doordeweeks;385;610302;50;09:38:00;IJmuiden Dennekoplaan;Haarlem Station;10:12:00;Haarlem;Normaal
+L1002;Doordeweeks;385;610333;142;18:51:00;IJmuiden Dennekoplaan;Haarlem Station;19:21:00;Haarlem;Normaal
 V1013;Doordeweeks;385;610302;51;10:14:00;Haarlem Station;IJmuiden Dennekoplaan;10:45:00;Haarlem;Normaal
 V1013;Doordeweeks;382;610301;67;11:07:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;11:47:00;Haarlem;Normaal
 V1013;Doordeweeks;382;610301;72;11:51:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;12:31:00;Haarlem;Normaal
@@ -180,7 +180,7 @@ V1013;Doordeweeks;MAT;610801;;12:53:00;Haarlem Delftplein;Haarlem Garage;13:02:0
 L1014;Doordeweeks;Pass.;610801;;13:55:00;Haarlem Garage;IJmuiden Dennekoplaan;14:17:00;Haarlem;Normaal
 L1014;Doordeweeks;382;610304;86;14:20:00;IJmuiden Dennekoplaan;IJmuiden Seaport;14:26:00;Haarlem;Normaal
 L1014;Doordeweeks;382;610304;97;14:32:00;IJmuiden Seaport;IJmuiden Dennekoplaan;14:38:00;Haarlem;Normaal
-L1014;Doordeweeks;385;610309;94;14:47:00;IJmuiden Dennekoplaan;Haarlem Station;15:21:00;Haarlem;Normaal
+M1327;Doordeweeks;385;610311;140;18:41:00;IJmuiden Dennekoplaan;Haarlem Station;19:11:00;Haarlem;Normaal
 L1014;Doordeweeks;385;610309;95;15:24:00;Haarlem Station;IJmuiden Dennekoplaan;15:58:00;Haarlem;Normaal
 L1014;Doordeweeks;74;920724;55;16:06:00;IJmuiden Dennekoplaan;Beverwijk Station;16:35:00;Haarlem;Normaal
 L1014;Doordeweeks;72;610727;23;17:06:00;Beverwijk Station;Heemskerk Centrum;17:34:00;Haarlem;Normaal
@@ -193,7 +193,7 @@ L1014;Doordeweeks;MAT;610801;;20:53:00;IJmuiden Dennekoplaan;Haarlem Garage;21:1
 V1015;Doordeweeks;MAT;610332;;05:27:00;Haarlem Garage;IJmuiden Dennekoplaan;05:48:00;Haarlem;Normaal
 V1015;Doordeweeks;382;610332;7;05:48:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;06:28:00;Haarlem;Normaal
 V1015;Doordeweeks;382;610332;12;06:31:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;07:07:00;Haarlem;Normaal
-V1015;Doordeweeks;385;610302;22;07:16:00;IJmuiden Dennekoplaan;Haarlem Station;07:52:00;Haarlem;Normaal
+L1030;Doordeweeks;385;610308;138;18:31:00;IJmuiden Dennekoplaan;Haarlem Station;19:01:00;Haarlem;Normaal
 V1015;Doordeweeks;385;610302;25;07:54:00;Haarlem Station;Haarlem Delftplein;08:04:00;Haarlem;Normaal
 V1015;Doordeweeks;14;610103;6;08:21:00;Haarlem Delftplein;Heemstede Station;09:00:00;Haarlem;Normaal
 V1015;Doordeweeks;14;610103;9;09:02:00;Heemstede Station;Haarlem Delftplein;09:41:00;Haarlem;Normaal
@@ -220,13 +220,13 @@ L1016;Doordeweeks;382;610331;161;20:35:00;IJmuiden Seaport;Amsterdam Sloterdijk;
 L1016;Doordeweeks;382;610331;166;21:21:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;21:57:00;Haarlem;Normaal
 L1016;Doordeweeks;MAT;610331;;21:57:00;IJmuiden Dennekoplaan;Haarlem Garage;22:18:00;Haarlem;Normaal
 V1017;Doordeweeks;MAT;610302;;05:31:00;Haarlem Garage;IJmuiden Dennekoplaan;05:52:00;Haarlem;Normaal
-V1017;Doordeweeks;385;610302;4;05:52:00;IJmuiden Dennekoplaan;Haarlem Station;06:22:00;Haarlem;Normaal
+P1462;Doordeweeks;385;610310;136;18:21:00;IJmuiden Dennekoplaan;Haarlem Station;18:51:00;Haarlem;Normaal
 V1017;Doordeweeks;385;610302;7;06:24:00;Haarlem Station;IJmuiden Dennekoplaan;06:52:00;Haarlem;Normaal
 V1017;Doordeweeks;382;610332;31;07:27:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;08:07:00;Haarlem;Normaal
 V1017;Doordeweeks;382;610332;36;08:10:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;08:51:00;Haarlem;Normaal
 V1017;Doordeweeks;382;610332;49;08:53:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;09:33:00;Haarlem;Normaal
 V1017;Doordeweeks;382;610332;54;09:36:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;10:16:00;Haarlem;Normaal
-V1017;Doordeweeks;385;610306;58;10:38:00;IJmuiden Dennekoplaan;Haarlem Station;11:12:00;Haarlem;Normaal
+G1215;Doordeweeks;385;610306;132;18:01:00;IJmuiden Dennekoplaan;Haarlem Station;18:31:00;Haarlem;Normaal
 V1017;Doordeweeks;MAT;610306;;11:12:00;Haarlem Station;Haarlem Delftplein;11:25:00;Haarlem;Normaal
 V1017;Doordeweeks;MAT;610515;;11:31:00;Haarlem Delftplein;Schalkwijk Centrum;11:54:00;Haarlem;Normaal
 V1017;Doordeweeks;3;610515;49;11:54:00;Schalkwijk Centrum;Haarlem Delftplein;12:41:00;Haarlem;Normaal
@@ -235,7 +235,7 @@ V1017;Doordeweeks;MAT;610807;;13:03:00;IJmuiden Dennekoplaan;Haarlem Garage;13:2
 L1018;Doordeweeks;MAT;610333;;14:06:00;Haarlem Garage;IJmuiden Dennekoplaan;14:28:00;Haarlem;Normaal
 L1018;Doordeweeks;382;610333;95;14:28:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;15:08:00;Haarlem;Normaal
 L1018;Doordeweeks;382;610333;100;15:11:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;15:55:00;Haarlem;Normaal
-L1018;Doordeweeks;385;610333;108;15:57:00;IJmuiden Dennekoplaan;Haarlem Station;16:31:00;Haarlem;Normaal
+M1319;Doordeweeks;385;610362;130;17:51:00;IJmuiden Dennekoplaan;Haarlem Station;18:21:00;Haarlem;Normaal
 L1018;Doordeweeks;3;610514;91;17:29:00;Haarlem Station;IJmuiden Rotonde Stadspark;18:06:00;Haarlem;Normaal
 L1018;Doordeweeks;3;610514;112;18:09:00;IJmuiden Rotonde Stadspark;Schalkwijk Centrum;19:09:00;Haarlem;Normaal
 L1018;Doordeweeks;73;610513;141;19:19:00;Schalkwijk Centrum;Haarlem Delftplein;19:50:00;Haarlem;Normaal
@@ -278,7 +278,7 @@ V1021;Doordeweeks;MAT;610809;;13:22:00;Haarlem Delftplein;Haarlem Garage;13:31:0
 L1022;Doordeweeks;Pass.;610809;;14:06:00;Haarlem Garage;IJmuiden Dennekoplaan;14:28:00;Haarlem;Normaal
 L1022;Doordeweeks;382;610304;97;14:38:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;15:18:00;Haarlem;Normaal
 L1022;Doordeweeks;382;610304;102;15:21:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;16:05:00;Haarlem;Normaal
-L1022;Doordeweeks;385;610304;110;16:07:00;IJmuiden Dennekoplaan;Haarlem Station;16:41:00;Haarlem;Normaal
+L1002;Doordeweeks;385;610333;128;17:40:00;IJmuiden Dennekoplaan;Haarlem Station;18:11:00;Haarlem;Normaal
 L1022;Doordeweeks;3;610542;96;16:49:00;Haarlem Station;Schalkwijk Centrum;17:20:00;Haarlem;Normaal
 L1022;Doordeweeks;3;610741;101;18:03:00;Schalkwijk Centrum;IJmuiden Rotonde Stadspark;19:06:00;Haarlem;Normaal
 L1022;Doordeweeks;3;610741;120;19:09:00;IJmuiden Rotonde Stadspark;Schalkwijk Centrum;20:08:00;Haarlem;Normaal
@@ -294,9 +294,9 @@ V1023;Doordeweeks;MAT;610506;;08:25:00;Haarlem Delftplein;Haarlem Garage;08:36:0
 V1023;Doordeweeks;MAT;610506;;09:23:00;Haarlem Garage;Schalkwijk Centrum;09:40:00;Haarlem;Normaal
 V1023;Doordeweeks;73;610506;51;09:40:00;Schalkwijk Centrum;Haarlem Delftplein;10:20:00;Haarlem;Normaal
 V1023;Doordeweeks;385;610312;53;10:40:00;Haarlem Delftplein;IJmuiden Dennekoplaan;11:00:00;Haarlem;Normaal
-V1023;Doordeweeks;385;610312;62;11:08:00;IJmuiden Dennekoplaan;Haarlem Station;11:42:00;Haarlem;Normaal
+G1203;Doordeweeks;385;610311;126;17:30:00;IJmuiden Dennekoplaan;Haarlem Station;18:01:00;Haarlem;Normaal
 V1023;Doordeweeks;385;610312;63;11:44:00;Haarlem Station;IJmuiden Dennekoplaan;12:18:00;Haarlem;Normaal
-V1023;Doordeweeks;385;610311;72;12:23:00;IJmuiden Dennekoplaan;Haarlem Station;12:57:00;Haarlem;Normaal
+G1211;Doordeweeks;385;610331;124;17:17:00;IJmuiden Dennekoplaan;Haarlem Station;17:51:00;Haarlem;Normaal
 V1023;Doordeweeks;MAT;610806;;13:00:00;Haarlem Station;Haarlem Garage;13:12:00;Haarlem;Normaal
 L1024;Doordeweeks;MAT;610741;;14:22:00;Haarlem Garage;Schalkwijk Centrum;14:38:00;Haarlem;Normaal
 L1024;Doordeweeks;73;610741;91;14:38:00;Schalkwijk Centrum;Beverwijk Station;15:36:00;Haarlem;Normaal
@@ -309,13 +309,13 @@ L1024;Doordeweeks;75;920711;30;20:02:00;Wijk aan Zee Julianaplein;Beverwijk Stat
 L1024;Doordeweeks;75;920711;31;20:39:00;Beverwijk Station;Wijk aan Zee Julianaplein;21:01:00;Haarlem;Normaal
 L1024;Doordeweeks;75;920711;32;21:02:00;Wijk aan Zee Julianaplein;Beverwijk Station;21:21:00;Haarlem;Normaal
 L1024;Doordeweeks;74;920711;82;21:27:00;Beverwijk Station;IJmuiden Dennekoplaan;21:49:00;Haarlem;Normaal
-L1024;Doordeweeks;385;610302;168;22:00:00;IJmuiden Dennekoplaan;Haarlem Station;22:28:00;Haarlem;Normaal
+L1040;Maandag t/m donderdag;385;610361;122;17:07:00;IJmuiden Dennekoplaan;Haarlem Station;17:41:00;Haarlem;Normaal
 L1024;Doordeweeks;MAT;610801;;22:31:00;Haarlem Station;Haarlem Garage;22:43:00;Haarlem;Normaal
 V1025;Doordeweeks;MAT;610201;;05:39:00;Haarlem Garage;Haarlem Station;05:52:00;Haarlem;Normaal
 V1025;Doordeweeks;81;610201;2502;05:52:00;Haarlem Station;Zandvoort Busstation;06:19:00;Haarlem;Normaal
 V1025;Doordeweeks;81;610201;2501;06:21:00;Zandvoort Busstation;Haarlem Station;07:00:00;Haarlem;Normaal
 V1025;Doordeweeks;385;610309;15;07:03:00;Haarlem Station;IJmuiden Dennekoplaan;07:33:00;Haarlem;Normaal
-V1025;Doordeweeks;385;610309;26;07:35:00;IJmuiden Dennekoplaan;Haarlem Station;08:12:00;Haarlem;Normaal
+L5040;Vrijdag;385;610361;122;17:07:00;IJmuiden Dennekoplaan;Haarlem Station;17:41:00;Haarlem;Normaal
 V1025;Doordeweeks;385;610309;29;08:14:00;Haarlem Station;Haarlem Delftplein;08:25:00;Haarlem;Normaal
 V1025;Doordeweeks;73;610510;41;09:17:00;Haarlem Delftplein;Velserbroek Centrum;09:21:00;Haarlem;Normaal
 V1025;Doordeweeks;73;610510;46;09:27:00;Velserbroek Centrum;Haarlem Station;09:47:00;Haarlem;Normaal
@@ -348,11 +348,11 @@ V1027;Doordeweeks;73;610512;53;09:56:00;Schalkwijk Centrum;Castricum Station;11:
 V1027;Doordeweeks;73;610512;70;11:39:00;Castricum Station;Schalkwijk Centrum;13:04:00;Haarlem;Normaal
 V1027;Doordeweeks;Pass.;610512;;13:08:00;Schalkwijk Centrum;Haarlem Garage;13:24:00;Haarlem;Normaal
 V1029;Doordeweeks;MAT;610305;;05:40:00;Haarlem Garage;IJmuiden Dennekoplaan;06:02:00;Haarlem;Normaal
-V1029;Doordeweeks;385;610305;6;06:02:00;IJmuiden Dennekoplaan;Haarlem Station;06:32:00;Haarlem;Normaal
+L1012;Doordeweeks;385;610302;120;16:57:00;IJmuiden Dennekoplaan;Haarlem Station;17:31:00;Haarlem;Normaal
 V1029;Doordeweeks;385;610305;9;06:34:00;Haarlem Station;IJmuiden Dennekoplaan;07:02:00;Haarlem;Normaal
 V1029;Doordeweeks;382;610331;27;07:09:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;07:49:00;Haarlem;Normaal
 V1029;Doordeweeks;382;610331;32;07:52:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;08:37:00;Haarlem;Normaal
-V1029;Doordeweeks;385;610306;42;08:58:00;IJmuiden Dennekoplaan;Haarlem Station;09:32:00;Haarlem;Normaal
+D1305;Doordeweeks;385;610308;118;16:47:00;IJmuiden Dennekoplaan;Haarlem Station;17:21:00;Haarlem;Normaal
 V1029;Doordeweeks;385;610306;45;09:34:00;Haarlem Station;IJmuiden Dennekoplaan;10:05:00;Haarlem;Normaal
 V1029;Doordeweeks;74;920724;27;10:09:00;IJmuiden Dennekoplaan;Heemskerk Centrum;10:54:00;Haarlem;Normaal
 V1029;Doordeweeks;72;920724;12;10:55:00;Heemskerk Centrum;Beverwijk Station;11:21:00;Haarlem;Normaal
@@ -365,7 +365,7 @@ L1030;Doordeweeks;244;610464;28;15:28:00;Amsterdam Station Zuid;Haarlem Delftple
 L1030;Doordeweeks;385;610332;105;16:25:00;Haarlem Delftplein;IJmuiden Dennekoplaan;16:48:00;Haarlem;Normaal
 L1030;Doordeweeks;382;610332;123;16:50:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;17:28:00;Haarlem;Normaal
 L1030;Doordeweeks;382;610332;128;17:31:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;18:07:00;Haarlem;Normaal
-L1030;Doordeweeks;385;610308;138;18:31:00;IJmuiden Dennekoplaan;Haarlem Station;19:01:00;Haarlem;Normaal
+L1032;Doordeweeks;385;610362;116;16:37:00;IJmuiden Dennekoplaan;Haarlem Station;17:11:00;Haarlem;Normaal
 L1030;Doordeweeks;385;610308;139;19:04:00;Haarlem Station;IJmuiden Dennekoplaan;19:34:00;Haarlem;Normaal
 L1030;Doordeweeks;MAT;610308;;19:34:00;IJmuiden Dennekoplaan;Haarlem Garage;19:55:00;Haarlem;Normaal
 L1030;Doordeweeks;MAT;610805;;20:19:00;Haarlem Garage;Schalkwijk Centrum;20:32:00;Haarlem;Normaal
@@ -384,9 +384,9 @@ V1031;Doordeweeks;72;920713;14;11:55:00;Heemskerk Centrum;Beverwijk Station;12:2
 V1031;Doordeweeks;73;610505;74;12:37:00;Beverwijk Station;Schalkwijk Centrum;13:34:00;Haarlem;Normaal
 V1031;Doordeweeks;MAT;610505;;13:34:00;Schalkwijk Centrum;Haarlem Garage;13:51:00;Haarlem;Normaal
 L1032;Doordeweeks;MAT;610362;;14:55:00;Haarlem Garage;IJmuiden Dennekoplaan;15:17:00;Haarlem;Normaal
-L1032;Doordeweeks;385;610362;100;15:17:00;IJmuiden Dennekoplaan;Haarlem Station;15:51:00;Haarlem;Normaal
+L1050;Doordeweeks;385;610309;114;16:27:00;IJmuiden Dennekoplaan;Haarlem Station;17:01:00;Haarlem;Normaal
 L1032;Doordeweeks;385;610362;101;15:54:00;Haarlem Station;IJmuiden Dennekoplaan;16:28:00;Haarlem;Normaal
-L1032;Doordeweeks;385;610362;116;16:37:00;IJmuiden Dennekoplaan;Haarlem Station;17:11:00;Haarlem;Normaal
+L1006;Doordeweeks;385;610311;112;16:17:00;IJmuiden Dennekoplaan;Haarlem Station;16:51:00;Haarlem;Normaal
 L1032;Doordeweeks;385;610362;117;17:14:00;Haarlem Station;Haarlem Delftplein;17:24:00;Haarlem;Normaal
 L1032;Doordeweeks;12;610101;33;17:45:00;Haarlem Delftplein;Spaarndam Westhoff;17:55:00;Haarlem;Normaal
 L1032;Doordeweeks;12;610101;34;17:57:00;Spaarndam Westhoff;Haarlem Delftplein;18:08:00;Haarlem;Normaal
@@ -403,11 +403,11 @@ L1032;Doordeweeks;MAT;610803;;21:58:00;Haarlem Station Spaarnwoude;Haarlem Garag
 L1032;Doordeweeks;MAT;610803;;22:12:00;Haarlem Garage;Haarlem Delftplein;22:21:00;Haarlem;Normaal
 L1032;Doordeweeks;MAT;610803;;22:21:00;Haarlem Delftplein;Haarlem Garage;22:30:00;Haarlem;Normaal
 V1033;Doordeweeks;MAT;610307;;05:48:00;Haarlem Garage;IJmuiden Dennekoplaan;06:10:00;Haarlem;Normaal
-V1033;Doordeweeks;385;610307;8;06:10:00;IJmuiden Dennekoplaan;Haarlem Station;06:42:00;Haarlem;Normaal
+L1022;Doordeweeks;385;610304;110;16:07:00;IJmuiden Dennekoplaan;Haarlem Station;16:41:00;Haarlem;Normaal
 V1033;Doordeweeks;385;610307;11;06:44:00;Haarlem Station;IJmuiden Dennekoplaan;07:13:00;Haarlem;Normaal
 V1033;Doordeweeks;382;610307;29;07:18:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;07:58:00;Haarlem;Normaal
 V1033;Doordeweeks;382;610307;34;08:02:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;08:43:00;Haarlem;Normaal
-V1033;Doordeweeks;385;610307;46;09:18:00;IJmuiden Dennekoplaan;Haarlem Station;09:52:00;Haarlem;Normaal
+L1018;Doordeweeks;385;610333;108;15:57:00;IJmuiden Dennekoplaan;Haarlem Station;16:31:00;Haarlem;Normaal
 V1033;Doordeweeks;3;610524;29;09:58:00;Haarlem Station;IJmuiden Rotonde Stadspark;10:35:00;Haarlem;Normaal
 V1033;Doordeweeks;3;610524;52;10:38:00;IJmuiden Rotonde Stadspark;Schalkwijk Centrum;11:46:00;Haarlem;Normaal
 V1033;Doordeweeks;73;610524;69;11:56:00;Schalkwijk Centrum;Beverwijk Station;12:53:00;Haarlem;Normaal
@@ -418,7 +418,7 @@ L1034;Doordeweeks;73;610503;99;15:18:00;Schalkwijk Centrum;Castricum Station;16:
 L1034;Doordeweeks;73;610503;114;17:08:00;Castricum Station;Schalkwijk Centrum;18:29:00;Haarlem;Normaal
 L1034;Doordeweeks;3;610503;105;18:33:00;Schalkwijk Centrum;IJmuiden Rotonde Stadspark;19:36:00;Haarlem;Normaal
 L1034;Doordeweeks;3;610503;124;19:39:00;IJmuiden Rotonde Stadspark;Haarlem Delftplein;19:59:00;Haarlem;Normaal
-L1034;Doordeweeks;385;610312;154;20:31:00;Haarlem Delftplein;Haarlem Station;20:42:00;Haarlem;Normaal
+L1040;Maandag t/m donderdag;385;610361;106;15:47:00;IJmuiden Dennekoplaan;Haarlem Station;16:21:00;Haarlem;Normaal
 L1034;Doordeweeks;385;610312;155;20:44:00;Haarlem Station;IJmuiden Dennekoplaan;21:14:00;Haarlem;Normaal
 L1034;Doordeweeks;382;610310;167;21:27:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;22:02:00;Haarlem;Normaal
 L1034;Doordeweeks;382;610310;172;22:06:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;22:42:00;Haarlem;Normaal
@@ -437,7 +437,7 @@ L1036;Doordeweeks;382;610303;113;15:53:00;IJmuiden Dennekoplaan;Amsterdam Sloter
 L1036;Doordeweeks;382;610303;118;16:41:00;Amsterdam Sloterdijk;IJmuiden Seaport;17:25:00;Haarlem;Normaal
 L1036;Doordeweeks;382;610303;133;17:33:00;IJmuiden Seaport;Amsterdam Sloterdijk;18:17:00;Haarlem;Normaal
 L1036;Doordeweeks;382;610303;138;18:21:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;18:57:00;Haarlem;Normaal
-L1036;Doordeweeks;385;610332;150;19:42:00;IJmuiden Dennekoplaan;Haarlem Station;20:12:00;Haarlem;Normaal
+L5040;Vrijdag;385;610361;106;15:47:00;IJmuiden Dennekoplaan;Haarlem Station;16:21:00;Haarlem;Normaal
 L1036;Doordeweeks;385;610332;151;20:14:00;Haarlem Station;IJmuiden Dennekoplaan;20:44:00;Haarlem;Normaal
 L1036;Doordeweeks;382;610301;165;21:12:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;21:47:00;Haarlem;Normaal
 L1036;Doordeweeks;382;610301;170;21:51:00;Amsterdam Sloterdijk;IJmuiden Seaport;22:33:00;Haarlem;Normaal
@@ -453,7 +453,7 @@ V1037;Doordeweeks;71;610519;22;09:54:00;Uitgeest Station;Beverwijk Station;10:18
 V1037;Doordeweeks;73;610519;56;10:22:00;Beverwijk Station;Schalkwijk Centrum;11:17:00;Haarlem;Normaal
 V1037;Doordeweeks;73;610519;65;11:26:00;Schalkwijk Centrum;Haarlem Delftplein;12:06:00;Haarlem;Normaal
 V1037;Doordeweeks;385;610362;69;12:40:00;Haarlem Delftplein;IJmuiden Dennekoplaan;13:03:00;Haarlem;Normaal
-V1037;Doordeweeks;385;610362;78;13:08:00;IJmuiden Dennekoplaan;Haarlem Station;13:42:00;Haarlem;Normaal
+G1201;Doordeweeks;385;610332;104;15:37:00;IJmuiden Dennekoplaan;Haarlem Station;16:11:00;Haarlem;Normaal
 V1037;Doordeweeks;MAT;610362;;13:42:00;Haarlem Station;Haarlem Garage;13:55:00;Haarlem;Normaal
 L1038;Doordeweeks;MAT;610512;;15:24:00;Haarlem Garage;Haarlem Waarderweg;15:26:00;Haarlem;Normaal
 L1038;Doordeweeks;15;610512;28;15:26:00;Haarlem Waarderweg;Haarlem Station;15:46:00;Haarlem;Normaal
@@ -468,9 +468,9 @@ L1038;Doordeweeks;382;610305;169;21:35:00;IJmuiden Seaport;Amsterdam Sloterdijk;
 L1038;Doordeweeks;382;610305;174;22:21:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;22:57:00;Haarlem;Normaal
 L1038;Doordeweeks;MAT;610305;;22:57:00;IJmuiden Dennekoplaan;Haarlem Garage;23:18:00;Haarlem;Normaal
 L1040;Maandag t/m donderdag;MAT;610361;;15:25:00;Haarlem Garage;IJmuiden Dennekoplaan;15:47:00;Haarlem;Normaal
-L1040;Maandag t/m donderdag;385;610361;106;15:47:00;IJmuiden Dennekoplaan;Haarlem Station;16:21:00;Haarlem;Normaal
+L1012;Doordeweeks;385;610307;102;15:27:00;IJmuiden Dennekoplaan;Haarlem Station;16:01:00;Haarlem;Normaal
 L1040;Maandag t/m donderdag;385;610361;107;16:24:00;Haarlem Station;IJmuiden Dennekoplaan;16:58:00;Haarlem;Normaal
-L1040;Maandag t/m donderdag;385;610361;122;17:07:00;IJmuiden Dennekoplaan;Haarlem Station;17:41:00;Haarlem;Normaal
+L1032;Doordeweeks;385;610362;100;15:17:00;IJmuiden Dennekoplaan;Haarlem Station;15:51:00;Haarlem;Normaal
 L1040;Maandag t/m donderdag;3;610542;97;18:03:00;Haarlem Station;IJmuiden Rotonde Stadspark;18:36:00;Haarlem;Normaal
 L1040;Maandag t/m donderdag;3;610542;116;18:38:00;IJmuiden Rotonde Stadspark;Schalkwijk Centrum;19:37:00;Haarlem;Normaal
 L1040;Maandag t/m donderdag;73;610507;145;19:48:00;Schalkwijk Centrum;Beverwijk Station;20:35:00;Haarlem;Normaal
@@ -490,7 +490,7 @@ V1041;Doordeweeks;75;920724;8;09:01:00;Wijk aan Zee Julianaplein;Beverwijk Stati
 V1041;Doordeweeks;74;920724;24;09:24:00;Beverwijk Station;IJmuiden Dennekoplaan;09:49:00;Haarlem;Normaal
 V1041;Doordeweeks;382;610311;59;10:07:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;10:47:00;Haarlem;Normaal
 V1041;Doordeweeks;382;610311;64;10:51:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;11:31:00;Haarlem;Normaal
-V1041;Doordeweeks;385;610361;70;12:08:00;IJmuiden Dennekoplaan;Haarlem Station;12:42:00;Haarlem;Normaal
+P1462;Doordeweeks;385;610310;96;14:57:00;IJmuiden Dennekoplaan;Haarlem Station;15:31:00;Haarlem;Normaal
 V1041;Doordeweeks;MAT;610809;;13:53:00;Haarlem Station;Haarlem Garage;14:05:00;Haarlem;Normaal
 L1042;Doordeweeks;MAT;610803;;15:29:00;Haarlem Garage;Schalkwijk Centrum;15:45:00;Haarlem;Normaal
 L1042;Doordeweeks;73;610510;105;15:48:00;Schalkwijk Centrum;Castricum Station;17:17:00;Haarlem;Normaal
@@ -591,15 +591,15 @@ V1049;Doordeweeks;73;610517;72;12:22:00;Beverwijk Station;Schalkwijk Centrum;13:
 V1049;Doordeweeks;3;610512;63;13:40:00;Schalkwijk Centrum;Haarlem Delftplein;14:27:00;Haarlem;Normaal
 V1049;Doordeweeks;MAT;610512;;14:27:00;Haarlem Delftplein;Haarlem Garage;14:36:00;Haarlem;Normaal
 L1050;Doordeweeks;MAT;610810;;16:01:00;Haarlem Garage;IJmuiden Dennekoplaan;16:24:00;Haarlem;Normaal
-L1050;Doordeweeks;385;610309;114;16:27:00;IJmuiden Dennekoplaan;Haarlem Station;17:01:00;Haarlem;Normaal
+L1014;Doordeweeks;385;610309;94;14:47:00;IJmuiden Dennekoplaan;Haarlem Station;15:21:00;Haarlem;Normaal
 L1050;Doordeweeks;385;610309;115;17:04:00;Haarlem Station;IJmuiden Dennekoplaan;17:38:00;Haarlem;Normaal
 L1050;Doordeweeks;382;610302;139;18:12:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;18:47:00;Haarlem;Normaal
 L1050;Doordeweeks;382;610302;144;18:51:00;Amsterdam Sloterdijk;IJmuiden Seaport;19:33:00;Haarlem;Normaal
 L1050;Doordeweeks;382;610302;153;19:35:00;IJmuiden Seaport;Amsterdam Sloterdijk;20:17:00;Haarlem;Normaal
 L1050;Doordeweeks;382;610302;158;20:21:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;20:57:00;Haarlem;Normaal
-L1050;Doordeweeks;385;610332;166;21:45:00;IJmuiden Dennekoplaan;Haarlem Station;22:13:00;Haarlem;Normaal
+L1004;Doordeweeks;385;610301;90;14:27:00;IJmuiden Dennekoplaan;Haarlem Station;15:01:00;Haarlem;Normaal
 L1050;Doordeweeks;385;610332;167;22:15:00;Haarlem Station;IJmuiden Dennekoplaan;22:44:00;Haarlem;Normaal
-L1050;Doordeweeks;385;610332;174;22:46:00;IJmuiden Dennekoplaan;Haarlem Station;23:14:00;Haarlem;Normaal
+G1201;Doordeweeks;385;610332;88;14:17:00;IJmuiden Dennekoplaan;Haarlem Station;14:51:00;Haarlem;Normaal
 L1050;Doordeweeks;385;610332;175;23:16:00;Haarlem Station;IJmuiden Dennekoplaan;23:45:00;Haarlem;Normaal
 L1050;Doordeweeks;MAT;610332;;23:45:00;IJmuiden Dennekoplaan;Haarlem Garage;00:06:00;Haarlem;Normaal
 V1051;Doordeweeks;MAT;610516;;06:24:00;Haarlem Garage;Velserbroek Centrum;06:36:00;Haarlem;Normaal
@@ -647,7 +647,7 @@ L1054;Doordeweeks;382;610342;129;17:20:00;IJmuiden Dennekoplaan;Amsterdam Sloter
 L1054;Doordeweeks;382;610342;134;18:01:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;18:37:00;Haarlem;Normaal
 L1054;Doordeweeks;382;610307;145;18:42:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;19:17:00;Haarlem;Normaal
 L1054;Doordeweeks;382;610307;150;19:21:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;19:57:00;Haarlem;Normaal
-L1054;Doordeweeks;385;610307;160;20:59:00;IJmuiden Dennekoplaan;Haarlem Station;21:27:00;Haarlem;Normaal
+G1211;Doordeweeks;385;610308;84;14:13:00;Haarlem Delftplein;Haarlem Station;14:27:00;Haarlem;Normaal
 L1054;Doordeweeks;385;610307;161;21:29:00;Haarlem Station;IJmuiden Dennekoplaan;21:58:00;Haarlem;Normaal
 L1054;Doordeweeks;74;920711;85;22:10:00;IJmuiden Dennekoplaan;Beverwijk Station;22:33:00;Haarlem;Normaal
 L1054;Doordeweeks;72;920711;35;22:36:00;Beverwijk Station;Heemskerk Centrum;22:59:00;Haarlem;Normaal
@@ -655,11 +655,11 @@ L1054;Doordeweeks;72;920711;36;23:02:00;Heemskerk Centrum;Beverwijk Station;23:2
 L1054;Doordeweeks;73;610503;156;23:30:00;Beverwijk Station;Schalkwijk Centrum;00:19:00;Haarlem;Normaal
 L1054;Doordeweeks;MAT;610503;;00:19:00;Schalkwijk Centrum;Haarlem Garage;00:33:00;Haarlem;Normaal
 V1055;Doordeweeks;MAT;610312;;06:26:00;Haarlem Garage;IJmuiden Dennekoplaan;06:48:00;Haarlem;Normaal
-V1055;Doordeweeks;385;610312;16;06:48:00;IJmuiden Dennekoplaan;Haarlem Station;07:21:00;Haarlem;Normaal
+L1012;Doordeweeks;385;610331;86;14:07:00;IJmuiden Dennekoplaan;Haarlem Station;14:41:00;Haarlem;Normaal
 V1055;Doordeweeks;385;610312;19;07:23:00;Haarlem Station;IJmuiden Dennekoplaan;07:53:00;Haarlem;Normaal
-V1055;Doordeweeks;385;610312;30;07:55:00;IJmuiden Dennekoplaan;Haarlem Station;08:32:00;Haarlem;Normaal
+M1317;Doordeweeks;385;610302;82;13:38:00;IJmuiden Dennekoplaan;Haarlem Station;14:12:00;Haarlem;Normaal
 V1055;Doordeweeks;385;610312;33;08:34:00;Haarlem Station;IJmuiden Dennekoplaan;09:06:00;Haarlem;Normaal
-V1055;Doordeweeks;385;610305;48;09:28:00;IJmuiden Dennekoplaan;Haarlem Station;10:02:00;Haarlem;Normaal
+V1061;Doordeweeks;385;610361;80;13:23:00;IJmuiden Dennekoplaan;Haarlem Station;13:57:00;Haarlem;Normaal
 V1055;Doordeweeks;MAT;610305;;10:02:00;Haarlem Station;Haarlem Delftplein;10:15:00;Haarlem;Normaal
 V1055;Doordeweeks;MAT;610101;;10:17:00;Haarlem Delftplein;Haarlem Garage;10:26:00;Haarlem;Normaal
 V1055;Doordeweeks;MAT;610101;;10:36:00;Haarlem Garage;Haarlem Delftplein;10:45:00;Haarlem;Normaal
@@ -687,7 +687,7 @@ V1057;Doordeweeks;81;610204;2505;07:21:00;Zandvoort Busstation;Haarlem Station;0
 V1057;Doordeweeks;MAT;610517;;08:55:00;Haarlem Station;Haarlem Garage;09:10:00;Haarlem;Normaal
 V1057;Doordeweeks;MAT;610803;;09:12:00;Haarlem Garage;Haarlem Delftplein;09:21:00;Haarlem;Normaal
 V1057;Doordeweeks;MAT;610308;;10:08:00;Haarlem Delftplein;IJmuiden Dennekoplaan;10:23:00;Haarlem;Normaal
-V1057;Doordeweeks;385;610308;56;10:23:00;IJmuiden Dennekoplaan;Haarlem Station;10:57:00;Haarlem;Normaal
+V1037;Doordeweeks;385;610362;78;13:08:00;IJmuiden Dennekoplaan;Haarlem Station;13:42:00;Haarlem;Normaal
 V1057;Doordeweeks;385;610308;57;10:59:00;Haarlem Station;IJmuiden Dennekoplaan;11:30:00;Haarlem;Normaal
 V1057;Doordeweeks;382;610341;71;11:37:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;12:17:00;Haarlem;Normaal
 V1057;Doordeweeks;382;610341;76;12:21:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;13:01:00;Haarlem;Normaal
@@ -705,9 +705,9 @@ L1058;Doordeweeks;3;610702;132;20:39:00;IJmuiden Rotonde Stadspark;Schalkwijk Ce
 L1058;Doordeweeks;MAT;610702;;21:35:00;Schalkwijk Centrum;Haarlem Garage;21:49:00;Haarlem;Normaal
 L1058;Doordeweeks;MAT;610801;;22:15:00;Haarlem Garage;Haarlem Station;22:27:00;Haarlem;Normaal
 L1058;Doordeweeks;385;610302;169;22:30:00;Haarlem Station;IJmuiden Dennekoplaan;22:59:00;Haarlem;Normaal
-L1058;Doordeweeks;385;610302;176;23:01:00;IJmuiden Dennekoplaan;Haarlem Station;23:29:00;Haarlem;Normaal
+GM1227;Doordeweeks;385;610309;76;12:53:00;IJmuiden Dennekoplaan;Haarlem Station;13:27:00;Haarlem;Normaal
 L1058;Doordeweeks;385;610302;177;23:31:00;Haarlem Station;IJmuiden Dennekoplaan;00:00:00;Haarlem;Normaal
-L1058;Doordeweeks;385;610302;184;00:02:00;IJmuiden Dennekoplaan;Haarlem Station;00:30:00;Haarlem;Normaal
+M1321;Doordeweeks;385;610308;74;12:38:00;IJmuiden Dennekoplaan;Haarlem Station;13:12:00;Haarlem;Normaal
 L1058;Doordeweeks;MAT;610302;;00:30:00;Haarlem Station;Haarlem Garage;00:42:00;Haarlem;Normaal
 V1059;Doordeweeks;MAT;610727;;06:40:00;Haarlem Garage;IJmuiden Dennekoplaan;07:04:00;Haarlem;Normaal
 V1059;Doordeweeks;74;610727;7;07:04:00;IJmuiden Dennekoplaan;Heemskerk Centrum;07:50:00;Haarlem;Normaal
@@ -716,7 +716,7 @@ V1059;Doordeweeks;74;610727;18;08:27:00;Beverwijk Station;IJmuiden Dennekoplaan;
 V1059;Doordeweeks;74;610727;21;08:58:00;IJmuiden Dennekoplaan;Beverwijk Station;09:26:00;Haarlem;Normaal
 V1059;Doordeweeks;72;610726;9;10:08:00;Beverwijk Station;Heemskerk Centrum;10:34:00;Haarlem;Normaal
 V1059;Doordeweeks;74;610726;30;10:35:00;Heemskerk Centrum;IJmuiden Dennekoplaan;11:19:00;Haarlem;Normaal
-V1059;Doordeweeks;385;610302;64;11:23:00;IJmuiden Dennekoplaan;Haarlem Station;11:57:00;Haarlem;Normaal
+V1023;Doordeweeks;385;610311;72;12:23:00;IJmuiden Dennekoplaan;Haarlem Station;12:57:00;Haarlem;Normaal
 V1059;Doordeweeks;14;610103;16;12:39:00;Haarlem Station;Heemstede Station;13:00:00;Haarlem;Normaal
 V1059;Doordeweeks;14;610103;17;13:02:00;Heemstede Station;Haarlem Delftplein;13:41:00;Haarlem;Normaal
 V1059;Doordeweeks;MAT;610103;;13:41:00;Haarlem Delftplein;Haarlem Garage;13:50:00;Haarlem;Normaal
@@ -734,15 +734,15 @@ V1061;Doordeweeks;3;610518;17;07:54:00;Schalkwijk Centrum;IJmuiden Rotonde Stads
 V1061;Doordeweeks;3;610518;40;09:08:00;IJmuiden Rotonde Stadspark;Schalkwijk Centrum;10:16:00;Haarlem;Normaal
 V1061;Doordeweeks;73;610523;59;10:40:00;Schalkwijk Centrum;Haarlem Delftplein;11:20:00;Haarlem;Normaal
 V1061;Doordeweeks;MAT;610305;;11:23:00;Haarlem Delftplein;IJmuiden Dennekoplaan;11:38:00;Haarlem;Normaal
-V1061;Doordeweeks;385;610305;66;11:38:00;IJmuiden Dennekoplaan;Haarlem Station;12:12:00;Haarlem;Normaal
+V1041;Doordeweeks;385;610361;70;12:08:00;IJmuiden Dennekoplaan;Haarlem Station;12:42:00;Haarlem;Normaal
 V1061;Doordeweeks;385;610305;67;12:14:00;Haarlem Station;IJmuiden Dennekoplaan;12:48:00;Haarlem;Normaal
-V1061;Doordeweeks;385;610361;80;13:23:00;IJmuiden Dennekoplaan;Haarlem Station;13:57:00;Haarlem;Normaal
+M1315;Doordeweeks;385;610362;68;11:53:00;IJmuiden Dennekoplaan;Haarlem Station;12:27:00;Haarlem;Normaal
 V1061;Doordeweeks;385;610361;81;13:59:00;Haarlem Station;IJmuiden Dennekoplaan;14:33:00;Haarlem;Normaal
 V1061;Doordeweeks;MAT;610361;;14:33:00;IJmuiden Dennekoplaan;Haarlem Garage;14:55:00;Haarlem;Normaal
 L1062;Doordeweeks;MAT;610809;;16:44:00;Haarlem Garage;IJmuiden Dennekoplaan;17:07:00;Haarlem;Normaal
 L1062;Doordeweeks;382;610312;127;17:10:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;17:47:00;Haarlem;Normaal
 L1062;Doordeweeks;382;610312;132;17:51:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;18:27:00;Haarlem;Normaal
-L1062;Doordeweeks;385;610312;144;19:01:00;IJmuiden Dennekoplaan;Haarlem Station;19:31:00;Haarlem;Normaal
+V1061;Doordeweeks;385;610305;66;11:38:00;IJmuiden Dennekoplaan;Haarlem Station;12:12:00;Haarlem;Normaal
 L1062;Doordeweeks;385;610312;145;19:34:00;Haarlem Station;IJmuiden Dennekoplaan;20:04:00;Haarlem;Normaal
 L1062;Doordeweeks;385;610312;154;20:12:00;IJmuiden Dennekoplaan;Haarlem Delftplein;20:30:00;Haarlem;Normaal
 L1062;Doordeweeks;14;610103;38;20:57:00;Haarlem Delftplein;Heemstede Station;21:29:00;Haarlem;Normaal
@@ -833,9 +833,9 @@ L1068;Doordeweeks;382;610303;160;20:36:00;Amsterdam Sloterdijk;IJmuiden Dennekop
 L1068;Doordeweeks;382;610304;173;22:12:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;22:47:00;Haarlem;Normaal
 L1068;Doordeweeks;382;610304;178;22:51:00;Amsterdam Sloterdijk;IJmuiden Seaport;23:33:00;Haarlem;Normaal
 L1068;Doordeweeks;MAT;610304;;23:33:00;IJmuiden Seaport;IJmuiden Dennekoplaan;23:38:00;Haarlem;Normaal
-L1068;Doordeweeks;385;610304;182;23:47:00;IJmuiden Dennekoplaan;Haarlem Station;00:15:00;Haarlem;Normaal
+V1059;Doordeweeks;385;610302;64;11:23:00;IJmuiden Dennekoplaan;Haarlem Station;11:57:00;Haarlem;Normaal
 L1068;Doordeweeks;385;610304;183;00:17:00;Haarlem Station;IJmuiden Dennekoplaan;00:46:00;Haarlem;Normaal
-L1068;Doordeweeks;385;610304;190;00:48:00;IJmuiden Dennekoplaan;Haarlem Station;01:16:00;Haarlem;Normaal
+V1023;Doordeweeks;385;610312;62;11:08:00;IJmuiden Dennekoplaan;Haarlem Station;11:42:00;Haarlem;Normaal
 L1068;Doordeweeks;MAT;610304;;01:16:00;Haarlem Station;Haarlem Garage;01:28:00;Haarlem;Normaal
 V1069;Doordeweeks;MAT;610702;;07:13:00;Haarlem Garage;Velserbroek Centrum;07:26:00;Haarlem;Normaal
 V1069;Doordeweeks;3;610702;18;07:26:00;Velserbroek Centrum;Haarlem Station;07:56:00;Haarlem;Normaal
@@ -859,7 +859,7 @@ L1070;Doordeweeks;71;610505;53;18:42:00;Beverwijk Station;Uitgeest Station;19:07
 L1070;Doordeweeks;71;610505;60;19:29:00;Uitgeest Station;Beverwijk Station;19:50:00;Haarlem;Normaal
 L1070;Doordeweeks;73;610505;132;19:53:00;Beverwijk Station;Schalkwijk Centrum;20:42:00;Haarlem;Normaal
 L1070;Doordeweeks;3;610505;123;20:48:00;Schalkwijk Centrum;Haarlem Delftplein;21:30:00;Haarlem;Normaal
-L1070;Doordeweeks;385;610309;164;21:47:00;Haarlem Delftplein;Haarlem Station;21:58:00;Haarlem;Normaal
+W903;Doordeweeks;385;610361;60;10:53:00;IJmuiden Dennekoplaan;Haarlem Station;11:27:00;Haarlem;Normaal
 L1070;Doordeweeks;385;610309;165;22:00:00;Haarlem Station;IJmuiden Dennekoplaan;22:29:00;Haarlem;Normaal
 L1070;Doordeweeks;382;610303;179;23:12:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;23:47:00;Haarlem;Normaal
 L1070;Doordeweeks;382;610303;182;23:51:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;00:27:00;Haarlem;Normaal
@@ -882,7 +882,7 @@ L1072;Doordeweeks;382;610305;135;17:50:00;IJmuiden Dennekoplaan;Amsterdam Sloter
 L1072;Doordeweeks;382;610305;140;18:31:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;19:07:00;Haarlem;Normaal
 L1072;Doordeweeks;382;610331;149;19:12:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;19:47:00;Haarlem;Normaal
 L1072;Doordeweeks;382;610331;154;19:51:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;20:27:00;Haarlem;Normaal
-L1072;Doordeweeks;385;610303;162;21:14:00;IJmuiden Dennekoplaan;Haarlem Station;21:42:00;Haarlem;Normaal
+V1017;Doordeweeks;385;610306;58;10:38:00;IJmuiden Dennekoplaan;Haarlem Station;11:12:00;Haarlem;Normaal
 L1072;Doordeweeks;385;610303;163;21:44:00;Haarlem Station;IJmuiden Dennekoplaan;22:13:00;Haarlem;Normaal
 L1072;Doordeweeks;MAT;610341;;22:30:00;IJmuiden Dennekoplaan;IJmuiden Seaport;22:35:00;Haarlem;Normaal
 L1072;Doordeweeks;382;610341;177;22:35:00;IJmuiden Seaport;Amsterdam Sloterdijk;23:17:00;Haarlem;Normaal
@@ -904,15 +904,15 @@ L1074;Doordeweeks;MAT;610808;;17:40:00;IJmuiden Dennekoplaan;Haarlem Garage;18:0
 L1074;Doordeweeks;MAT;610203;;18:21:00;Haarlem Garage;Haarlem Waarderweg;18:23:00;Haarlem;Normaal
 L1074;Doordeweeks;15;610203;40;18:26:00;Haarlem Waarderweg;Haarlem Station;18:49:00;Haarlem;Normaal
 L1074;Doordeweeks;385;610310;137;18:54:00;Haarlem Station;IJmuiden Dennekoplaan;19:24:00;Haarlem;Normaal
-L1074;Doordeweeks;385;610310;148;19:27:00;IJmuiden Dennekoplaan;Haarlem Station;19:57:00;Haarlem;Normaal
+V1057;Doordeweeks;385;610308;56;10:23:00;IJmuiden Dennekoplaan;Haarlem Station;10:57:00;Haarlem;Normaal
 L1074;Doordeweeks;385;610310;149;19:59:00;Haarlem Station;IJmuiden Dennekoplaan;20:29:00;Haarlem;Normaal
-L1074;Doordeweeks;385;610304;158;20:42:00;IJmuiden Dennekoplaan;Haarlem Station;21:12:00;Haarlem;Normaal
+V1077;Doordeweeks;385;610310;54;10:08:00;IJmuiden Dennekoplaan;Haarlem Station;10:42:00;Haarlem;Normaal
 L1074;Doordeweeks;385;610304;159;21:14:00;Haarlem Station;IJmuiden Dennekoplaan;21:43:00;Haarlem;Normaal
-L1074;Doordeweeks;385;610307;172;22:31:00;IJmuiden Dennekoplaan;Haarlem Station;22:59:00;Haarlem;Normaal
+V1011;Doordeweeks;385;610312;52;09:53:00;IJmuiden Dennekoplaan;Haarlem Station;10:27:00;Haarlem;Normaal
 L1074;Doordeweeks;385;610307;173;23:01:00;Haarlem Station;IJmuiden Dennekoplaan;23:30:00;Haarlem;Normaal
-L1074;Doordeweeks;385;610307;180;23:32:00;IJmuiden Dennekoplaan;Haarlem Station;00:00:00;Haarlem;Normaal
+V1013;Doordeweeks;385;610302;50;09:38:00;IJmuiden Dennekoplaan;Haarlem Station;10:12:00;Haarlem;Normaal
 L1074;Doordeweeks;385;610307;181;00:02:00;Haarlem Station;IJmuiden Dennekoplaan;00:31:00;Haarlem;Normaal
-L1074;Doordeweeks;385;610307;188;00:33:00;IJmuiden Dennekoplaan;Haarlem Station;01:01:00;Haarlem;Normaal
+V1055;Doordeweeks;385;610305;48;09:28:00;IJmuiden Dennekoplaan;Haarlem Station;10:02:00;Haarlem;Normaal
 L1074;Doordeweeks;MAT;610307;;01:01:00;Haarlem Station;Haarlem Garage;01:13:00;Haarlem;Normaal
 V1075;Doordeweeks;MAT;610524;;07:50:00;Haarlem Garage;Velserbroek Centrum;08:03:00;Haarlem;Normaal
 V1075;Doordeweeks;3;610524;28;08:03:00;Velserbroek Centrum;Schalkwijk Centrum;09:03:00;Haarlem;Normaal
@@ -928,9 +928,9 @@ V1075;Doordeweeks;382;610304;86;13:36:00;Amsterdam Sloterdijk;IJmuiden Dennekopl
 V1075;Doordeweeks;MAT;610807;;14:22:00;IJmuiden Dennekoplaan;Haarlem Garage;14:44:00;Haarlem;Normaal
 V1077;Doordeweeks;MAT;610802;;08:13:00;Haarlem Garage;Haarlem Delftplein;08:24:00;Haarlem;Normaal
 V1077;Doordeweeks;385;610309;29;08:26:00;Haarlem Delftplein;IJmuiden Dennekoplaan;08:46:00;Haarlem;Normaal
-V1077;Doordeweeks;385;610309;40;08:48:00;IJmuiden Dennekoplaan;Haarlem Station;09:22:00;Haarlem;Normaal
+V1033;Doordeweeks;385;610307;46;09:18:00;IJmuiden Dennekoplaan;Haarlem Station;09:52:00;Haarlem;Normaal
 V1077;Doordeweeks;385;610309;43;09:24:00;Haarlem Station;IJmuiden Dennekoplaan;09:55:00;Haarlem;Normaal
-V1077;Doordeweeks;385;610310;54;10:08:00;IJmuiden Dennekoplaan;Haarlem Station;10:42:00;Haarlem;Normaal
+W903;Doordeweeks;385;610301;44;09:08:00;IJmuiden Dennekoplaan;Haarlem Station;09:42:00;Haarlem;Normaal
 V1077;Doordeweeks;385;610310;55;10:44:00;Haarlem Station;IJmuiden Dennekoplaan;11:15:00;Haarlem;Normaal
 V1077;Doordeweeks;382;610310;73;11:52:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;12:32:00;Haarlem;Normaal
 V1077;Doordeweeks;382;610310;78;12:36:00;Amsterdam Sloterdijk;IJmuiden Seaport;13:22:00;Haarlem;Normaal
@@ -948,9 +948,9 @@ G1201;Doordeweeks;81;610203;2507;07:55:00;Zandvoort Busstation;Haarlem Station;0
 G1201;Doordeweeks;15;610203;9;08:42:00;Haarlem Station;Haarlem Waarderweg;09:01:00;Haarlem;Normaal
 G1201;Doordeweeks;MAT;610203;;09:01:00;Haarlem Waarderweg;Haarlem Garage;09:03:00;Haarlem;Normaal
 G1201;Doordeweeks;MAT;610332;;13:55:00;Haarlem Garage;IJmuiden Dennekoplaan;14:17:00;Haarlem;Normaal
-G1201;Doordeweeks;385;610332;88;14:17:00;IJmuiden Dennekoplaan;Haarlem Station;14:51:00;Haarlem;Normaal
+V1029;Doordeweeks;385;610306;42;08:58:00;IJmuiden Dennekoplaan;Haarlem Station;09:32:00;Haarlem;Normaal
 G1201;Doordeweeks;385;610332;89;14:54:00;Haarlem Station;IJmuiden Dennekoplaan;15:28:00;Haarlem;Normaal
-G1201;Doordeweeks;385;610332;104;15:37:00;IJmuiden Dennekoplaan;Haarlem Station;16:11:00;Haarlem;Normaal
+V1013;Doordeweeks;385;610302;36;08:48:00;Haarlem Delftplein;Haarlem Station;09:02:00;Haarlem;Normaal
 G1201;Doordeweeks;385;610332;105;16:14:00;Haarlem Station;Haarlem Delftplein;16:24:00;Haarlem;Normaal
 G1201;Doordeweeks;3;610524;81;16:43:00;Haarlem Delftplein;IJmuiden Rotonde Stadspark;17:06:00;Haarlem;Normaal
 G1201;Doordeweeks;3;610524;104;17:09:00;IJmuiden Rotonde Stadspark;Haarlem Station;17:47:00;Haarlem;Normaal
@@ -965,7 +965,7 @@ G1203;Doordeweeks;MAT;610507;;10:57:00;Haarlem Delftplein;Haarlem Garage;11:06:0
 G1203;Doordeweeks;MAT;610804;;14:37:00;Haarlem Garage;Haarlem Station Spaarnwoude;14:46:00;Haarlem;Normaal
 G1203;Doordeweeks;2;610224;37;14:49:00;Haarlem Station Spaarnwoude;Haarlem Station;15:14:00;Haarlem;Normaal
 G1203;Doordeweeks;385;610311;113;16:54:00;Haarlem Station;IJmuiden Dennekoplaan;17:28:00;Haarlem;Normaal
-G1203;Doordeweeks;385;610311;126;17:30:00;IJmuiden Dennekoplaan;Haarlem Station;18:01:00;Haarlem;Normaal
+V1077;Doordeweeks;385;610309;40;08:48:00;IJmuiden Dennekoplaan;Haarlem Station;09:22:00;Haarlem;Normaal
 G1203;Doordeweeks;MAT;610811;;18:04:00;Haarlem Station;Haarlem Garage;18:16:00;Haarlem;Normaal
 G1205;Doordeweeks;MAT;610517;;06:42:00;Haarlem Garage;Haarlem Wim van Eststraat;06:50:00;Haarlem;Normaal
 G1205;Doordeweeks;567;610517;1;06:50:00;Haarlem Wim van Eststraat;Cruquius Werkt;07:35:00;Haarlem;Normaal
@@ -1018,11 +1018,11 @@ G1209;Doordeweeks;MAT;610463;;18:45:00;Beverwijk Station;Haarlem Garage;19:03:00
 G1211;Doordeweeks;MAT;610652;;07:30:00;Haarlem Garage;Haarlem Station;07:45:00;Haarlem;Normaal
 G1211;Doordeweeks;MAT;610801;;09:50:00;Haarlem Station;Haarlem Garage;10:02:00;Haarlem;Normaal
 G1211;Doordeweeks;MAT;610810;;14:02:00;Haarlem Garage;Haarlem Delftplein;14:11:00;Haarlem;Normaal
-G1211;Doordeweeks;385;610308;84;14:13:00;Haarlem Delftplein;Haarlem Station;14:27:00;Haarlem;Normaal
+G1553;Doordeweeks;385;610362;38;08:38:00;IJmuiden Dennekoplaan;Haarlem Station;09:12:00;Haarlem;Normaal
 G1211;Doordeweeks;385;610308;85;14:29:00;Haarlem Station;IJmuiden Dennekoplaan;15:03:00;Haarlem;Normaal
 G1211;Doordeweeks;382;610312;103;15:08:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;15:48:00;Haarlem;Normaal
 G1211;Doordeweeks;382;610312;108;15:51:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;16:35:00;Haarlem;Normaal
-G1211;Doordeweeks;385;610331;124;17:17:00;IJmuiden Dennekoplaan;Haarlem Station;17:51:00;Haarlem;Normaal
+V1011;Doordeweeks;385;610304;32;08:07:00;IJmuiden Dennekoplaan;Haarlem Station;08:42:00;Haarlem;Normaal
 G1211;Doordeweeks;81;610204;2550;17:54:00;Haarlem Station;Zandvoort Busstation;18:23:00;Haarlem;Normaal
 G1211;Doordeweeks;81;610204;2549;18:25:00;Zandvoort Busstation;Haarlem Station;19:04:00;Haarlem;Normaal
 G1211;Doordeweeks;MAT;610204;;19:04:00;Haarlem Station;Haarlem Garage;19:17:00;Haarlem;Normaal
@@ -1052,14 +1052,14 @@ G1215;Doordeweeks;74;920724;50;15:36:00;Beverwijk Station;IJmuiden Dennekoplaan;
 G1215;Doordeweeks;382;610306;106;16:25:00;IJmuiden Dennekoplaan;IJmuiden Seaport;16:31:00;Haarlem;Normaal
 G1215;Doordeweeks;382;610306;121;16:33:00;IJmuiden Seaport;Amsterdam Sloterdijk;17:18:00;Haarlem;Normaal
 G1215;Doordeweeks;382;610306;126;17:21:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;17:57:00;Haarlem;Normaal
-G1215;Doordeweeks;385;610306;132;18:01:00;IJmuiden Dennekoplaan;Haarlem Station;18:31:00;Haarlem;Normaal
+V1055;Doordeweeks;385;610312;30;07:55:00;IJmuiden Dennekoplaan;Haarlem Station;08:32:00;Haarlem;Normaal
 G1215;Doordeweeks;385;610306;133;18:34:00;Haarlem Station;Haarlem Delftplein;18:43:00;Haarlem;Normaal
 G1215;Doordeweeks;MAT;610801;;18:45:00;Haarlem Delftplein;Haarlem Garage;18:54:00;Haarlem;Normaal
 GM1217;Doordeweeks;MAT;610361;;05:38:00;Haarlem Garage;Haarlem Station;05:50:00;Haarlem;Normaal
 GM1217;Doordeweeks;385;610361;1;05:50:00;Haarlem Station;IJmuiden Dennekoplaan;06:18:00;Haarlem;Normaal
-GM1217;Doordeweeks;385;610361;10;06:20:00;IJmuiden Dennekoplaan;Haarlem Station;06:52:00;Haarlem;Normaal
+W903;Doordeweeks;385;610306;28;07:45:00;IJmuiden Dennekoplaan;Haarlem Station;08:22:00;Haarlem;Normaal
 GM1217;Doordeweeks;385;610361;13;06:54:00;Haarlem Station;IJmuiden Dennekoplaan;07:23:00;Haarlem;Normaal
-GM1217;Doordeweeks;385;610361;24;07:26:00;IJmuiden Dennekoplaan;Haarlem Station;08:02:00;Haarlem;Normaal
+V1025;Doordeweeks;385;610309;26;07:35:00;IJmuiden Dennekoplaan;Haarlem Station;08:12:00;Haarlem;Normaal
 GM1217;Doordeweeks;MAT;610361;;08:02:00;Haarlem Station;Haarlem Garage;08:17:00;Haarlem;Normaal
 GM1217;Doordeweeks;MAT;610507;;12:06:00;Haarlem Garage;Schalkwijk Centrum;12:23:00;Haarlem;Normaal
 GM1217;Doordeweeks;73;610507;;12:23:00;Schalkwijk Centrum;Haarlem Delftplein;13:04:00;Haarlem;Normaal
@@ -1158,7 +1158,7 @@ GM1227;Doordeweeks;12;610101;8;08:26:00;Spaarndam Westhoff;Haarlem Delftplein;08
 GM1227;Doordeweeks;MAT;610803;;08:40:00;Haarlem Delftplein;Haarlem Garage;08:51:00;Haarlem;Normaal
 GM1227;Doordeweeks;MAT;610807;;12:27:00;Haarlem Garage;Haarlem Delftplein;12:36:00;Haarlem;Normaal
 GM1227;Doordeweeks;MAT;610309;;12:38:00;Haarlem Delftplein;IJmuiden Dennekoplaan;12:53:00;Haarlem;Normaal
-GM1227;Doordeweeks;385;610309;76;12:53:00;IJmuiden Dennekoplaan;Haarlem Station;13:27:00;Haarlem;Normaal
+GM1217;Doordeweeks;385;610361;24;07:26:00;IJmuiden Dennekoplaan;Haarlem Station;08:02:00;Haarlem;Normaal
 GM1227;Doordeweeks;385;610309;77;13:29:00;Haarlem Station;Haarlem Delftplein;13:39:00;Haarlem;Normaal
 GM1227;Doordeweeks;MAT;610810;;13:42:00;Haarlem Delftplein;Haarlem Garage;13:51:00;Haarlem;Normaal
 GM1227;Doordeweeks;MAT;610203;;14:21:00;Haarlem Garage;Haarlem Waarderweg;14:23:00;Haarlem;Normaal
@@ -1168,7 +1168,7 @@ GM1227;Doordeweeks;81;610203;2537;15:25:00;Zandvoort Busstation;Haarlem Station;
 GM1227;Doordeweeks;15;610203;29;16:12:00;Haarlem Station;Haarlem Waarderweg;16:29:00;Haarlem;Normaal
 GM1227;Doordeweeks;MAT;610203;;16:29:00;Haarlem Waarderweg;Haarlem Garage;16:31:00;Haarlem;Normaal
 GM1229;Doordeweeks;MAT;610309;;06:06:00;Haarlem Garage;IJmuiden Dennekoplaan;06:28:00;Haarlem;Normaal
-GM1229;Doordeweeks;385;610309;12;06:28:00;IJmuiden Dennekoplaan;Haarlem Station;07:01:00;Haarlem;Normaal
+V1011;Doordeweeks;385;610304;18;07:18:00;Haarlem Delftplein;Haarlem Station;07:31:00;Haarlem;Normaal
 GM1229;Doordeweeks;15;610201;3;07:06:00;Haarlem Station;Haarlem Waarderweg;07:22:00;Haarlem;Normaal
 GM1229;Doordeweeks;MAT;610201;;07:22:00;Haarlem Waarderweg;Haarlem Garage;07:23:00;Haarlem;Normaal
 GM1229;Doordeweeks;MAT;610201;;07:29:00;Haarlem Garage;Haarlem Waarderweg;07:30:00;Haarlem;Normaal
@@ -1279,7 +1279,7 @@ D1305;Doordeweeks;78;610727;16;13:33:00;Wijk aan Zee Julianaplein;Beverwijk Stat
 D1305;Doordeweeks;74;610727;44;14:25:00;Beverwijk Station;IJmuiden Dennekoplaan;14:53:00;Haarlem;Normaal
 D1305;Doordeweeks;382;610308;105;15:16:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;15:58:00;Haarlem;Normaal
 D1305;Doordeweeks;382;610308;110;16:01:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;16:45:00;Haarlem;Normaal
-D1305;Doordeweeks;385;610308;118;16:47:00;IJmuiden Dennekoplaan;Haarlem Station;17:21:00;Haarlem;Normaal
+V1015;Doordeweeks;385;610302;22;07:16:00;IJmuiden Dennekoplaan;Haarlem Station;07:52:00;Haarlem;Normaal
 D1305;Doordeweeks;MAT;610807;;17:24:00;Haarlem Station;Haarlem Garage;17:38:00;Haarlem;Normaal
 M1311;Doordeweeks;MAT;610212;;10:50:00;Haarlem Garage;Schalkwijk Centrum;11:07:00;Haarlem;Normaal
 M1311;Doordeweeks;73;610212;63;11:10:00;Schalkwijk Centrum;Beverwijk Station;12:07:00;Haarlem;Normaal
@@ -1303,7 +1303,7 @@ M1313;Doordeweeks;74;920725;69;17:59:00;IJmuiden Dennekoplaan;Beverwijk Station;
 M1313;Doordeweeks;MAT;920725;;18:22:00;Beverwijk Station;Haarlem Garage;18:41:00;Haarlem;Normaal
 M1315;Doordeweeks;MAT;610362;;11:01:00;Haarlem Garage;Haarlem Station;11:14:00;Haarlem;Normaal
 M1315;Doordeweeks;385;610362;59;11:14:00;Haarlem Station;IJmuiden Dennekoplaan;11:47:00;Haarlem;Normaal
-M1315;Doordeweeks;385;610362;68;11:53:00;IJmuiden Dennekoplaan;Haarlem Station;12:27:00;Haarlem;Normaal
+V1001;Doordeweeks;385;610305;20;07:06:00;IJmuiden Dennekoplaan;Haarlem Station;07:42:00;Haarlem;Normaal
 M1315;Doordeweeks;385;610362;69;12:29:00;Haarlem Station;Haarlem Delftplein;12:39:00;Haarlem;Normaal
 M1315;Doordeweeks;73;610507;;13:05:00;Haarlem Delftplein;Castricum Station;13:51:00;Haarlem;Normaal
 M1315;Doordeweeks;73;610507;90;14:07:00;Castricum Station;Schalkwijk Centrum;15:34:00;Haarlem;Normaal
@@ -1316,7 +1316,7 @@ M1315;Doordeweeks;15;610201;39;18:42:00;Haarlem Station;Haarlem Waarderweg;18:57
 M1315;Doordeweeks;MAT;610201;;18:57:00;Haarlem Waarderweg;Haarlem Garage;18:59:00;Haarlem;Normaal
 M1317;Doordeweeks;MAT;610803;;10:50:00;Haarlem Garage;Haarlem Station;11:02:00;Haarlem;Normaal
 M1317;Doordeweeks;385;610311;73;12:59:00;Haarlem Station;IJmuiden Dennekoplaan;13:33:00;Haarlem;Normaal
-M1317;Doordeweeks;385;610302;82;13:38:00;IJmuiden Dennekoplaan;Haarlem Station;14:12:00;Haarlem;Normaal
+V1055;Doordeweeks;385;610312;16;06:48:00;IJmuiden Dennekoplaan;Haarlem Station;07:21:00;Haarlem;Normaal
 M1317;Doordeweeks;385;610302;83;14:14:00;Haarlem Station;IJmuiden Dennekoplaan;14:48:00;Haarlem;Normaal
 M1317;Doordeweeks;74;610727;47;15:06:00;IJmuiden Dennekoplaan;Heemskerk Centrum;15:55:00;Haarlem;Normaal
 M1317;Doordeweeks;72;610727;22;15:56:00;Heemskerk Centrum;Beverwijk Station;16:24:00;Haarlem;Normaal
@@ -1334,12 +1334,12 @@ M1319;Doordeweeks;3;610511;67;14:10:00;Schalkwijk Centrum;Haarlem Delftplein;14:
 M1319;Doordeweeks;3;610511;86;15:15:00;Haarlem Delftplein;Schalkwijk Centrum;16:04:00;Haarlem;Normaal
 M1319;Doordeweeks;3;610522;83;16:10:00;Schalkwijk Centrum;Haarlem Delftplein;16:57:00;Haarlem;Normaal
 M1319;Doordeweeks;385;610362;117;17:25:00;Haarlem Delftplein;IJmuiden Dennekoplaan;17:46:00;Haarlem;Normaal
-M1319;Doordeweeks;385;610362;130;17:51:00;IJmuiden Dennekoplaan;Haarlem Station;18:21:00;Haarlem;Normaal
+GM1541;Doordeweeks;385;610308;14;06:38:00;IJmuiden Dennekoplaan;Haarlem Station;07:11:00;Haarlem;Normaal
 M1319;Doordeweeks;385;610362;131;18:24:00;Haarlem Station;IJmuiden Dennekoplaan;18:56:00;Haarlem;Normaal
 M1319;Doordeweeks;MAT;610362;;18:56:00;IJmuiden Dennekoplaan;Haarlem Garage;19:18:00;Haarlem;Normaal
 M1321;Doordeweeks;MAT;610806;;11:44:00;Haarlem Garage;Haarlem Station;11:56:00;Haarlem;Normaal
 M1321;Doordeweeks;385;610302;65;11:59:00;Haarlem Station;IJmuiden Dennekoplaan;12:33:00;Haarlem;Normaal
-M1321;Doordeweeks;385;610308;74;12:38:00;IJmuiden Dennekoplaan;Haarlem Station;13:12:00;Haarlem;Normaal
+GM1229;Doordeweeks;385;610309;12;06:28:00;IJmuiden Dennekoplaan;Haarlem Station;07:01:00;Haarlem;Normaal
 M1321;Doordeweeks;385;610308;75;13:14:00;Haarlem Station;Haarlem Delftplein;13:24:00;Haarlem;Normaal
 M1321;Doordeweeks;73;610513;84;14:06:00;Haarlem Delftplein;Schalkwijk Centrum;14:49:00;Haarlem;Normaal
 M1321;Doordeweeks;3;610542;73;14:55:00;Schalkwijk Centrum;IJmuiden Rotonde Stadspark;16:06:00;Haarlem;Normaal
@@ -1375,7 +1375,7 @@ M1327;Doordeweeks;71;920544;44;15:24:00;Uitgeest Station;Beverwijk Station;15:50
 M1327;Doordeweeks;73;920544;100;15:53:00;Beverwijk Station;Schalkwijk Centrum;16:56:00;Haarlem;Normaal
 M1327;Doordeweeks;3;610542;97;17:28:00;Schalkwijk Centrum;Haarlem Station;18:00:00;Haarlem;Normaal
 M1327;Doordeweeks;385;610311;127;18:04:00;Haarlem Station;IJmuiden Dennekoplaan;18:36:00;Haarlem;Normaal
-M1327;Doordeweeks;385;610311;140;18:41:00;IJmuiden Dennekoplaan;Haarlem Station;19:11:00;Haarlem;Normaal
+GM1217;Doordeweeks;385;610361;10;06:20:00;IJmuiden Dennekoplaan;Haarlem Station;06:52:00;Haarlem;Normaal
 M1327;Doordeweeks;385;610311;141;19:14:00;Haarlem Station;IJmuiden Dennekoplaan;19:44:00;Haarlem;Normaal
 M1327;Doordeweeks;MAT;610311;;19:44:00;IJmuiden Dennekoplaan;Haarlem Garage;20:05:00;Haarlem;Normaal
 M1329;Doordeweeks;MAT;610510;;12:35:00;Haarlem Garage;Schalkwijk Centrum;12:52:00;Haarlem;Normaal
@@ -1395,11 +1395,11 @@ P1442;Doordeweeks;385;610361;123;17:44:00;Haarlem Station;IJmuiden Dennekoplaan;
 P1442;Doordeweeks;MAT;610361;;18:16:00;IJmuiden Dennekoplaan;Haarlem Garage;18:38:00;Haarlem;Normaal
 P1462;Doordeweeks;Pass.;610361;;14:29:00;Haarlem Garage;Haarlem Delftplein;14:40:00;Haarlem;Normaal
 P1462;Doordeweeks;MAT;610310;;14:42:00;Haarlem Delftplein;IJmuiden Dennekoplaan;14:57:00;Haarlem;Normaal
-P1462;Doordeweeks;385;610310;96;14:57:00;IJmuiden Dennekoplaan;Haarlem Station;15:31:00;Haarlem;Normaal
+V1033;Doordeweeks;385;610307;8;06:10:00;IJmuiden Dennekoplaan;Haarlem Station;06:42:00;Haarlem;Normaal
 P1462;Doordeweeks;385;610310;97;15:34:00;Haarlem Station;IJmuiden Dennekoplaan;16:08:00;Haarlem;Normaal
 P1462;Doordeweeks;382;610310;117;16:13:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;16:58:00;Haarlem;Normaal
 P1462;Doordeweeks;382;610310;122;17:01:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;17:37:00;Haarlem;Normaal
-P1462;Doordeweeks;385;610310;136;18:21:00;IJmuiden Dennekoplaan;Haarlem Station;18:51:00;Haarlem;Normaal
+V1029;Doordeweeks;385;610305;6;06:02:00;IJmuiden Dennekoplaan;Haarlem Station;06:32:00;Haarlem;Normaal
 P1462;Doordeweeks;81;610203;2554;18:54:00;Haarlem Station;Zandvoort Busstation;19:23:00;Haarlem;Normaal
 P1462;Doordeweeks;81;610203;2553;19:25:00;Zandvoort Busstation;Haarlem Station;20:04:00;Haarlem;Normaal
 P1462;Doordeweeks;MAT;610203;;20:04:00;Haarlem Station;Haarlem Garage;20:17:00;Haarlem;Normaal
@@ -1626,11 +1626,11 @@ L1522;Doordeweeks;MAT;610406;;19:14:00;Amsterdam Busstation Elandsgracht;Haarlem
 L1522;Doordeweeks;MAT;610801;;20:04:00;Haarlem Garage;IJmuiden Dennekoplaan;20:25:00;Haarlem;Normaal
 L1522;Doordeweeks;382;610342;159;20:27:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;21:02:00;Haarlem;Normaal
 L1522;Doordeweeks;382;610342;164;21:06:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;21:42:00;Haarlem;Normaal
-L1522;Doordeweeks;385;610312;170;22:15:00;IJmuiden Dennekoplaan;Haarlem Station;22:43:00;Haarlem;Normaal
+V1017;Doordeweeks;385;610302;4;05:52:00;IJmuiden Dennekoplaan;Haarlem Station;06:22:00;Haarlem;Normaal
 L1522;Doordeweeks;385;610312;171;22:45:00;Haarlem Station;IJmuiden Dennekoplaan;23:14:00;Haarlem;Normaal
-L1522;Doordeweeks;385;610312;178;23:16:00;IJmuiden Dennekoplaan;Haarlem Station;23:44:00;Haarlem;Normaal
+V1009;Vrijdag;385;610301;2;05:42:00;IJmuiden Dennekoplaan;Haarlem Station;06:12:00;Haarlem;Normaal
 L1522;Doordeweeks;385;610312;179;23:46:00;Haarlem Station;IJmuiden Dennekoplaan;00:15:00;Haarlem;Normaal
-L1522;Doordeweeks;385;610312;186;00:17:00;IJmuiden Dennekoplaan;Haarlem Station;00:45:00;Haarlem;Normaal
+V1009;Maandag t/m donderdag;385;610301;2;05:42:00;IJmuiden Dennekoplaan;Haarlem Station;06:12:00;Haarlem;Normaal
 L1522;Doordeweeks;MAT;610312;;00:45:00;Haarlem Station;Haarlem Garage;00:57:00;Haarlem;Normaal
 V1523;Doordeweeks;MAT;610223;;06:25:00;Haarlem Garage;Haarlem Delftplein;06:33:00;Haarlem;Normaal
 V1523;Doordeweeks;2;610223;4;06:33:00;Haarlem Delftplein;Haarlem Station Spaarnwoude;07:13:00;Haarlem;Normaal
@@ -1710,7 +1710,7 @@ V1533;Doordeweeks;80;610441;575;14:55:00;Zandvoort Busstation;Haarlem Station Sp
 V1533;Doordeweeks;MAT;610807;;15:31:00;Haarlem Station Spaarnwoude;Haarlem Garage;15:40:00;Haarlem;Normaal
 GM1541;Doordeweeks;MAT;610308;;05:52:00;Haarlem Garage;Haarlem Station;06:04:00;Haarlem;Normaal
 GM1541;Doordeweeks;385;610308;3;06:04:00;Haarlem Station;IJmuiden Dennekoplaan;06:32:00;Haarlem;Normaal
-GM1541;Doordeweeks;385;610308;14;06:38:00;IJmuiden Dennekoplaan;Haarlem Station;07:11:00;Haarlem;Normaal
+L1068;Doordeweeks;385;610304;190;00:48:00;IJmuiden Dennekoplaan;Haarlem Station;01:16:00;Haarlem;Normaal
 GM1541;Doordeweeks;385;610308;17;07:13:00;Haarlem Station;IJmuiden Dennekoplaan;07:43:00;Haarlem;Normaal
 GM1541;Doordeweeks;382;610308;35;07:45:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;08:25:00;Haarlem;Normaal
 GM1541;Doordeweeks;382;610308;40;08:29:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;09:09:00;Haarlem;Normaal
@@ -1794,7 +1794,7 @@ G1551;Doordeweeks;2;610224;48;17:39:00;Haarlem Delftplein;Haarlem Station Spaarn
 G1551;Doordeweeks;MAT;610802;;18:27:00;Haarlem Station Spaarnwoude;Haarlem Garage;18:36:00;Haarlem;Normaal
 G1553;Doordeweeks;MAT;610362;;07:50:00;Haarlem Garage;Haarlem Station;08:04:00;Haarlem;Normaal
 G1553;Doordeweeks;385;610362;27;08:04:00;Haarlem Station;IJmuiden Dennekoplaan;08:36:00;Haarlem;Normaal
-G1553;Doordeweeks;385;610362;38;08:38:00;IJmuiden Dennekoplaan;Haarlem Station;09:12:00;Haarlem;Normaal
+L1074;Doordeweeks;385;610307;188;00:33:00;IJmuiden Dennekoplaan;Haarlem Station;01:01:00;Haarlem;Normaal
 G1553;Doordeweeks;MAT;610803;;11:03:00;Haarlem Station;Haarlem Garage;11:15:00;Haarlem;Normaal
 G1553;Doordeweeks;MAT;610809;;15:03:00;Haarlem Garage;Haarlem Station Spaarnwoude;15:12:00;Haarlem;Normaal
 G1553;Doordeweeks;80;610407;573;15:14:00;Haarlem Station Spaarnwoude;Amsterdam Busstation Elandsgracht;15:51:00;Haarlem;Normaal
@@ -1850,9 +1850,9 @@ P5002;Vrijdag;2;610224;53;18:31:00;Haarlem Station Spaarnwoude;Haarlem Delftplei
 P5002;Vrijdag;2;610224;54;19:16:00;Haarlem Delftplein;Haarlem Station Spaarnwoude;19:55:00;Haarlem;Normaal
 P5002;Vrijdag;MAT;610819;;20:01:00;Haarlem Station Spaarnwoude;Haarlem Garage;20:10:00;Haarlem;Normaal
 L5040;Vrijdag;MAT;610361;;15:25:00;Haarlem Garage;IJmuiden Dennekoplaan;15:47:00;Haarlem;Normaal
-L5040;Vrijdag;385;610361;106;15:47:00;IJmuiden Dennekoplaan;Haarlem Station;16:21:00;Haarlem;Normaal
+L1522;Doordeweeks;385;610312;186;00:17:00;IJmuiden Dennekoplaan;Haarlem Station;00:45:00;Haarlem;Normaal
 L5040;Vrijdag;385;610361;107;16:24:00;Haarlem Station;IJmuiden Dennekoplaan;16:58:00;Haarlem;Normaal
-L5040;Vrijdag;385;610361;122;17:07:00;IJmuiden Dennekoplaan;Haarlem Station;17:41:00;Haarlem;Normaal
+L1058;Doordeweeks;385;610302;184;00:02:00;IJmuiden Dennekoplaan;Haarlem Station;00:30:00;Haarlem;Normaal
 L5040;Vrijdag;3;610542;97;18:03:00;Haarlem Station;IJmuiden Rotonde Stadspark;18:36:00;Haarlem;Normaal
 L5040;Vrijdag;3;610542;116;18:38:00;IJmuiden Rotonde Stadspark;Schalkwijk Centrum;19:37:00;Haarlem;Normaal
 L5040;Vrijdag;73;610507;145;19:48:00;Schalkwijk Centrum;Beverwijk Station;20:35:00;Haarlem;Normaal
@@ -1941,11 +1941,11 @@ M9502;Doordeweeks;80;610405;594;17:13:00;Haarlem Station Spaarnwoude;Zandvoort B
 M9502;Doordeweeks;80;610405;599;17:57:00;Zandvoort Busstation;Haarlem Station Spaarnwoude;18:28:00;Haarlem;Normaal
 M9502;Doordeweeks;MAT;610804;;18:30:00;Haarlem Station Spaarnwoude;Haarlem Garage;18:39:00;Haarlem;Normaal
 V6001;ZA;MAT;610302;;05:35:00;Haarlem Garage;IJmuiden Dennekoplaan;05:57:00;Haarlem;Normaal
-V6001;ZA;385;610302;6002;05:57:00;IJmuiden Dennekoplaan;Haarlem Station;06:25:00;Haarlem;Normaal
+N6904;ZA;385;610311;6142;23:50:00;IJmuiden Dennekoplaan;Haarlem Station;00:20:00;Haarlem;Normaal
 V6001;ZA;385;610302;6003;06:27:00;Haarlem Station;IJmuiden Dennekoplaan;06:54:00;Haarlem;Normaal
-V6001;ZA;385;610302;6008;06:56:00;IJmuiden Dennekoplaan;Haarlem Station;07:24:00;Haarlem;Normaal
+L6062;ZA;385;610314;6140;23:31:00;IJmuiden Dennekoplaan;Haarlem Station;00:01:00;Haarlem;Normaal
 V6001;ZA;385;610302;6009;07:26:00;Haarlem Station;IJmuiden Dennekoplaan;07:53:00;Haarlem;Normaal
-V6001;ZA;385;610301;6018;08:10:00;IJmuiden Dennekoplaan;Haarlem Station;08:42:00;Haarlem;Normaal
+L6046;ZA;385;610307;6136;23:20:00;Haarlem Delftplein;Haarlem Station;23:31:00;Haarlem;Normaal
 V6001;ZA;385;610301;6019;08:44:00;Haarlem Station;IJmuiden Dennekoplaan;09:13:00;Haarlem;Normaal
 V6001;ZA;74;920715;6009;09:38:00;IJmuiden Dennekoplaan;Beverwijk Station;10:04:00;Haarlem;Normaal
 V6001;ZA;75;920715;6007;10:07:00;Beverwijk Station;Wijk aan Zee Julianaplein;10:30:00;Haarlem;Normaal
@@ -1966,9 +1966,9 @@ L6002;ZA;Pass.;610806;;19:41:00;Haarlem Garage;Schalkwijk Centrum;19:54:00;Haarl
 L6002;ZA;MAT;610804;;19:55:00;Schalkwijk Centrum;Haarlem Garage;20:08:00;Haarlem;Normaal
 V6003;ZA;MAT;610303;;05:44:00;Haarlem Garage;Haarlem Station;05:57:00;Haarlem;Normaal
 V6003;ZA;385;610303;6001;05:57:00;Haarlem Station;IJmuiden Dennekoplaan;06:24:00;Haarlem;Normaal
-V6003;ZA;385;610303;6004;06:27:00;IJmuiden Dennekoplaan;Haarlem Station;06:55:00;Haarlem;Normaal
+L6064;ZA;385;610305;6138;23:16:00;IJmuiden Dennekoplaan;Haarlem Station;23:46:00;Haarlem;Normaal
 V6003;ZA;385;610303;6005;06:57:00;Haarlem Station;IJmuiden Dennekoplaan;07:24:00;Haarlem;Normaal
-V6003;ZA;385;610303;6012;07:27:00;IJmuiden Dennekoplaan;Haarlem Station;07:57:00;Haarlem;Normaal
+N6904;ZA;385;610311;6134;23:05:00;Haarlem Delftplein;Haarlem Station;23:16:00;Haarlem;Normaal
 V6003;ZA;385;610303;6013;07:59:00;Haarlem Station;IJmuiden Dennekoplaan;08:28:00;Haarlem;Normaal
 V6003;ZA;Pass.;610303;;08:46:00;IJmuiden Dennekoplaan;Haarlem Garage;09:08:00;Haarlem;Normaal
 V6003;ZA;MAT;610509;;09:10:00;Haarlem Garage;Haarlem Station;09:23:00;Haarlem;Normaal
@@ -1995,7 +1995,7 @@ V6005;ZA;MAT;610304;;05:45:00;Haarlem Garage;IJmuiden Dennekoplaan;06:07:00;Haar
 V6005;ZA;382;610304;6003;06:07:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;06:44:00;Haarlem;Normaal
 V6005;ZA;382;610304;6004;06:47:00;Amsterdam Sloterdijk;IJmuiden Seaport;07:31:00;Haarlem;Normaal
 V6005;ZA;MAT;610304;;07:31:00;IJmuiden Seaport;IJmuiden Dennekoplaan;07:38:00;Haarlem;Normaal
-V6005;ZA;385;610302;6016;07:55:00;IJmuiden Dennekoplaan;Haarlem Station;08:27:00;Haarlem;Normaal
+L6052;ZA;385;610314;6132;22:27:00;IJmuiden Dennekoplaan;Haarlem Station;22:57:00;Haarlem;Normaal
 V6005;ZA;385;610302;6017;08:29:00;Haarlem Station;IJmuiden Dennekoplaan;08:58:00;Haarlem;Normaal
 V6005;ZA;74;920714;6007;09:08:00;IJmuiden Dennekoplaan;Heemskerk Centrum;09:50:00;Haarlem;Normaal
 V6005;ZA;72;920714;6004;09:51:00;Heemskerk Centrum;Beverwijk Station;10:23:00;Haarlem;Normaal
@@ -2039,7 +2039,7 @@ V6009;ZA;MAT;610305;;06:15:00;Haarlem Garage;IJmuiden Dennekoplaan;06:37:00;Haar
 V6009;ZA;382;610305;6005;06:37:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;07:14:00;Haarlem;Normaal
 V6009;ZA;382;610305;6006;07:17:00;Amsterdam Sloterdijk;IJmuiden Seaport;08:01:00;Haarlem;Normaal
 V6009;ZA;MAT;610305;;08:01:00;IJmuiden Seaport;IJmuiden Dennekoplaan;08:08:00;Haarlem;Normaal
-V6009;ZA;385;610304;6022;08:40:00;IJmuiden Dennekoplaan;Haarlem Station;09:12:00;Haarlem;Normaal
+L6056;ZA;385;610305;6130;22:12:00;IJmuiden Dennekoplaan;Haarlem Station;22:42:00;Haarlem;Normaal
 V6009;ZA;385;610304;6023;09:14:00;Haarlem Station;IJmuiden Dennekoplaan;09:43:00;Haarlem;Normaal
 V6009;ZA;385;610304;6032;09:55:00;IJmuiden Dennekoplaan;Haarlem Delftplein;10:14:00;Haarlem;Normaal
 V6009;ZA;14;920712;6006;10:21:00;Haarlem Delftplein;Heemstede Station;11:00:00;Haarlem;Normaal
@@ -2057,7 +2057,7 @@ L6010;ZA;74;610733;6034;15:37:00;Heemskerk Centrum;IJmuiden Dennekoplaan;16:22:0
 L6010;ZA;74;610733;6037;16:36:00;IJmuiden Dennekoplaan;Beverwijk Station;17:03:00;Haarlem;Normaal
 L6010;ZA;73;610504;6082;17:11:00;Beverwijk Station;Haarlem Delftplein;17:25:00;Haarlem;Normaal
 L6010;ZA;385;610306;6091;17:55:00;Haarlem Delftplein;IJmuiden Dennekoplaan;18:17:00;Haarlem;Normaal
-L6010;ZA;385;610306;6100;18:25:00;IJmuiden Dennekoplaan;Haarlem Station;18:57:00;Haarlem;Normaal
+L6026;ZA;385;610307;6128;21:57:00;IJmuiden Dennekoplaan;Haarlem Station;22:27:00;Haarlem;Normaal
 L6010;ZA;385;610306;6101;18:59:00;Haarlem Station;IJmuiden Dennekoplaan;19:30:00;Haarlem;Normaal
 L6010;ZA;MAT;610306;;20:27:00;IJmuiden Dennekoplaan;IJmuiden Seaport;20:34:00;Haarlem;Normaal
 L6010;ZA;382;610306;6095;20:34:00;IJmuiden Seaport;Amsterdam Sloterdijk;21:17:00;Haarlem;Normaal
@@ -2067,9 +2067,9 @@ V6011;ZA;MAT;610502;;06:17:00;Haarlem Garage;IJmuiden Rotonde Stadspark;06:36:00
 V6011;ZA;3;610502;6002;06:36:00;IJmuiden Rotonde Stadspark;Schalkwijk Centrum;07:29:00;Haarlem;Normaal
 V6011;ZA;73;920543;6007;07:46:00;Schalkwijk Centrum;Haarlem Delftplein;08:19:00;Haarlem;Normaal
 V6011;ZA;385;610306;6015;08:24:00;Haarlem Delftplein;IJmuiden Dennekoplaan;08:43:00;Haarlem;Normaal
-V6011;ZA;385;610306;6024;08:55:00;IJmuiden Dennekoplaan;Haarlem Station;09:27:00;Haarlem;Normaal
+L6038;ZA;385;610309;6122;21:31:00;Haarlem Delftplein;Haarlem Station;21:42:00;Haarlem;Normaal
 V6011;ZA;385;610306;6025;09:29:00;Haarlem Station;IJmuiden Dennekoplaan;09:58:00;Haarlem;Normaal
-V6011;ZA;385;610305;6038;10:40:00;IJmuiden Dennekoplaan;Haarlem Station;11:12:00;Haarlem;Normaal
+L6060;ZA;385;610303;6124;21:27:00;IJmuiden Dennekoplaan;Haarlem Station;21:57:00;Haarlem;Normaal
 V6011;ZA;385;610305;6039;11:14:00;Haarlem Station;Haarlem Delftplein;11:24:00;Haarlem;Normaal
 V6011;ZA;73;610519;6038;11:55:00;Haarlem Delftplein;Schalkwijk Centrum;12:33:00;Haarlem;Normaal
 V6011;ZA;3;610515;6047;12:43:00;Schalkwijk Centrum;Haarlem Delftplein;13:27:00;Haarlem;Normaal
@@ -2100,9 +2100,9 @@ L6014;ZA;14;610103;6024;19:39:00;Haarlem Delftplein;Heemstede Station;20:10:00;H
 L6014;ZA;14;610103;6023;20:12:00;Heemstede Station;Haarlem Delftplein;20:46:00;Haarlem;Normaal
 L6014;ZA;MAT;610803;;20:48:00;Haarlem Delftplein;Haarlem Garage;20:57:00;Haarlem;Normaal
 V6015;ZA;MAT;610306;;06:20:00;Haarlem Garage;IJmuiden Dennekoplaan;06:42:00;Haarlem;Normaal
-V6015;ZA;385;610306;6006;06:42:00;IJmuiden Dennekoplaan;Haarlem Station;07:10:00;Haarlem;Normaal
+L6052;ZA;385;610314;6120;20:57:00;IJmuiden Dennekoplaan;Haarlem Station;21:27:00;Haarlem;Normaal
 V6015;ZA;385;610306;6007;07:12:00;Haarlem Station;IJmuiden Dennekoplaan;07:39:00;Haarlem;Normaal
-V6015;ZA;385;610306;6014;07:41:00;IJmuiden Dennekoplaan;Haarlem Station;08:12:00;Haarlem;Normaal
+L6056;ZA;385;610305;6116;20:27:00;IJmuiden Dennekoplaan;Haarlem Station;20:57:00;Haarlem;Normaal
 V6015;ZA;385;610306;6015;08:14:00;Haarlem Station;Haarlem Delftplein;08:23:00;Haarlem;Normaal
 V6015;ZA;MAT;610803;;08:25:00;Haarlem Delftplein;Haarlem Garage;08:34:00;Haarlem;Normaal
 V6015;ZA;MAT;610542;;08:42:00;Haarlem Garage;Schalkwijk Centrum;08:56:00;Haarlem;Normaal
@@ -2142,7 +2142,7 @@ L6018;ZA;MAT;610807;;14:14:00;Haarlem Garage;Haarlem Delftplein;14:23:00;Haarlem
 L6018;ZA;385;610306;6063;14:25:00;Haarlem Delftplein;IJmuiden Dennekoplaan;14:47:00;Haarlem;Normaal
 L6018;ZA;382;610306;6059;14:54:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;15:32:00;Haarlem;Normaal
 L6018;ZA;382;610306;6060;15:36:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;16:15:00;Haarlem;Normaal
-L6018;ZA;385;610302;6084;16:22:00;IJmuiden Dennekoplaan;Haarlem Station;16:57:00;Haarlem;Normaal
+L6060;ZA;385;610307;6114;20:12:00;IJmuiden Dennekoplaan;Haarlem Station;20:42:00;Haarlem;Normaal
 L6018;ZA;385;610302;6085;16:59:00;Haarlem Station;IJmuiden Dennekoplaan;17:32:00;Haarlem;Normaal
 L6018;ZA;74;920714;6041;17:36:00;IJmuiden Dennekoplaan;Beverwijk Station;18:03:00;Haarlem;Normaal
 L6018;ZA;78;920711;6023;18:49:00;Beverwijk Station;Wijk aan Zee Julianaplein;19:01:00;Haarlem;Normaal
@@ -2153,9 +2153,9 @@ V6019;ZA;MAT;610307;;06:40:00;Haarlem Garage;IJmuiden Seaport;07:02:00;Haarlem;N
 V6019;ZA;382;610307;6007;07:02:00;IJmuiden Seaport;Amsterdam Sloterdijk;07:46:00;Haarlem;Normaal
 V6019;ZA;382;610307;6008;07:49:00;Amsterdam Sloterdijk;IJmuiden Seaport;08:33:00;Haarlem;Normaal
 V6019;ZA;MAT;610307;;08:33:00;IJmuiden Seaport;IJmuiden Dennekoplaan;08:40:00;Haarlem;Normaal
-V6019;ZA;385;610305;6026;09:10:00;IJmuiden Dennekoplaan;Haarlem Station;09:42:00;Haarlem;Normaal
+L6024;ZA;385;610311;6110;20:01:00;Haarlem Delftplein;Haarlem Station;20:12:00;Haarlem;Normaal
 V6019;ZA;385;610305;6027;09:44:00;Haarlem Station;IJmuiden Dennekoplaan;10:14:00;Haarlem;Normaal
-V6019;ZA;385;610306;6036;10:25:00;IJmuiden Dennekoplaan;Haarlem Station;10:57:00;Haarlem;Normaal
+L6048;ZA;385;610309;6112;19:56:00;IJmuiden Dennekoplaan;Haarlem Station;20:27:00;Haarlem;Normaal
 V6019;ZA;385;610306;6037;10:59:00;Haarlem Station;IJmuiden Dennekoplaan;11:30:00;Haarlem;Normaal
 V6019;ZA;74;920731;6017;11:38:00;IJmuiden Dennekoplaan;Beverwijk Station;12:04:00;Haarlem;Normaal
 V6019;ZA;74;920731;6020;12:27:00;Beverwijk Station;IJmuiden Dennekoplaan;12:53:00;Haarlem;Normaal
@@ -2193,7 +2193,7 @@ V6021;ZA;MAT;610103;;14:41:00;Haarlem Delftplein;Haarlem Garage;14:50:00;Haarlem
 L6022;ZA;MAT;610806;;15:07:00;Haarlem Garage;Haarlem Station Spaarnwoude;15:16:00;Haarlem;Normaal
 L6022;ZA;2;610222;6031;15:19:00;Haarlem Station Spaarnwoude;Haarlem Delftplein;16:05:00;Haarlem;Normaal
 L6022;ZA;385;610310;6077;16:10:00;Haarlem Delftplein;IJmuiden Dennekoplaan;16:32:00;Haarlem;Normaal
-L6022;ZA;385;610305;6086;16:37:00;IJmuiden Dennekoplaan;Haarlem Station;17:12:00;Haarlem;Normaal
+L6056;ZA;385;610314;6106;19:10:00;IJmuiden Dennekoplaan;Haarlem Station;19:42:00;Haarlem;Normaal
 L6022;ZA;385;610305;6087;17:14:00;Haarlem Station;IJmuiden Dennekoplaan;17:47:00;Haarlem;Normaal
 L6022;ZA;382;610315;6083;17:56:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;18:32:00;Haarlem;Normaal
 L6022;ZA;MAT;610315;;18:32:00;Amsterdam Sloterdijk;Haarlem Garage;18:57:00;Haarlem;Normaal
@@ -2221,21 +2221,21 @@ L6024;ZA;MAT;610541;;16:41:00;Haarlem Station;Schalkwijk Centrum;16:54:00;Haarle
 L6024;ZA;73;610541;6081;16:55:00;Schalkwijk Centrum;Beverwijk Station;17:49:00;Haarlem;Normaal
 L6024;ZA;73;920543;6088;17:56:00;Beverwijk Station;Schalkwijk Centrum;18:45:00;Haarlem;Normaal
 L6024;ZA;3;610519;6099;19:17:00;Schalkwijk Centrum;Haarlem Delftplein;19:57:00;Haarlem;Normaal
-L6024;ZA;385;610311;6110;20:01:00;Haarlem Delftplein;Haarlem Station;20:12:00;Haarlem;Normaal
+L6052;ZA;385;610307;6104;18:55:00;IJmuiden Dennekoplaan;Haarlem Station;19:27:00;Haarlem;Normaal
 L6024;ZA;385;610311;6111;20:14:00;Haarlem Station;IJmuiden Dennekoplaan;20:44:00;Haarlem;Normaal
 L6024;ZA;382;610313;6097;21:11:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;21:47:00;Haarlem;Normaal
 L6024;ZA;382;610313;6096;21:51:00;Amsterdam Sloterdijk;IJmuiden Seaport;22:32:00;Haarlem;Normaal
 L6024;ZA;MAT;610313;;22:32:00;IJmuiden Seaport;Haarlem Garage;22:54:00;Haarlem;Normaal
 V6025;ZA;MAT;610308;;06:52:00;Haarlem Garage;IJmuiden Dennekoplaan;07:14:00;Haarlem;Normaal
-V6025;ZA;385;610308;6010;07:14:00;IJmuiden Dennekoplaan;Haarlem Station;07:42:00;Haarlem;Normaal
+M6331;ZA;385;610304;6102;18:40:00;IJmuiden Dennekoplaan;Haarlem Station;19:12:00;Haarlem;Normaal
 V6025;ZA;385;610308;6011;07:44:00;Haarlem Station;IJmuiden Dennekoplaan;08:12:00;Haarlem;Normaal
 V6025;ZA;MAT;610308;;08:56:00;IJmuiden Dennekoplaan;IJmuiden Seaport;09:03:00;Haarlem;Normaal
 V6025;ZA;382;610308;6015;09:04:00;IJmuiden Seaport;Amsterdam Sloterdijk;09:48:00;Haarlem;Normaal
 V6025;ZA;382;610308;6016;09:51:00;Amsterdam Sloterdijk;IJmuiden Seaport;10:35:00;Haarlem;Normaal
 V6025;ZA;MAT;610308;;10:35:00;IJmuiden Seaport;IJmuiden Dennekoplaan;10:42:00;Haarlem;Normaal
-V6025;ZA;385;610308;6040;10:54:00;IJmuiden Dennekoplaan;Haarlem Station;11:27:00;Haarlem;Normaal
+L6010;ZA;385;610306;6100;18:25:00;IJmuiden Dennekoplaan;Haarlem Station;18:57:00;Haarlem;Normaal
 V6025;ZA;385;610308;6041;11:29:00;Haarlem Station;IJmuiden Dennekoplaan;12:00:00;Haarlem;Normaal
-V6025;ZA;385;610308;6050;12:08:00;IJmuiden Dennekoplaan;Haarlem Station;12:42:00;Haarlem;Normaal
+L6048;ZA;385;610311;6096;17:55:00;IJmuiden Dennekoplaan;Haarlem Station;18:27:00;Haarlem;Normaal
 V6025;ZA;385;610308;6051;12:44:00;Haarlem Station;Haarlem Delftplein;12:54:00;Haarlem;Normaal
 V6025;ZA;3;610501;6052;13:15:00;Haarlem Delftplein;Schalkwijk Centrum;14:01:00;Haarlem;Normaal
 V6025;ZA;3;610521;6059;14:13:00;Schalkwijk Centrum;Haarlem Delftplein;14:57:00;Haarlem;Normaal
@@ -2249,7 +2249,7 @@ L6026;ZA;73;610504;6108;19:38:00;Castricum Station;Beverwijk Station;20:01:00;Ha
 L6026;ZA;75;610733;6029;20:41:00;Beverwijk Station;Wijk aan Zee Julianaplein;21:00:00;Haarlem;Normaal
 L6026;ZA;75;610733;6028;21:01:00;Wijk aan Zee Julianaplein;Beverwijk Station;21:19:00;Haarlem;Normaal
 L6026;ZA;74;920711;6052;21:27:00;Beverwijk Station;IJmuiden Dennekoplaan;21:49:00;Haarlem;Normaal
-L6026;ZA;385;610307;6128;21:57:00;IJmuiden Dennekoplaan;Haarlem Station;22:27:00;Haarlem;Normaal
+P6480;ZA;385;610309;6094;17:39:00;IJmuiden Dennekoplaan;Haarlem Station;18:12:00;Haarlem;Normaal
 L6026;ZA;385;610307;6129;22:29:00;Haarlem Station;IJmuiden Dennekoplaan;22:59:00;Haarlem;Normaal
 L6026;ZA;385;610307;6136;23:01:00;IJmuiden Dennekoplaan;Haarlem Delftplein;23:19:00;Haarlem;Normaal
 L6026;ZA;MAT;610803;;23:21:00;Haarlem Delftplein;Haarlem Garage;23:30:00;Haarlem;Normaal
@@ -2267,7 +2267,7 @@ V6027;ZA;2;610222;6026;14:08:00;Haarlem Delftplein;Haarlem Station Spaarnwoude;1
 V6027;ZA;MAT;610801;;14:58:00;Haarlem Station Spaarnwoude;Haarlem Garage;15:07:00;Haarlem;Normaal
 L6028;ZA;MAT;610807;;15:29:00;Haarlem Garage;Haarlem Delftplein;15:38:00;Haarlem;Normaal
 L6028;ZA;385;610307;6073;15:40:00;Haarlem Delftplein;IJmuiden Dennekoplaan;16:02:00;Haarlem;Normaal
-L6028;ZA;385;610309;6082;16:07:00;IJmuiden Dennekoplaan;Haarlem Station;16:42:00;Haarlem;Normaal
+L6056;ZA;385;610303;6092;17:24:00;IJmuiden Dennekoplaan;Haarlem Station;17:57:00;Haarlem;Normaal
 L6028;ZA;385;610309;6083;16:44:00;Haarlem Station;IJmuiden Dennekoplaan;17:17:00;Haarlem;Normaal
 L6028;ZA;382;610310;6079;17:24:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;18:01:00;Haarlem;Normaal
 L6028;ZA;382;610310;6080;18:06:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;18:41:00;Haarlem;Normaal
@@ -2290,13 +2290,13 @@ V6029;ZA;73;610518;6019;09:22:00;Beverwijk Station;Castricum Station;09:48:00;Ha
 V6029;ZA;73;610518;6030;10:16:00;Castricum Station;Schalkwijk Centrum;11:32:00;Haarlem;Normaal
 V6029;ZA;3;610505;6039;11:43:00;Schalkwijk Centrum;Haarlem Delftplein;12:27:00;Haarlem;Normaal
 V6029;ZA;385;610308;6051;12:55:00;Haarlem Delftplein;IJmuiden Dennekoplaan;13:16:00;Haarlem;Normaal
-V6029;ZA;385;610308;6060;13:23:00;IJmuiden Dennekoplaan;Haarlem Station;13:57:00;Haarlem;Normaal
+D6325;ZA;385;610306;6090;17:07:00;IJmuiden Dennekoplaan;Haarlem Station;17:42:00;Haarlem;Normaal
 V6029;ZA;385;610308;6061;13:59:00;Haarlem Station;IJmuiden Dennekoplaan;14:32:00;Haarlem;Normaal
 V6029;ZA;MAT;610805;;14:35:00;IJmuiden Dennekoplaan;Haarlem Garage;14:58:00;Haarlem;Normaal
 L6030;ZA;MAT;610808;;15:48:00;Haarlem Garage;Haarlem Delftplein;15:57:00;Haarlem;Normaal
-L6030;ZA;385;610304;6078;15:59:00;Haarlem Delftplein;Haarlem Station;16:12:00;Haarlem;Normaal
-L6030;ZA;385;610304;6079;16:14:00;Haarlem Station;IJmuiden Dennekoplaan;16:47:00;Haarlem;Normaal
 L6030;ZA;385;610304;6088;16:52:00;IJmuiden Dennekoplaan;Haarlem Station;17:27:00;Haarlem;Normaal
+L6030;ZA;385;610304;6079;16:14:00;Haarlem Station;IJmuiden Dennekoplaan;16:47:00;Haarlem;Normaal
+L6022;ZA;385;610305;6086;16:37:00;IJmuiden Dennekoplaan;Haarlem Station;17:12:00;Haarlem;Normaal
 L6030;ZA;385;610304;6089;17:29:00;Haarlem Station;IJmuiden Dennekoplaan;18:02:00;Haarlem;Normaal
 L6030;ZA;74;920712;6043;18:06:00;IJmuiden Dennekoplaan;Beverwijk Station;18:33:00;Haarlem;Normaal
 L6030;ZA;74;920712;6043;18:36:00;Beverwijk Station;Heemskerk Centrum;18:51:00;Haarlem;Normaal
@@ -2367,9 +2367,9 @@ V6035;ZA;73;610517;6029;10:23:00;Schalkwijk Centrum;Beverwijk Station;11:19:00;H
 V6035;ZA;72;920716;6011;12:05:00;Beverwijk Station;Heemskerk Centrum;12:32:00;Haarlem;Normaal
 V6035;ZA;74;920716;6022;12:37:00;Heemskerk Centrum;Beverwijk Station;12:53:00;Haarlem;Normaal
 V6035;ZA;74;920715;6024;13:27:00;Beverwijk Station;IJmuiden Dennekoplaan;13:53:00;Haarlem;Normaal
-V6035;ZA;385;610310;6066;14:07:00;IJmuiden Dennekoplaan;Haarlem Station;14:42:00;Haarlem;Normaal
+L6018;ZA;385;610302;6084;16:22:00;IJmuiden Dennekoplaan;Haarlem Station;16:57:00;Haarlem;Normaal
 V6035;ZA;385;610310;6067;14:44:00;Haarlem Station;IJmuiden Dennekoplaan;15:17:00;Haarlem;Normaal
-V6035;ZA;385;610310;6076;15:22:00;IJmuiden Dennekoplaan;Haarlem Station;15:57:00;Haarlem;Normaal
+L6028;ZA;385;610309;6082;16:07:00;IJmuiden Dennekoplaan;Haarlem Station;16:42:00;Haarlem;Normaal
 V6035;ZA;385;610310;6077;15:59:00;Haarlem Station;Haarlem Delftplein;16:09:00;Haarlem;Normaal
 V6035;ZA;MAT;610802;;16:11:00;Haarlem Delftplein;Haarlem Garage;16:20:00;Haarlem;Normaal
 L6036;ZA;MAT;610810;;16:07:00;Haarlem Garage;Haarlem Delftplein;16:16:00;Haarlem;Normaal
@@ -2393,9 +2393,9 @@ V6037;ZA;382;610310;6012;08:49:00;Amsterdam Sloterdijk;IJmuiden Seaport;09:33:00
 V6037;ZA;MAT;610310;;09:33:00;IJmuiden Seaport;IJmuiden Dennekoplaan;09:40:00;Haarlem;Normaal
 V6037;ZA;382;610311;6019;09:55:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;10:32:00;Haarlem;Normaal
 V6037;ZA;382;610311;6020;10:36:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;11:14:00;Haarlem;Normaal
-V6037;ZA;385;610307;6046;11:38:00;IJmuiden Dennekoplaan;Haarlem Station;12:12:00;Haarlem;Normaal
+L6030;ZA;385;610304;6078;15:59:00;Haarlem Delftplein;Haarlem Station;16:12:00;Haarlem;Normaal
 V6037;ZA;385;610307;6047;12:14:00;Haarlem Station;IJmuiden Dennekoplaan;12:45:00;Haarlem;Normaal
-V6037;ZA;385;610301;6056;12:53:00;IJmuiden Dennekoplaan;Haarlem Station;13:27:00;Haarlem;Normaal
+D6325;ZA;385;610312;6080;15:52:00;IJmuiden Dennekoplaan;Haarlem Station;16:27:00;Haarlem;Normaal
 V6037;ZA;385;610301;6057;13:29:00;Haarlem Station;IJmuiden Dennekoplaan;14:02:00;Haarlem;Normaal
 V6037;ZA;74;920711;6029;14:36:00;IJmuiden Dennekoplaan;Beverwijk Station;15:03:00;Haarlem;Normaal
 V6037;ZA;73;610502;6066;15:11:00;Beverwijk Station;Schalkwijk Centrum;16:03:00;Haarlem;Normaal
@@ -2407,7 +2407,7 @@ L6038;ZA;3;920544;6088;17:45:00;Haarlem Delftplein;Schalkwijk Centrum;18:27:00;H
 L6038;ZA;73;920544;6093;18:32:00;Schalkwijk Centrum;Haarlem Delftplein;19:08:00;Haarlem;Normaal
 L6038;ZA;3;920544;6100;19:12:00;Haarlem Delftplein;Schalkwijk Centrum;19:53:00;Haarlem;Normaal
 L6038;ZA;3;610516;6111;20:47:00;Schalkwijk Centrum;Haarlem Delftplein;21:27:00;Haarlem;Normaal
-L6038;ZA;385;610309;6122;21:31:00;Haarlem Delftplein;Haarlem Station;21:42:00;Haarlem;Normaal
+V6035;ZA;385;610310;6076;15:22:00;IJmuiden Dennekoplaan;Haarlem Station;15:57:00;Haarlem;Normaal
 L6038;ZA;385;610309;6123;21:44:00;Haarlem Station;IJmuiden Dennekoplaan;22:14:00;Haarlem;Normaal
 L6038;ZA;MAT;610302;;22:27:00;IJmuiden Dennekoplaan;IJmuiden Seaport;22:34:00;Haarlem;Normaal
 L6038;ZA;382;610302;6103;22:34:00;IJmuiden Seaport;Amsterdam Sloterdijk;23:17:00;Haarlem;Normaal
@@ -2446,7 +2446,7 @@ V6041;ZA;MAT;610310;;11:55:00;IJmuiden Dennekoplaan;IJmuiden Seaport;12:02:00;Ha
 V6041;ZA;382;610310;6037;12:02:00;IJmuiden Seaport;Amsterdam Sloterdijk;12:47:00;Haarlem;Normaal
 V6041;ZA;382;610310;6038;12:51:00;Amsterdam Sloterdijk;IJmuiden Seaport;13:36:00;Haarlem;Normaal
 V6041;ZA;MAT;610310;;13:36:00;IJmuiden Seaport;IJmuiden Dennekoplaan;13:43:00;Haarlem;Normaal
-V6041;ZA;385;610309;6068;14:22:00;IJmuiden Dennekoplaan;Haarlem Station;14:57:00;Haarlem;Normaal
+V6043;ZA;385;610301;6074;15:07:00;IJmuiden Dennekoplaan;Haarlem Station;15:42:00;Haarlem;Normaal
 V6041;ZA;385;610309;6069;14:59:00;Haarlem Station;IJmuiden Dennekoplaan;15:32:00;Haarlem;Normaal
 V6041;ZA;385;610304;6078;15:37:00;IJmuiden Dennekoplaan;Haarlem Delftplein;15:58:00;Haarlem;Normaal
 V6041;ZA;MAT;610808;;16:00:00;Haarlem Delftplein;Haarlem Garage;16:09:00;Haarlem;Normaal
@@ -2464,9 +2464,9 @@ L6042;ZA;MAT;610514;;00:03:00;IJmuiden Rotonde Stadspark;Haarlem Garage;00:22:00
 L6042;ZA;MAT;610802;;00:24:00;Haarlem Garage;Haarlem Delftplein;00:33:00;Haarlem;Normaal
 L6042;ZA;MAT;610802;;00:33:00;Haarlem Delftplein;Haarlem Garage;00:42:00;Haarlem;Normaal
 V6043;ZA;MAT;610311;;08:03:00;Haarlem Garage;IJmuiden Dennekoplaan;08:25:00;Haarlem;Normaal
-V6043;ZA;385;610311;6020;08:25:00;IJmuiden Dennekoplaan;Haarlem Station;08:57:00;Haarlem;Normaal
+D6303;ZA;385;610307;6072;14:52:00;IJmuiden Dennekoplaan;Haarlem Station;15:27:00;Haarlem;Normaal
 V6043;ZA;385;610311;6021;08:59:00;Haarlem Station;IJmuiden Dennekoplaan;09:28:00;Haarlem;Normaal
-V6043;ZA;385;610307;6030;09:40:00;IJmuiden Dennekoplaan;Haarlem Station;10:12:00;Haarlem;Normaal
+V6041;ZA;385;610309;6068;14:22:00;IJmuiden Dennekoplaan;Haarlem Station;14:57:00;Haarlem;Normaal
 V6043;ZA;385;610307;6031;10:14:00;Haarlem Station;IJmuiden Dennekoplaan;10:45:00;Haarlem;Normaal
 V6043;ZA;382;610303;6031;11:24:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;12:02:00;Haarlem;Normaal
 V6043;ZA;382;610303;6032;12:06:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;12:44:00;Haarlem;Normaal
@@ -2474,7 +2474,7 @@ V6043;ZA;MAT;610303;;12:55:00;IJmuiden Dennekoplaan;IJmuiden Seaport;13:02:00;Ha
 V6043;ZA;382;610303;6045;13:02:00;IJmuiden Seaport;Amsterdam Sloterdijk;13:47:00;Haarlem;Normaal
 V6043;ZA;382;610303;6046;13:51:00;Amsterdam Sloterdijk;IJmuiden Seaport;14:36:00;Haarlem;Normaal
 V6043;ZA;MAT;610303;;14:36:00;IJmuiden Seaport;IJmuiden Dennekoplaan;14:43:00;Haarlem;Normaal
-V6043;ZA;385;610301;6074;15:07:00;IJmuiden Dennekoplaan;Haarlem Station;15:42:00;Haarlem;Normaal
+V6035;ZA;385;610310;6066;14:07:00;IJmuiden Dennekoplaan;Haarlem Station;14:42:00;Haarlem;Normaal
 V6043;ZA;MAT;610802;;15:45:00;Haarlem Station;Haarlem Garage;15:57:00;Haarlem;Normaal
 L6044;ZA;MAT;610809;;16:33:00;Haarlem Garage;Haarlem Delftplein;16:42:00;Haarlem;Normaal
 L6044;ZA;3;610542;6080;16:45:00;Haarlem Delftplein;Schalkwijk Centrum;17:27:00;Haarlem;Normaal
@@ -2508,18 +2508,18 @@ L6046;ZA;MAT;610522;;21:33:00;Haarlem Station;Haarlem Delftplein;21:42:00;Haarle
 L6046;ZA;2;610222;6058;22:15:00;Haarlem Delftplein;Haarlem Station Spaarnwoude;22:56:00;Haarlem;Normaal
 L6046;ZA;MAT;610222;;22:56:00;Haarlem Station Spaarnwoude;Haarlem Garage;23:06:00;Haarlem;Normaal
 L6046;ZA;MAT;610803;;23:09:00;Haarlem Garage;Haarlem Delftplein;23:18:00;Haarlem;Normaal
-L6046;ZA;385;610307;6136;23:20:00;Haarlem Delftplein;Haarlem Station;23:31:00;Haarlem;Normaal
+D6323;ZA;385;610304;6064;13:52:00;IJmuiden Dennekoplaan;Haarlem Station;14:27:00;Haarlem;Normaal
 L6046;ZA;385;610307;6137;23:33:00;Haarlem Station;IJmuiden Dennekoplaan;00:03:00;Haarlem;Normaal
-L6046;ZA;385;610307;6144;00:05:00;IJmuiden Dennekoplaan;Haarlem Station;00:35:00;Haarlem;Normaal
+D6317;ZA;385;610306;6062;13:37:00;IJmuiden Dennekoplaan;Haarlem Station;14:12:00;Haarlem;Normaal
 L6046;ZA;MAT;610307;;00:35:00;Haarlem Station;Haarlem Garage;00:48:00;Haarlem;Normaal
 L6048;ZA;MAT;610101;;16:36:00;Haarlem Garage;Haarlem Delftplein;16:45:00;Haarlem;Normaal
 L6048;ZA;12;610101;6019;16:45:00;Haarlem Delftplein;Spaarndam Westhoff;16:54:00;Haarlem;Normaal
 L6048;ZA;12;610101;6020;16:56:00;Spaarndam Westhoff;Haarlem Delftplein;17:08:00;Haarlem;Normaal
 L6048;ZA;MAT;610101;;17:08:00;Haarlem Delftplein;Haarlem Garage;17:17:00;Haarlem;Normaal
 L6048;ZA;MAT;610801;;17:22:00;Haarlem Garage;IJmuiden Dennekoplaan;17:43:00;Haarlem;Normaal
-L6048;ZA;385;610311;6096;17:55:00;IJmuiden Dennekoplaan;Haarlem Station;18:27:00;Haarlem;Normaal
+V6029;ZA;385;610308;6060;13:23:00;IJmuiden Dennekoplaan;Haarlem Station;13:57:00;Haarlem;Normaal
 L6048;ZA;385;610311;6097;18:29:00;Haarlem Station;IJmuiden Dennekoplaan;19:02:00;Haarlem;Normaal
-L6048;ZA;385;610309;6112;19:56:00;IJmuiden Dennekoplaan;Haarlem Station;20:27:00;Haarlem;Normaal
+V6037;ZA;385;610301;6056;12:53:00;IJmuiden Dennekoplaan;Haarlem Station;13:27:00;Haarlem;Normaal
 L6048;ZA;385;610309;6113;20:29:00;Haarlem Station;IJmuiden Dennekoplaan;20:59:00;Haarlem;Normaal
 L6048;ZA;385;610309;6122;21:12:00;IJmuiden Dennekoplaan;Haarlem Delftplein;21:30:00;Haarlem;Normaal
 L6048;ZA;73;610509;6115;21:49:00;Haarlem Delftplein;Castricum Station;22:30:00;Haarlem;Normaal
@@ -2546,11 +2546,11 @@ L6052;ZA;MAT;610201;;16:40:00;Haarlem Garage;Haarlem Station;16:53:00;Haarlem;No
 L6052;ZA;81;610201;4542;16:53:00;Haarlem Station;Zandvoort Busstation;17:25:00;Haarlem;Normaal
 L6052;ZA;81;610201;4541;17:27:00;Zandvoort Busstation;Haarlem Station;18:06:00;Haarlem;Normaal
 L6052;ZA;385;610309;6095;18:14:00;Haarlem Station;IJmuiden Dennekoplaan;18:47:00;Haarlem;Normaal
-L6052;ZA;385;610307;6104;18:55:00;IJmuiden Dennekoplaan;Haarlem Station;19:27:00;Haarlem;Normaal
+D6323;ZA;385;610304;6054;12:38:00;IJmuiden Dennekoplaan;Haarlem Station;13:12:00;Haarlem;Normaal
 L6052;ZA;385;610307;6105;19:29:00;Haarlem Station;IJmuiden Dennekoplaan;19:59:00;Haarlem;Normaal
-L6052;ZA;385;610314;6120;20:57:00;IJmuiden Dennekoplaan;Haarlem Station;21:27:00;Haarlem;Normaal
+D6317;ZA;385;610306;6052;12:23:00;IJmuiden Dennekoplaan;Haarlem Station;12:57:00;Haarlem;Normaal
 L6052;ZA;385;610314;6121;21:29:00;Haarlem Station;IJmuiden Dennekoplaan;21:59:00;Haarlem;Normaal
-L6052;ZA;385;610314;6132;22:27:00;IJmuiden Dennekoplaan;Haarlem Station;22:57:00;Haarlem;Normaal
+V6025;ZA;385;610308;6050;12:08:00;IJmuiden Dennekoplaan;Haarlem Station;12:42:00;Haarlem;Normaal
 L6052;ZA;385;610314;6133;22:59:00;Haarlem Station;Haarlem Delftplein;23:08:00;Haarlem;Normaal
 L6052;ZA;3;610518;6132;23:12:00;Haarlem Delftplein;Haarlem Station;23:27:00;Haarlem;Normaal
 L6052;ZA;81;610518;4560;23:35:00;Haarlem Station;Zandvoort Busstation;00:00:00;Haarlem;Normaal
@@ -2566,13 +2566,13 @@ L6054;ZA;73;610521;6130;23:04:00;Haarlem Delftplein;Schalkwijk Centrum;23:39:00;
 L6054;ZA;3;610506;6135;00:02:00;Schalkwijk Centrum;Haarlem Delftplein;00:42:00;Haarlem;Normaal
 L6054;ZA;MAT;610506;;00:42:00;Haarlem Delftplein;Haarlem Garage;00:51:00;Haarlem;Normaal
 L6056;ZA;Pass.;610506;;17:01:00;Haarlem Garage;IJmuiden Dennekoplaan;17:22:00;Haarlem;Normaal
-L6056;ZA;385;610303;6092;17:24:00;IJmuiden Dennekoplaan;Haarlem Station;17:57:00;Haarlem;Normaal
+V6037;ZA;385;610307;6046;11:38:00;IJmuiden Dennekoplaan;Haarlem Station;12:12:00;Haarlem;Normaal
 L6056;ZA;385;610303;6093;17:59:00;Haarlem Station;IJmuiden Dennekoplaan;18:32:00;Haarlem;Normaal
-L6056;ZA;385;610314;6106;19:10:00;IJmuiden Dennekoplaan;Haarlem Station;19:42:00;Haarlem;Normaal
+D6311;ZA;385;610304;6042;11:09:00;IJmuiden Dennekoplaan;Haarlem Station;11:42:00;Haarlem;Normaal
 L6056;ZA;385;610314;6107;19:44:00;Haarlem Station;IJmuiden Dennekoplaan;20:14:00;Haarlem;Normaal
-L6056;ZA;385;610305;6116;20:27:00;IJmuiden Dennekoplaan;Haarlem Station;20:57:00;Haarlem;Normaal
+V6025;ZA;385;610308;6040;10:54:00;IJmuiden Dennekoplaan;Haarlem Station;11:27:00;Haarlem;Normaal
 L6056;ZA;385;610305;6117;20:59:00;Haarlem Station;IJmuiden Dennekoplaan;21:29:00;Haarlem;Normaal
-L6056;ZA;385;610305;6130;22:12:00;IJmuiden Dennekoplaan;Haarlem Station;22:42:00;Haarlem;Normaal
+V6011;ZA;385;610305;6038;10:40:00;IJmuiden Dennekoplaan;Haarlem Station;11:12:00;Haarlem;Normaal
 L6056;ZA;385;610305;6131;22:44:00;Haarlem Station;IJmuiden Dennekoplaan;23:14:00;Haarlem;Normaal
 L6056;ZA;MAT;610303;;23:27:00;IJmuiden Dennekoplaan;IJmuiden Seaport;23:34:00;Haarlem;Normaal
 L6056;ZA;382;610303;6107;23:34:00;IJmuiden Seaport;Amsterdam Sloterdijk;00:17:00;Haarlem;Normaal
@@ -2593,9 +2593,9 @@ L6060;ZA;MAT;610312;;17:57:00;IJmuiden Dennekoplaan;IJmuiden Seaport;18:04:00;Ha
 L6060;ZA;382;610312;6085;18:04:00;IJmuiden Seaport;Amsterdam Sloterdijk;18:47:00;Haarlem;Normaal
 L6060;ZA;382;610312;6084;18:51:00;Amsterdam Sloterdijk;IJmuiden Seaport;19:32:00;Haarlem;Normaal
 L6060;ZA;MAT;610312;;19:32:00;IJmuiden Seaport;IJmuiden Dennekoplaan;19:39:00;Haarlem;Normaal
-L6060;ZA;385;610307;6114;20:12:00;IJmuiden Dennekoplaan;Haarlem Station;20:42:00;Haarlem;Normaal
+V6019;ZA;385;610306;6036;10:25:00;IJmuiden Dennekoplaan;Haarlem Station;10:57:00;Haarlem;Normaal
 L6060;ZA;385;610307;6115;20:44:00;Haarlem Station;IJmuiden Dennekoplaan;21:14:00;Haarlem;Normaal
-L6060;ZA;385;610303;6124;21:27:00;IJmuiden Dennekoplaan;Haarlem Station;21:57:00;Haarlem;Normaal
+D6347;ZA;385;610304;6032;10:15:00;Haarlem Delftplein;Haarlem Station;10:27:00;Haarlem;Normaal
 L6060;ZA;385;610303;6125;21:59:00;Haarlem Station;IJmuiden Dennekoplaan;22:29:00;Haarlem;Normaal
 L6060;ZA;382;610309;6105;23:11:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;23:47:00;Haarlem;Normaal
 L6060;ZA;382;610309;6104;23:51:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;00:26:00;Haarlem;Normaal
@@ -2611,9 +2611,9 @@ L6062;ZA;71;610520;6050;20:02:00;Uitgeest Station;Beverwijk Station;20:24:00;Haa
 L6062;ZA;73;610521;6116;21:04:00;Beverwijk Station;Schalkwijk Centrum;21:53:00;Haarlem;Normaal
 L6062;ZA;73;610542;6121;22:00:00;Schalkwijk Centrum;Haarlem Delftplein;22:33:00;Haarlem;Normaal
 L6062;ZA;385;610314;6133;23:09:00;Haarlem Delftplein;IJmuiden Dennekoplaan;23:29:00;Haarlem;Normaal
-L6062;ZA;385;610314;6140;23:31:00;IJmuiden Dennekoplaan;Haarlem Station;00:01:00;Haarlem;Normaal
+V6043;ZA;385;610307;6030;09:40:00;IJmuiden Dennekoplaan;Haarlem Station;10:12:00;Haarlem;Normaal
 L6062;ZA;385;610314;6141;00:03:00;Haarlem Station;IJmuiden Dennekoplaan;00:33:00;Haarlem;Normaal
-L6062;ZA;385;610314;6148;00:35:00;IJmuiden Dennekoplaan;Haarlem Station;01:05:00;Haarlem;Normaal
+V6019;ZA;385;610305;6026;09:10:00;IJmuiden Dennekoplaan;Haarlem Station;09:42:00;Haarlem;Normaal
 L6062;ZA;MAT;610314;;01:05:00;Haarlem Station;Haarlem Garage;01:18:00;Haarlem;Normaal
 L6064;ZA;MAT;610805;;17:01:00;Haarlem Garage;IJmuiden Dennekoplaan;17:22:00;Haarlem;Normaal
 L6064;ZA;MAT;610805;;17:22:00;IJmuiden Dennekoplaan;Haarlem Garage;17:43:00;Haarlem;Normaal
@@ -2626,9 +2626,9 @@ L6064;ZA;3;920543;6110;20:27:00;Haarlem Delftplein;Schalkwijk Centrum;21:06:00;H
 L6064;ZA;3;920543;6115;21:17:00;Schalkwijk Centrum;Haarlem Delftplein;21:57:00;Haarlem;Normaal
 L6064;ZA;MAT;920543;;21:57:00;Haarlem Delftplein;Haarlem Garage;22:06:00;Haarlem;Normaal
 L6064;ZA;Pass.;920543;;22:08:00;Haarlem Garage;IJmuiden Dennekoplaan;22:29:00;Haarlem;Normaal
-L6064;ZA;385;610305;6138;23:16:00;IJmuiden Dennekoplaan;Haarlem Station;23:46:00;Haarlem;Normaal
+V6011;ZA;385;610306;6024;08:55:00;IJmuiden Dennekoplaan;Haarlem Station;09:27:00;Haarlem;Normaal
 L6064;ZA;385;610305;6139;23:48:00;Haarlem Station;IJmuiden Dennekoplaan;00:18:00;Haarlem;Normaal
-L6064;ZA;385;610305;6146;00:20:00;IJmuiden Dennekoplaan;Haarlem Station;00:50:00;Haarlem;Normaal
+V6009;ZA;385;610304;6022;08:40:00;IJmuiden Dennekoplaan;Haarlem Station;09:12:00;Haarlem;Normaal
 L6064;ZA;MAT;610305;;00:50:00;Haarlem Station;Haarlem Garage;01:03:00;Haarlem;Normaal
 D6301;ZA;MAT;610512;;08:00:00;Haarlem Garage;Heemskerk Centrum;08:25:00;Haarlem;Normaal
 D6301;ZA;73;610512;6014;08:25:00;Heemskerk Centrum;Schalkwijk Centrum;09:28:00;Haarlem;Normaal
@@ -2648,7 +2648,7 @@ D6303;ZA;382;610301;6030;11:51:00;Amsterdam Sloterdijk;IJmuiden Seaport;12:35:00
 D6303;ZA;MAT;610301;;12:35:00;IJmuiden Seaport;IJmuiden Dennekoplaan;12:42:00;Haarlem;Normaal
 D6303;ZA;382;610307;6047;13:24:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;14:02:00;Haarlem;Normaal
 D6303;ZA;382;610307;6048;14:06:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;14:45:00;Haarlem;Normaal
-D6303;ZA;385;610307;6072;14:52:00;IJmuiden Dennekoplaan;Haarlem Station;15:27:00;Haarlem;Normaal
+V6043;ZA;385;610311;6020;08:25:00;IJmuiden Dennekoplaan;Haarlem Station;08:57:00;Haarlem;Normaal
 D6303;ZA;385;610307;6073;15:29:00;Haarlem Station;Haarlem Delftplein;15:39:00;Haarlem;Normaal
 D6303;ZA;3;610521;6072;15:45:00;Haarlem Delftplein;Schalkwijk Centrum;16:31:00;Haarlem;Normaal
 D6303;ZA;MAT;610805;;16:35:00;Schalkwijk Centrum;Haarlem Garage;16:51:00;Haarlem;Normaal
@@ -2692,7 +2692,7 @@ D6311;ZA;81;610516;4510;08:57:00;Haarlem Station;Zandvoort Busstation;09:25:00;H
 D6311;ZA;81;610516;4509;09:27:00;Zandvoort Busstation;Haarlem Station;10:05:00;Haarlem;Normaal
 D6311;ZA;MAT;610516;;10:05:00;Haarlem Station;Haarlem Delftplein;10:18:00;Haarlem;Normaal
 D6311;ZA;385;610304;6033;10:40:00;Haarlem Delftplein;IJmuiden Dennekoplaan;11:00:00;Haarlem;Normaal
-D6311;ZA;385;610304;6042;11:09:00;IJmuiden Dennekoplaan;Haarlem Station;11:42:00;Haarlem;Normaal
+V6001;ZA;385;610301;6018;08:10:00;IJmuiden Dennekoplaan;Haarlem Station;08:42:00;Haarlem;Normaal
 D6311;ZA;385;610304;6043;11:44:00;Haarlem Station;IJmuiden Dennekoplaan;12:15:00;Haarlem;Normaal
 D6311;ZA;MAT;610312;;12:25:00;IJmuiden Dennekoplaan;IJmuiden Seaport;12:32:00;Haarlem;Normaal
 D6311;ZA;382;610312;6041;12:32:00;IJmuiden Seaport;Amsterdam Sloterdijk;13:17:00;Haarlem;Normaal
@@ -2732,9 +2732,9 @@ D6317;ZA;MAT;610309;;09:56:00;IJmuiden Dennekoplaan;IJmuiden Seaport;10:03:00;Ha
 D6317;ZA;382;610309;6021;10:03:00;IJmuiden Seaport;Amsterdam Sloterdijk;10:47:00;Haarlem;Normaal
 D6317;ZA;382;610309;6022;10:51:00;Amsterdam Sloterdijk;IJmuiden Seaport;11:35:00;Haarlem;Normaal
 D6317;ZA;MAT;610309;;11:35:00;IJmuiden Seaport;IJmuiden Dennekoplaan;11:42:00;Haarlem;Normaal
-D6317;ZA;385;610306;6052;12:23:00;IJmuiden Dennekoplaan;Haarlem Station;12:57:00;Haarlem;Normaal
+V6005;ZA;385;610302;6016;07:55:00;IJmuiden Dennekoplaan;Haarlem Station;08:27:00;Haarlem;Normaal
 D6317;ZA;385;610306;6053;12:59:00;Haarlem Station;IJmuiden Dennekoplaan;13:31:00;Haarlem;Normaal
-D6317;ZA;385;610306;6062;13:37:00;IJmuiden Dennekoplaan;Haarlem Station;14:12:00;Haarlem;Normaal
+V6015;ZA;385;610306;6014;07:41:00;IJmuiden Dennekoplaan;Haarlem Station;08:12:00;Haarlem;Normaal
 D6317;ZA;385;610306;6063;14:14:00;Haarlem Station;Haarlem Delftplein;14:24:00;Haarlem;Normaal
 D6317;ZA;12;610101;6015;14:45:00;Haarlem Delftplein;Spaarndam Westhoff;14:54:00;Haarlem;Normaal
 D6317;ZA;12;610101;6016;14:56:00;Spaarndam Westhoff;Haarlem Delftplein;15:08:00;Haarlem;Normaal
@@ -2770,9 +2770,9 @@ D6323;ZA;MAT;610313;;10:10:00;Haarlem Garage;IJmuiden Seaport;10:33:00;Haarlem;N
 D6323;ZA;382;610313;6025;10:33:00;IJmuiden Seaport;Amsterdam Sloterdijk;11:17:00;Haarlem;Normaal
 D6323;ZA;382;610313;6026;11:21:00;Amsterdam Sloterdijk;IJmuiden Seaport;12:05:00;Haarlem;Normaal
 D6323;ZA;MAT;610313;;12:05:00;IJmuiden Seaport;IJmuiden Dennekoplaan;12:12:00;Haarlem;Normaal
-D6323;ZA;385;610304;6054;12:38:00;IJmuiden Dennekoplaan;Haarlem Station;13:12:00;Haarlem;Normaal
+V6003;ZA;385;610303;6012;07:27:00;IJmuiden Dennekoplaan;Haarlem Station;07:57:00;Haarlem;Normaal
 D6323;ZA;385;610304;6055;13:14:00;Haarlem Station;IJmuiden Dennekoplaan;13:47:00;Haarlem;Normaal
-D6323;ZA;385;610304;6064;13:52:00;IJmuiden Dennekoplaan;Haarlem Station;14:27:00;Haarlem;Normaal
+V6025;ZA;385;610308;6010;07:14:00;IJmuiden Dennekoplaan;Haarlem Station;07:42:00;Haarlem;Normaal
 D6323;ZA;385;610304;6065;14:29:00;Haarlem Station;IJmuiden Dennekoplaan;15:02:00;Haarlem;Normaal
 D6323;ZA;MAT;610308;;15:25:00;IJmuiden Dennekoplaan;IJmuiden Seaport;15:32:00;Haarlem;Normaal
 D6323;ZA;382;610308;6065;15:32:00;IJmuiden Seaport;Amsterdam Sloterdijk;16:17:00;Haarlem;Normaal
@@ -2789,9 +2789,9 @@ D6325;ZA;MAT;610311;;13:25:00;IJmuiden Dennekoplaan;IJmuiden Seaport;13:32:00;Ha
 D6325;ZA;382;610311;6049;13:32:00;IJmuiden Seaport;Amsterdam Sloterdijk;14:17:00;Haarlem;Normaal
 D6325;ZA;382;610311;6050;14:21:00;Amsterdam Sloterdijk;IJmuiden Seaport;15:06:00;Haarlem;Normaal
 D6325;ZA;MAT;610311;;15:06:00;IJmuiden Seaport;IJmuiden Dennekoplaan;15:13:00;Haarlem;Normaal
-D6325;ZA;385;610312;6080;15:52:00;IJmuiden Dennekoplaan;Haarlem Station;16:27:00;Haarlem;Normaal
+V6001;ZA;385;610302;6008;06:56:00;IJmuiden Dennekoplaan;Haarlem Station;07:24:00;Haarlem;Normaal
 D6325;ZA;385;610312;6081;16:29:00;Haarlem Station;IJmuiden Dennekoplaan;17:02:00;Haarlem;Normaal
-D6325;ZA;385;610306;6090;17:07:00;IJmuiden Dennekoplaan;Haarlem Station;17:42:00;Haarlem;Normaal
+V6015;ZA;385;610306;6006;06:42:00;IJmuiden Dennekoplaan;Haarlem Station;07:10:00;Haarlem;Normaal
 D6325;ZA;385;610306;6091;17:44:00;Haarlem Station;Haarlem Delftplein;17:54:00;Haarlem;Normaal
 D6325;ZA;MAT;610809;;17:56:00;Haarlem Delftplein;Haarlem Garage;18:05:00;Haarlem;Normaal
 M6327;ZA;MAT;610510;;11:04:00;Haarlem Garage;Haarlem Delftplein;11:13:00;Haarlem;Normaal
@@ -2822,14 +2822,14 @@ M6331;ZA;MAT;610301;;16:17:00;IJmuiden Dennekoplaan;IJmuiden Seaport;16:22:00;Ha
 M6331;ZA;382;610301;6073;16:32:00;IJmuiden Seaport;Amsterdam Sloterdijk;17:17:00;Haarlem;Normaal
 M6331;ZA;382;610301;6074;17:21:00;Amsterdam Sloterdijk;IJmuiden Seaport;18:06:00;Haarlem;Normaal
 M6331;ZA;MAT;610301;;18:06:00;IJmuiden Seaport;IJmuiden Dennekoplaan;18:13:00;Haarlem;Normaal
-M6331;ZA;385;610304;6102;18:40:00;IJmuiden Dennekoplaan;Haarlem Station;19:12:00;Haarlem;Normaal
+V6003;ZA;385;610303;6004;06:27:00;IJmuiden Dennekoplaan;Haarlem Station;06:55:00;Haarlem;Normaal
 M6331;ZA;385;610304;6103;19:14:00;Haarlem Station;IJmuiden Dennekoplaan;19:44:00;Haarlem;Normaal
 M6331;ZA;MAT;610304;;19:44:00;IJmuiden Dennekoplaan;Haarlem Garage;20:06:00;Haarlem;Normaal
 D6347;ZA;MAT;610804;;08:24:00;Haarlem Garage;IJmuiden Dennekoplaan;08:46:00;Haarlem;Normaal
 D6347;ZA;MAT;610804;;08:46:00;IJmuiden Dennekoplaan;Haarlem Garage;09:08:00;Haarlem;Normaal
 D6347;ZA;MAT;610520;;09:14:00;Haarlem Garage;Schalkwijk Centrum;09:28:00;Haarlem;Normaal
 D6347;ZA;3;610520;6021;09:28:00;Schalkwijk Centrum;Haarlem Delftplein;10:11:00;Haarlem;Normaal
-D6347;ZA;385;610304;6032;10:15:00;Haarlem Delftplein;Haarlem Station;10:27:00;Haarlem;Normaal
+V6001;ZA;385;610302;6002;05:57:00;IJmuiden Dennekoplaan;Haarlem Station;06:25:00;Haarlem;Normaal
 D6347;ZA;385;610304;6033;10:29:00;Haarlem Station;Haarlem Delftplein;10:39:00;Haarlem;Normaal
 D6347;ZA;12;610101;6007;10:45:00;Haarlem Delftplein;Spaarndam Westhoff;10:54:00;Haarlem;Normaal
 D6347;ZA;12;610101;6008;10:56:00;Spaarndam Westhoff;Haarlem Delftplein;11:08:00;Haarlem;Normaal
@@ -2880,7 +2880,7 @@ P6480;ZA;382;610315;6054;14:51:00;Amsterdam Sloterdijk;IJmuiden Seaport;15:36:00
 P6480;ZA;MAT;610315;;15:36:00;IJmuiden Seaport;IJmuiden Dennekoplaan;15:41:00;Haarlem;Normaal
 P6480;ZA;382;610303;6067;15:54:00;IJmuiden Dennekoplaan;Amsterdam Sloterdijk;16:32:00;Haarlem;Normaal
 P6480;ZA;382;610303;6068;16:36:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;17:15:00;Haarlem;Normaal
-P6480;ZA;385;610309;6094;17:39:00;IJmuiden Dennekoplaan;Haarlem Station;18:12:00;Haarlem;Normaal
+L6062;ZA;385;610314;6148;00:35:00;IJmuiden Dennekoplaan;Haarlem Station;01:05:00;Haarlem;Normaal
 P6480;ZA;MAT;610808;;18:15:00;Haarlem Station;Haarlem Garage;18:27:00;Haarlem;Normaal
 P6482;ZA;MAT;610808;;18:02:00;Haarlem Garage;Haarlem Station;18:14:00;Haarlem;Normaal
 P6482;ZA;81;610201;4548;18:27:00;Haarlem Station;Zandvoort Busstation;18:55:00;Haarlem;Normaal
@@ -3246,9 +3246,9 @@ N6902;ZA;MAT;610403;;02:28:00;Beverwijk Station;Amsterdam Leidseplein;03:08:00;H
 N6902;ZA;N80;610403;;03:11:00;Amsterdam Leidseplein;Beverwijk Station;04:18:00;Haarlem;Normaal
 N6902;ZA;MAT;610403;;04:18:00;Beverwijk Station;Haarlem Garage;04:36:00;Haarlem;Normaal
 N6904;ZA;MAT;610804;;22:54:00;Haarlem Garage;Haarlem Delftplein;23:03:00;Haarlem;Normaal
-N6904;ZA;385;610311;6134;23:05:00;Haarlem Delftplein;Haarlem Station;23:16:00;Haarlem;Normaal
+L6064;ZA;385;610305;6146;00:20:00;IJmuiden Dennekoplaan;Haarlem Station;00:50:00;Haarlem;Normaal
 N6904;ZA;385;610311;6135;23:18:00;Haarlem Station;IJmuiden Dennekoplaan;23:48:00;Haarlem;Normaal
-N6904;ZA;385;610311;6142;23:50:00;IJmuiden Dennekoplaan;Haarlem Station;00:20:00;Haarlem;Normaal
+L6046;ZA;385;610307;6144;00:05:00;IJmuiden Dennekoplaan;Haarlem Station;00:35:00;Haarlem;Normaal
 N6904;ZA;MAT;610311;;00:20:00;Haarlem Station;Haarlem Garage;00:33:00;Haarlem;Normaal
 N6904;ZA;MAT;610801;;01:02:00;Haarlem Garage;Haarlem Station Spaarnwoude;01:11:00;Haarlem;Normaal
 N6904;ZA;80;610441;6621;01:13:00;Haarlem Station Spaarnwoude;Amsterdam Busstation Elandsgracht;01:44:00;Haarlem;Normaal
@@ -3258,13 +3258,13 @@ N6904;ZA;MAT;610441;;03:28:00;Beverwijk Station;Amsterdam Leidseplein;04:08:00;H
 N6904;ZA;N80;610441;;04:11:00;Amsterdam Leidseplein;Beverwijk Station;05:18:00;Haarlem;Normaal
 N6904;ZA;MAT;610441;;05:18:00;Beverwijk Station;Haarlem Garage;05:36:00;Haarlem;Normaal
 V7001;ZO;MAT;610301;;05:38:00;Haarlem Garage;IJmuiden Dennekoplaan;05:59:00;Haarlem;Normaal
-V7001;ZO;385;610301;7002;05:59:00;IJmuiden Dennekoplaan;Haarlem Station;06:27:00;Haarlem;Normaal
+L7514;ZO;385;610307;7140;23:45:00;IJmuiden Dennekoplaan;Haarlem Station;00:11:00;Haarlem;Normaal
 V7001;ZO;385;610301;7003;06:29:00;Haarlem Station;IJmuiden Dennekoplaan;06:56:00;Haarlem;Normaal
-V7001;ZO;385;610301;7006;06:59:00;IJmuiden Dennekoplaan;Haarlem Station;07:27:00;Haarlem;Normaal
+L7040;ZO;385;610333;7138;23:31:00;IJmuiden Dennekoplaan;Haarlem Station;23:57:00;Haarlem;Normaal
 V7001;ZO;385;610301;7007;07:29:00;Haarlem Station;IJmuiden Dennekoplaan;07:56:00;Haarlem;Normaal
-V7001;ZO;385;610301;7014;07:58:00;IJmuiden Dennekoplaan;Haarlem Station;08:26:00;Haarlem;Normaal
+L7036;ZO;385;610331;7136;23:16:00;IJmuiden Dennekoplaan;Haarlem Station;23:42:00;Haarlem;Normaal
 V7001;ZO;385;610301;7015;08:28:00;Haarlem Station;IJmuiden Dennekoplaan;08:55:00;Haarlem;Normaal
-V7001;ZO;385;610301;7030;09:56:00;IJmuiden Dennekoplaan;Haarlem Station;10:26:00;Haarlem;Normaal
+L7516;ZO;385;610304;7134;23:01:00;IJmuiden Dennekoplaan;Haarlem Station;23:27:00;Haarlem;Normaal
 V7001;ZO;385;610301;7031;10:28:00;Haarlem Station;IJmuiden Dennekoplaan;10:55:00;Haarlem;Normaal
 V7001;ZO;385;610301;7038;10:57:00;IJmuiden Dennekoplaan;Haarlem Delftplein;11:15:00;Haarlem;Normaal
 V7001;ZO;73;610502;7028;11:18:00;Haarlem Delftplein;Schalkwijk Centrum;11:52:00;Haarlem;Normaal
@@ -3280,7 +3280,7 @@ L7002;ZO;3;610507;7092;19:35:00;IJmuiden Rotonde Stadspark;Schalkwijk Centrum;20
 L7002;ZO;MAT;610804;;20:34:00;Schalkwijk Centrum;Haarlem Garage;20:47:00;Haarlem;Normaal
 V7003;ZO;MAT;610302;;05:47:00;Haarlem Garage;Haarlem Station;05:59:00;Haarlem;Normaal
 V7003;ZO;385;610302;7001;05:59:00;Haarlem Station;IJmuiden Dennekoplaan;06:26:00;Haarlem;Normaal
-V7003;ZO;385;610302;7004;06:29:00;IJmuiden Dennekoplaan;Haarlem Station;06:57:00;Haarlem;Normaal
+L7514;ZO;385;610307;7132;22:46:00;IJmuiden Dennekoplaan;Haarlem Station;23:12:00;Haarlem;Normaal
 V7003;ZO;385;610302;7005;06:59:00;Haarlem Station;IJmuiden Dennekoplaan;07:26:00;Haarlem;Normaal
 V7003;ZO;385;610302;7010;07:28:00;IJmuiden Dennekoplaan;Haarlem Delftplein;07:45:00;Haarlem;Normaal
 V7003;ZO;MAT;610801;;07:48:00;Haarlem Delftplein;Haarlem Garage;07:57:00;Haarlem;Normaal
@@ -3297,15 +3297,15 @@ V7003;ZO;MAT;610807;;13:29:00;Haarlem Delftplein;IJmuiden Dennekoplaan;13:43:00;
 V7003;ZO;MAT;610807;;13:48:00;IJmuiden Dennekoplaan;Haarlem Garage;14:11:00;Haarlem;Normaal
 L7004;ZO;MAT;610807;;13:19:00;Haarlem Garage;Haarlem Delftplein;13:28:00;Haarlem;Normaal
 L7004;ZO;385;610302;7055;13:40:00;Haarlem Delftplein;IJmuiden Dennekoplaan;14:00:00;Haarlem;Normaal
-L7004;ZO;385;610303;7064;14:10:00;IJmuiden Dennekoplaan;Haarlem Station;14:42:00;Haarlem;Normaal
+L7036;ZO;385;610331;7128;22:32:00;Haarlem Delftplein;Haarlem Station;22:42:00;Haarlem;Normaal
 L7004;ZO;385;610303;7065;14:44:00;Haarlem Station;IJmuiden Dennekoplaan;15:15:00;Haarlem;Normaal
-L7004;ZO;385;610307;7074;15:25:00;IJmuiden Dennekoplaan;Haarlem Station;15:57:00;Haarlem;Normaal
+L7032;ZO;385;610305;7130;22:31:00;IJmuiden Dennekoplaan;Haarlem Station;22:57:00;Haarlem;Normaal
 L7004;ZO;385;610307;7075;15:59:00;Haarlem Station;IJmuiden Dennekoplaan;16:30:00;Haarlem;Normaal
-L7004;ZO;385;610304;7088;17:11:00;IJmuiden Dennekoplaan;Haarlem Station;17:42:00;Haarlem;Normaal
+L7040;ZO;385;610333;7126;22:01:00;IJmuiden Dennekoplaan;Haarlem Station;22:27:00;Haarlem;Normaal
 L7004;ZO;385;610304;7089;17:44:00;Haarlem Station;IJmuiden Dennekoplaan;18:15:00;Haarlem;Normaal
-L7004;ZO;385;610304;7098;18:28:00;IJmuiden Dennekoplaan;Haarlem Station;18:57:00;Haarlem;Normaal
+L7514;ZO;385;610307;7124;21:47:00;IJmuiden Dennekoplaan;Haarlem Station;22:14:00;Haarlem;Normaal
 L7004;ZO;385;610304;7099;18:59:00;Haarlem Station;IJmuiden Dennekoplaan;19:28:00;Haarlem;Normaal
-L7004;ZO;385;610333;7108;19:43:00;IJmuiden Dennekoplaan;Haarlem Station;20:12:00;Haarlem;Normaal
+L7032;ZO;385;610305;7122;21:30:00;IJmuiden Dennekoplaan;Haarlem Station;21:59:00;Haarlem;Normaal
 L7004;ZO;385;610333;7109;20:14:00;Haarlem Station;Haarlem Delftplein;20:23:00;Haarlem;Normaal
 L7004;ZO;12;610101;7021;20:45:00;Haarlem Delftplein;Spaarndam Westhoff;20:55:00;Haarlem;Normaal
 L7004;ZO;12;610101;7024;20:57:00;Spaarndam Westhoff;Haarlem Delftplein;21:09:00;Haarlem;Normaal
@@ -3345,9 +3345,9 @@ V7007;ZO;73;610541;7012;08:39:00;Castricum Station;Schalkwijk Centrum;09:48:00;H
 V7007;ZO;MAT;610541;;10:00:00;Schalkwijk Centrum;Haarlem Station;10:14:00;Haarlem;Normaal
 V7007;ZO;3;610541;7015;10:14:00;Haarlem Station;Haarlem Delftplein;10:27:00;Haarlem;Normaal
 V7007;ZO;385;610302;7033;10:54:00;Haarlem Delftplein;IJmuiden Dennekoplaan;11:12:00;Haarlem;Normaal
-V7007;ZO;385;610302;7042;11:27:00;IJmuiden Dennekoplaan;Haarlem Station;11:57:00;Haarlem;Normaal
+L7014;ZO;385;610331;7120;21:15:00;IJmuiden Dennekoplaan;Haarlem Station;21:44:00;Haarlem;Normaal
 V7007;ZO;385;610302;7043;11:59:00;Haarlem Station;IJmuiden Dennekoplaan;12:30:00;Haarlem;Normaal
-V7007;ZO;385;610303;7052;12:42:00;IJmuiden Dennekoplaan;Haarlem Station;13:12:00;Haarlem;Normaal
+L7516;ZO;385;610304;7118;21:00:00;IJmuiden Dennekoplaan;Haarlem Station;21:29:00;Haarlem;Normaal
 V7007;ZO;385;610303;7053;13:14:00;Haarlem Station;IJmuiden Dennekoplaan;13:45:00;Haarlem;Normaal
 V7007;ZO;Pass.;610303;;13:48:00;IJmuiden Dennekoplaan;Haarlem Garage;14:11:00;Haarlem;Normaal
 L7008;ZO;MAT;610331;;13:39:00;Haarlem Garage;IJmuiden Seaport;14:03:00;Haarlem;Normaal
@@ -3358,7 +3358,7 @@ L7008;ZO;MAT;610332;;16:29:00;IJmuiden Dennekoplaan;IJmuiden Seaport;16:34:00;Ha
 L7008;ZO;382;610332;7041;16:34:00;IJmuiden Seaport;Amsterdam Sloterdijk;17:17:00;Haarlem;Normaal
 L7008;ZO;382;610332;7042;17:21:00;Amsterdam Sloterdijk;IJmuiden Seaport;18:04:00;Haarlem;Normaal
 L7008;ZO;MAT;610332;;18:04:00;IJmuiden Seaport;IJmuiden Dennekoplaan;18:11:00;Haarlem;Normaal
-L7008;ZO;385;610332;7100;18:43:00;IJmuiden Dennekoplaan;Haarlem Station;19:12:00;Haarlem;Normaal
+L7040;ZO;385;610333;7116;20:45:00;IJmuiden Dennekoplaan;Haarlem Station;21:14:00;Haarlem;Normaal
 L7008;ZO;385;610332;7101;19:14:00;Haarlem Station;IJmuiden Dennekoplaan;19:43:00;Haarlem;Normaal
 L7008;ZO;MAT;610308;;19:59:00;IJmuiden Dennekoplaan;IJmuiden Seaport;20:06:00;Haarlem;Normaal
 L7008;ZO;382;610308;7055;20:06:00;IJmuiden Seaport;Amsterdam Sloterdijk;20:47:00;Haarlem;Normaal
@@ -3377,9 +3377,9 @@ V7009;ZO;71;610508;7014;13:03:00;Uitgeest Station;Beverwijk Station;13:26:00;Haa
 V7009;ZO;73;610508;7048;13:31:00;Beverwijk Station;Haarlem Station;13:55:00;Haarlem;Normaal
 V7009;ZO;MAT;610806;;13:58:00;Haarlem Station;Haarlem Garage;14:10:00;Haarlem;Normaal
 L7010;ZO;MAT;610803;;13:59:00;Haarlem Garage;IJmuiden Dennekoplaan;14:22:00;Haarlem;Normaal
-L7010;ZO;385;610302;7066;14:25:00;IJmuiden Dennekoplaan;Haarlem Station;14:57:00;Haarlem;Normaal
+L7514;ZO;385;610302;7112;20:31:00;Haarlem Delftplein;Haarlem Station;20:42:00;Haarlem;Normaal
 L7010;ZO;385;610302;7067;14:59:00;Haarlem Station;IJmuiden Dennekoplaan;15:30:00;Haarlem;Normaal
-L7010;ZO;385;610308;7076;15:40:00;IJmuiden Dennekoplaan;Haarlem Station;16:12:00;Haarlem;Normaal
+L7516;ZO;385;610304;7110;19:58:00;IJmuiden Dennekoplaan;Haarlem Station;20:27:00;Haarlem;Normaal
 L7010;ZO;385;610308;7077;16:14:00;Haarlem Station;IJmuiden Dennekoplaan;16:45:00;Haarlem;Normaal
 L7010;ZO;74;920714;7033;17:07:00;IJmuiden Dennekoplaan;Heemskerk Centrum;17:50:00;Haarlem;Normaal
 L7010;ZO;72;920714;7020;17:51:00;Heemskerk Centrum;Beverwijk Station;18:24:00;Haarlem;Normaal
@@ -3410,7 +3410,7 @@ L7012;ZO;14;610701;7010;14:25:00;Haarlem Delftplein;Heemstede Station;15:00:00;H
 L7012;ZO;14;610701;7011;15:02:00;Heemstede Station;Haarlem Delftplein;15:39:00;Haarlem;Normaal
 L7012;ZO;12;610101;7011;15:45:00;Haarlem Delftplein;Spaarndam Westhoff;15:54:00;Haarlem;Normaal
 L7012;ZO;12;610101;7014;15:56:00;Spaarndam Westhoff;Haarlem Delftplein;16:07:00;Haarlem;Normaal
-L7012;ZO;385;610302;7078;16:15:00;Haarlem Delftplein;Haarlem Station;16:27:00;Haarlem;Normaal
+L7004;ZO;385;610333;7108;19:43:00;IJmuiden Dennekoplaan;Haarlem Station;20:12:00;Haarlem;Normaal
 L7012;ZO;385;610302;7079;16:29:00;Haarlem Station;IJmuiden Dennekoplaan;17:00:00;Haarlem;Normaal
 L7012;ZO;MAT;610302;;17:59:00;IJmuiden Dennekoplaan;IJmuiden Seaport;18:06:00;Haarlem;Normaal
 L7012;ZO;382;610302;7047;18:06:00;IJmuiden Seaport;Amsterdam Sloterdijk;18:47:00;Haarlem;Normaal
@@ -3445,16 +3445,16 @@ L7014;ZO;MAT;610333;;18:32:00;IJmuiden Seaport;IJmuiden Dennekoplaan;18:39:00;Ha
 L7014;ZO;MAT;610305;;19:27:00;IJmuiden Dennekoplaan;IJmuiden Seaport;19:34:00;Haarlem;Normaal
 L7014;ZO;382;610305;7053;19:36:00;IJmuiden Seaport;Amsterdam Sloterdijk;20:17:00;Haarlem;Normaal
 L7014;ZO;382;610305;7054;20:21:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;20:56:00;Haarlem;Normaal
-L7014;ZO;385;610331;7120;21:15:00;IJmuiden Dennekoplaan;Haarlem Station;21:44:00;Haarlem;Normaal
+M7333;ZO;385;610301;7102;18:58:00;IJmuiden Dennekoplaan;Haarlem Station;19:27:00;Haarlem;Normaal
 L7014;ZO;385;610331;7121;21:46:00;Haarlem Station;IJmuiden Dennekoplaan;22:13:00;Haarlem;Normaal
 L7014;ZO;385;610331;7128;22:16:00;IJmuiden Dennekoplaan;Haarlem Delftplein;22:31:00;Haarlem;Normaal
 L7014;ZO;MAT;610805;;22:33:00;Haarlem Delftplein;Haarlem Garage;22:42:00;Haarlem;Normaal
 L7014;ZO;MAT;610805;;22:44:00;Haarlem Garage;Haarlem Delftplein;22:53:00;Haarlem;Normaal
 L7014;ZO;MAT;610805;;22:53:00;Haarlem Delftplein;Haarlem Garage;23:02:00;Haarlem;Normaal
 V7015;ZO;MAT;610304;;07:22:00;Haarlem Garage;IJmuiden Dennekoplaan;07:43:00;Haarlem;Normaal
-V7015;ZO;385;610304;7012;07:43:00;IJmuiden Dennekoplaan;Haarlem Station;08:11:00;Haarlem;Normaal
+L7008;ZO;385;610332;7100;18:43:00;IJmuiden Dennekoplaan;Haarlem Station;19:12:00;Haarlem;Normaal
 V7015;ZO;385;610304;7013;08:13:00;Haarlem Station;IJmuiden Dennekoplaan;08:40:00;Haarlem;Normaal
-V7015;ZO;385;610304;7020;08:42:00;IJmuiden Dennekoplaan;Haarlem Station;09:10:00;Haarlem;Normaal
+L7004;ZO;385;610304;7098;18:28:00;IJmuiden Dennekoplaan;Haarlem Station;18:57:00;Haarlem;Normaal
 V7015;ZO;385;610304;7021;09:12:00;Haarlem Station;IJmuiden Dennekoplaan;09:39:00;Haarlem;Normaal
 V7015;ZO;74;920711;7005;10:11:00;IJmuiden Dennekoplaan;Heemskerk Centrum;10:50:00;Haarlem;Normaal
 V7015;ZO;72;920711;7006;10:51:00;Heemskerk Centrum;Beverwijk Station;11:18:00;Haarlem;Normaal
@@ -3523,9 +3523,9 @@ V7019;ZO;3;610504;7051;14:43:00;Haarlem Station;Haarlem Delftplein;14:56:00;Haar
 V7019;ZO;2;610201;7028;15:08:00;Haarlem Delftplein;Haarlem Station Spaarnwoude;15:55:00;Haarlem;Normaal
 V7019;ZO;MAT;610805;;15:58:00;Haarlem Station Spaarnwoude;Haarlem Garage;16:07:00;Haarlem;Normaal
 L7020;ZO;MAT;610305;;15:48:00;Haarlem Garage;IJmuiden Dennekoplaan;16:10:00;Haarlem;Normaal
-L7020;ZO;385;610305;7080;16:10:00;IJmuiden Dennekoplaan;Haarlem Station;16:42:00;Haarlem;Normaal
-L7020;ZO;385;610305;7081;16:44:00;Haarlem Station;IJmuiden Dennekoplaan;17:15:00;Haarlem;Normaal
 L7020;ZO;385;610305;7092;17:43:00;IJmuiden Dennekoplaan;Haarlem Station;18:12:00;Haarlem;Normaal
+L7020;ZO;385;610305;7081;16:44:00;Haarlem Station;IJmuiden Dennekoplaan;17:15:00;Haarlem;Normaal
+L7004;ZO;385;610304;7088;17:11:00;IJmuiden Dennekoplaan;Haarlem Station;17:42:00;Haarlem;Normaal
 L7020;ZO;385;610305;7093;18:14:00;Haarlem Station;IJmuiden Dennekoplaan;18:43:00;Haarlem;Normaal
 L7020;ZO;MAT;610306;;18:59:00;IJmuiden Dennekoplaan;IJmuiden Seaport;19:06:00;Haarlem;Normaal
 L7020;ZO;382;610306;7051;19:06:00;IJmuiden Seaport;Amsterdam Sloterdijk;19:47:00;Haarlem;Normaal
@@ -3537,17 +3537,17 @@ L7020;ZO;382;610303;7065;22:36:00;IJmuiden Seaport;Amsterdam Sloterdijk;23:17:00
 L7020;ZO;382;610303;7066;23:21:00;Amsterdam Sloterdijk;IJmuiden Dennekoplaan;23:56:00;Haarlem;Normaal
 L7020;ZO;MAT;610303;;23:56:00;IJmuiden Dennekoplaan;Haarlem Garage;00:17:00;Haarlem;Normaal
 V7021;ZO;MAT;610801;;07:35:00;Haarlem Garage;Haarlem Delftplein;07:44:00;Haarlem;Normaal
-V7021;ZO;385;610302;7010;07:46:00;Haarlem Delftplein;Haarlem Station;07:56:00;Haarlem;Normaal
+L7032;ZO;385;610306;7086;16:55:00;IJmuiden Dennekoplaan;Haarlem Station;17:27:00;Haarlem;Normaal
 V7021;ZO;385;610302;7011;07:58:00;Haarlem Station;IJmuiden Dennekoplaan;08:25:00;Haarlem;Normaal
-V7021;ZO;385;610302;7018;08:27:00;IJmuiden Dennekoplaan;Haarlem Station;08:55:00;Haarlem;Normaal
+D7549;ZO;385;610301;7084;16:40:00;IJmuiden Dennekoplaan;Haarlem Station;17:12:00;Haarlem;Normaal
 V7021;ZO;385;610302;7019;08:57:00;Haarlem Station;IJmuiden Dennekoplaan;09:24:00;Haarlem;Normaal
-V7021;ZO;385;610304;7028;09:41:00;IJmuiden Dennekoplaan;Haarlem Station;10:11:00;Haarlem;Normaal
+L7012;ZO;385;610302;7078;16:15:00;Haarlem Delftplein;Haarlem Station;16:27:00;Haarlem;Normaal
 V7021;ZO;385;610304;7029;10:13:00;Haarlem Station;IJmuiden Dennekoplaan;10:40:00;Haarlem;Normaal
 V7021;ZO;MAT;610304;;11:26:00;IJmuiden Dennekoplaan;IJmuiden Seaport;11:33:00;Haarlem;Normaal
 V7021;ZO;382;610304;7021;11:33:00;IJmuiden Seaport;Amsterdam Sloterdijk;12:17:00;Haarlem;Normaal
 V7021;ZO;382;610304;7022;12:21:00;Amsterdam Sloterdijk;IJmuiden Seaport;13:04:00;Haarlem;Normaal
 V7021;ZO;MAT;610304;;13:04:00;IJmuiden Seaport;IJmuiden Dennekoplaan;13:09:00;Haarlem;Normaal
-V7021;ZO;385;610304;7056;13:11:00;IJmuiden Dennekoplaan;Haarlem Station;13:42:00;Haarlem;Normaal
+L7020;ZO;385;610305;7080;16:10:00;IJmuiden Dennekoplaan;Haarlem Station;16:42:00;Haarlem;Normaal
 V7021;ZO;385;610304;7057;13:44:00;Haarlem Station;IJmuiden Dennekoplaan;14:15:00;Haarlem;Normaal
 V7021;ZO;MAT;610803;;14:23:00;IJmuiden Dennekoplaan;Haarlem Garage;14:46:00;Haarlem;Normaal
 L7022;ZO;MAT;610801;;15:52:00;Haarlem Garage;Haarlem Station;16:04:00;Haarlem;Normaal
@@ -3563,7 +3563,7 @@ V7023;ZO;MAT;610505;;07:46:00;Haarlem Garage;IJmuiden Rotonde Stadspark;08:05:00
 V7023;ZO;3;610505;7002;08:05:00;IJmuiden Rotonde Stadspark;Schalkwijk Centrum;09:02:00;Haarlem;Normaal
 V7023;ZO;73;610502;7011;09:16:00;Schalkwijk Centrum;Castricum Station;10:31:00;Haarlem;Normaal
 V7023;ZO;73;610502;7028;10:39:00;Castricum Station;Haarlem Delftplein;11:17:00;Haarlem;Normaal
-V7023;ZO;385;610308;7044;12:01:00;Haarlem Delftplein;Haarlem Station;12:12:00;Haarlem;Normaal
+L7010;ZO;385;610308;7076;15:40:00;IJmuiden Dennekoplaan;Haarlem Station;16:12:00;Haarlem;Normaal
 V7023;ZO;385;610308;7045;12:14:00;Haarlem Station;IJmuiden Dennekoplaan;12:45:00;Haarlem;Normaal
 V7023;ZO;MAT;610308;;12:56:00;IJmuiden Dennekoplaan;IJmuiden Seaport;13:03:00;Haarlem;Normaal
 V7023;ZO;382;610308;7027;13:03:00;IJmuiden Seaport;Amsterdam Sloterdijk;13:47:00;Haarlem;Normaal
@@ -3642,16 +3642,16 @@ L7030;ZO;73;610513;7105;22:46:00;Schalkwijk Centrum;Beverwijk Station;23:34:00;H
 L7030;ZO;71;610513;7033;23:37:00;Beverwijk Station;Uitgeest Station;23:59:00;Haarlem;Normaal
 L7030;ZO;MAT;610513;;23:59:00;Uitgeest Station;Haarlem Garage;00:21:00;Haarlem;Normaal
 L7032;ZO;MAT;610804;;16:29:00;Haarlem Garage;IJmuiden Dennekoplaan;16:52:00;Haarlem;Normaal
-L7032;ZO;385;610306;7086;16:55:00;IJmuiden Dennekoplaan;Haarlem Station;17:27:00;Haarlem;Normaal
+L7004;ZO;385;610307;7074;15:25:00;IJmuiden Dennekoplaan;Haarlem Station;15:57:00;Haarlem;Normaal
 L7032;ZO;385;610306;7087;17:29:00;Haarlem Station;IJmuiden Dennekoplaan;18:00:00;Haarlem;Normaal
 L7032;ZO;74;920715;7037;18:07:00;IJmuiden Dennekoplaan;Heemskerk Centrum;18:50:00;Haarlem;Normaal
 L7032;ZO;72;920715;7022;18:54:00;Heemskerk Centrum;Beverwijk Station;19:21:00;Haarlem;Normaal
 L7032;ZO;75;920715;7025;19:41:00;Beverwijk Station;Wijk aan Zee Julianaplein;20:02:00;Haarlem;Normaal
 L7032;ZO;75;920715;7024;20:03:00;Wijk aan Zee Julianaplein;Beverwijk Station;20:20:00;Haarlem;Normaal
 L7032;ZO;74;920711;7046;20:27:00;Beverwijk Station;IJmuiden Dennekoplaan;20:49:00;Haarlem;Normaal
-L7032;ZO;385;610305;7122;21:30:00;IJmuiden Dennekoplaan;Haarlem Station;21:59:00;Haarlem;Normaal
+D7515;ZO;385;610304;7070;15:15:00;Haarlem Delftplein;Haarlem Station;15:27:00;Haarlem;Normaal
 L7032;ZO;385;610305;7123;22:01:00;Haarlem Station;IJmuiden Dennekoplaan;22:28:00;Haarlem;Normaal
-L7032;ZO;385;610305;7130;22:31:00;IJmuiden Dennekoplaan;Haarlem Station;22:57:00;Haarlem;Normaal
+D7317;ZO;385;610301;7068;14:40:00;IJmuiden Dennekoplaan;Haarlem Station;15:12:00;Haarlem;Normaal
 L7032;ZO;385;610305;7131;22:59:00;Haarlem Station;IJmuiden Dennekoplaan;23:26:00;Haarlem;Normaal
 L7032;ZO;MAT;610305;;23:26:00;IJmuiden Dennekoplaan;Haarlem Garage;23:47:00;Haarlem;Normaal
 L7032;ZO;Pass.;610305;;23:51:00;Haarlem Garage;IJmuiden Dennekoplaan;00:12:00;Haarlem;Normaal
@@ -3683,11 +3683,11 @@ L7036;ZO;MAT;610702;;20:53:00;Haarlem Delftplein;Haarlem Garage;21:02:00;Haarlem
 L7036;ZO;MAT;610805;;21:27:00;Haarlem Garage;Haarlem Delftplein;21:36:00;Haarlem;Normaal
 L7036;ZO;3;610509;7106;21:39:00;Haarlem Delftplein;Haarlem Station;21:50:00;Haarlem;Normaal
 L7036;ZO;3;610509;7111;22:15:00;Haarlem Station;Haarlem Delftplein;22:26:00;Haarlem;Normaal
-L7036;ZO;385;610331;7128;22:32:00;Haarlem Delftplein;Haarlem Station;22:42:00;Haarlem;Normaal
+L7010;ZO;385;610302;7066;14:25:00;IJmuiden Dennekoplaan;Haarlem Station;14:57:00;Haarlem;Normaal
 L7036;ZO;385;610331;7129;22:44:00;Haarlem Station;IJmuiden Dennekoplaan;23:11:00;Haarlem;Normaal
-L7036;ZO;385;610331;7136;23:16:00;IJmuiden Dennekoplaan;Haarlem Station;23:42:00;Haarlem;Normaal
+L7004;ZO;385;610303;7064;14:10:00;IJmuiden Dennekoplaan;Haarlem Station;14:42:00;Haarlem;Normaal
 L7036;ZO;385;610331;7137;23:44:00;Haarlem Station;IJmuiden Dennekoplaan;00:11:00;Haarlem;Normaal
-L7036;ZO;385;610331;7144;00:15:00;IJmuiden Dennekoplaan;Haarlem Station;00:41:00;Haarlem;Normaal
+D7307;ZO;385;610306;7060;14:00:00;Haarlem Delftplein;Haarlem Station;14:12:00;Haarlem;Normaal
 L7036;ZO;MAT;610331;;00:41:00;Haarlem Station;Haarlem Garage;00:53:00;Haarlem;Normaal
 L7038;ZO;MAT;610807;;16:43:00;Haarlem Garage;Haarlem Delftplein;16:52:00;Haarlem;Normaal
 L7038;ZO;3;610511;7068;16:54:00;Haarlem Delftplein;Schalkwijk Centrum;17:33:00;Haarlem;Normaal
@@ -3709,13 +3709,13 @@ L7040;ZO;81;610504;5535;17:57:00;Zandvoort Busstation;Haarlem Station;18:35:00;H
 L7040;ZO;73;610504;7086;18:44:00;Haarlem Station;Schalkwijk Centrum;19:07:00;Haarlem;Normaal
 L7040;ZO;73;610513;7091;19:16:00;Schalkwijk Centrum;Haarlem Delftplein;19:49:00;Haarlem;Normaal
 L7040;ZO;385;610333;7109;20:24:00;Haarlem Delftplein;IJmuiden Dennekoplaan;20:43:00;Haarlem;Normaal
-L7040;ZO;385;610333;7116;20:45:00;IJmuiden Dennekoplaan;Haarlem Station;21:14:00;Haarlem;Normaal
+D7317;ZO;385;610309;7058;13:25:00;IJmuiden Dennekoplaan;Haarlem Station;13:57:00;Haarlem;Normaal
 L7040;ZO;385;610333;7117;21:16:00;Haarlem Station;IJmuiden Dennekoplaan;21:45:00;Haarlem;Normaal
-L7040;ZO;385;610333;7126;22:01:00;IJmuiden Dennekoplaan;Haarlem Station;22:27:00;Haarlem;Normaal
+V7021;ZO;385;610304;7056;13:11:00;IJmuiden Dennekoplaan;Haarlem Station;13:42:00;Haarlem;Normaal
 L7040;ZO;385;610333;7127;22:29:00;Haarlem Station;IJmuiden Dennekoplaan;22:56:00;Haarlem;Normaal
-L7040;ZO;385;610333;7138;23:31:00;IJmuiden Dennekoplaan;Haarlem Station;23:57:00;Haarlem;Normaal
+D7303;ZO;385;610302;7054;12:56:00;IJmuiden Dennekoplaan;Haarlem Station;13:27:00;Haarlem;Normaal
 L7040;ZO;385;610333;7139;23:59:00;Haarlem Station;IJmuiden Dennekoplaan;00:26:00;Haarlem;Normaal
-L7040;ZO;385;610333;7146;00:30:00;IJmuiden Dennekoplaan;Haarlem Station;00:56:00;Haarlem;Normaal
+V7007;ZO;385;610303;7052;12:42:00;IJmuiden Dennekoplaan;Haarlem Station;13:12:00;Haarlem;Normaal
 L7040;ZO;MAT;610333;;00:56:00;Haarlem Station;Haarlem Garage;01:08:00;Haarlem;Normaal
 L7042;ZO;Pass.;610333;;16:58:00;Haarlem Garage;Haarlem Delftplein;17:07:00;Haarlem;Normaal
 L7042;ZO;2;610201;7036;17:15:00;Haarlem Delftplein;Haarlem Station Spaarnwoude;17:59:00;Haarlem;Normaal
@@ -3750,13 +3750,13 @@ D7301;ZO;3;610509;7056;15:05:00;IJmuiden Rotonde Stadspark;Schalkwijk Centrum;16
 D7301;ZO;MAT;610808;;16:12:00;Schalkwijk Centrum;Haarlem Garage;16:28:00;Haarlem;Normaal
 D7303;ZO;MAT;610801;;08:42:00;Haarlem Garage;Haarlem Delftplein;08:51:00;Haarlem;Normaal
 D7303;ZO;385;610303;7017;08:53:00;Haarlem Delftplein;IJmuiden Dennekoplaan;09:10:00;Haarlem;Normaal
-D7303;ZO;385;610303;7024;09:12:00;IJmuiden Dennekoplaan;Haarlem Station;09:41:00;Haarlem;Normaal
+D7309;ZO;385;610307;7050;12:27:00;IJmuiden Dennekoplaan;Haarlem Station;12:57:00;Haarlem;Normaal
 D7303;ZO;385;610303;7025;09:43:00;Haarlem Station;IJmuiden Dennekoplaan;10:10:00;Haarlem;Normaal
 D7303;ZO;MAT;610303;;10:56:00;IJmuiden Dennekoplaan;IJmuiden Seaport;11:03:00;Haarlem;Normaal
 D7303;ZO;382;610303;7019;11:03:00;IJmuiden Seaport;Amsterdam Sloterdijk;11:47:00;Haarlem;Normaal
 D7303;ZO;382;610303;7020;11:51:00;Amsterdam Sloterdijk;IJmuiden Seaport;12:34:00;Haarlem;Normaal
 D7303;ZO;MAT;610303;;12:34:00;IJmuiden Seaport;IJmuiden Dennekoplaan;12:39:00;Haarlem;Normaal
-D7303;ZO;385;610302;7054;12:56:00;IJmuiden Dennekoplaan;Haarlem Station;13:27:00;Haarlem;Normaal
+D7321;ZO;385;610309;7048;12:12:00;IJmuiden Dennekoplaan;Haarlem Station;12:42:00;Haarlem;Normaal
 D7303;ZO;385;610302;7055;13:29:00;Haarlem Station;Haarlem Delftplein;13:39:00;Haarlem;Normaal
 D7303;ZO;73;610541;7052;14:18:00;Haarlem Delftplein;Schalkwijk Centrum;14:55:00;Haarlem;Normaal
 D7303;ZO;73;610541;7057;14:57:00;Schalkwijk Centrum;Haarlem Station;15:23:00;Haarlem;Normaal
@@ -3784,7 +3784,7 @@ D7307;ZO;3;610501;7030;12:11:00;Haarlem Delftplein;Haarlem Station;12:24:00;Haar
 D7307;ZO;81;610501;5516;12:26:00;Haarlem Station;Zandvoort Busstation;12:56:00;Haarlem;Normaal
 D7307;ZO;81;610501;5515;12:58:00;Zandvoort Busstation;Haarlem Station;13:41:00;Haarlem;Normaal
 D7307;ZO;3;610501;7043;13:43:00;Haarlem Station;Haarlem Delftplein;13:56:00;Haarlem;Normaal
-D7307;ZO;385;610306;7060;14:00:00;Haarlem Delftplein;Haarlem Station;14:12:00;Haarlem;Normaal
+V7023;ZO;385;610308;7044;12:01:00;Haarlem Delftplein;Haarlem Station;12:12:00;Haarlem;Normaal
 D7307;ZO;385;610306;7061;14:14:00;Haarlem Station;IJmuiden Dennekoplaan;14:45:00;Haarlem;Normaal
 D7307;ZO;MAT;610309;;15:26:00;IJmuiden Dennekoplaan;IJmuiden Seaport;15:33:00;Haarlem;Normaal
 D7307;ZO;382;610309;7037;15:33:00;IJmuiden Seaport;Amsterdam Sloterdijk;16:17:00;Haarlem;Normaal
@@ -3794,9 +3794,9 @@ D7309;ZO;MAT;610307;;09:15:00;Haarlem Garage;IJmuiden Seaport;09:37:00;Haarlem;N
 D7309;ZO;382;610307;7013;09:37:00;IJmuiden Seaport;Amsterdam Sloterdijk;10:17:00;Haarlem;Normaal
 D7309;ZO;382;610307;7014;10:21:00;Amsterdam Sloterdijk;IJmuiden Seaport;11:03:00;Haarlem;Normaal
 D7309;ZO;MAT;610307;;11:03:00;IJmuiden Seaport;IJmuiden Dennekoplaan;11:08:00;Haarlem;Normaal
-D7309;ZO;385;610307;7040;11:12:00;IJmuiden Dennekoplaan;Haarlem Station;11:42:00;Haarlem;Normaal
+V7007;ZO;385;610302;7042;11:27:00;IJmuiden Dennekoplaan;Haarlem Station;11:57:00;Haarlem;Normaal
 D7309;ZO;385;610307;7041;11:44:00;Haarlem Station;IJmuiden Dennekoplaan;12:15:00;Haarlem;Normaal
-D7309;ZO;385;610307;7050;12:27:00;IJmuiden Dennekoplaan;Haarlem Station;12:57:00;Haarlem;Normaal
+D7309;ZO;385;610307;7040;11:12:00;IJmuiden Dennekoplaan;Haarlem Station;11:42:00;Haarlem;Normaal
 D7309;ZO;73;610542;7046;13:44:00;Haarlem Station;Schalkwijk Centrum;14:09:00;Haarlem;Normaal
 D7309;ZO;3;610510;7053;14:28:00;Schalkwijk Centrum;IJmuiden Rotonde Stadspark;15:32:00;Haarlem;Normaal
 D7309;ZO;3;610510;7060;15:35:00;IJmuiden Rotonde Stadspark;Schalkwijk Centrum;16:36:00;Haarlem;Normaal
@@ -3847,9 +3847,9 @@ D7317;ZO;382;610308;7016;10:51:00;Amsterdam Sloterdijk;IJmuiden Seaport;11:34:00
 D7317;ZO;MAT;610308;;11:34:00;IJmuiden Seaport;IJmuiden Dennekoplaan;11:39:00;Haarlem;Normaal
 D7317;ZO;385;610308;7044;11:42:00;IJmuiden Dennekoplaan;Haarlem Delftplein;12:00:00;Haarlem;Normaal
 D7317;ZO;385;610309;7049;12:55:00;Haarlem Delftplein;IJmuiden Dennekoplaan;13:15:00;Haarlem;Normaal
-D7317;ZO;385;610309;7058;13:25:00;IJmuiden Dennekoplaan;Haarlem Station;13:57:00;Haarlem;Normaal
+D7537;ZO;385;610306;7034;10:27:00;IJmuiden Dennekoplaan;Haarlem Station;10:57:00;Haarlem;Normaal
 D7317;ZO;385;610309;7059;13:59:00;Haarlem Station;IJmuiden Dennekoplaan;14:30:00;Haarlem;Normaal
-D7317;ZO;385;610301;7068;14:40:00;IJmuiden Dennekoplaan;Haarlem Station;15:12:00;Haarlem;Normaal
+V7501;ZO;385;610302;7032;10:12:00;IJmuiden Dennekoplaan;Haarlem Station;10:42:00;Haarlem;Normaal
 D7317;ZO;385;610301;7069;15:14:00;Haarlem Station;IJmuiden Dennekoplaan;15:45:00;Haarlem;Normaal
 D7317;ZO;385;610302;7078;15:55:00;IJmuiden Dennekoplaan;Haarlem Delftplein;16:14:00;Haarlem;Normaal
 D7317;ZO;Pass.;610302;;16:19:00;Haarlem Delftplein;Haarlem Garage;16:28:00;Haarlem;Normaal
@@ -3868,7 +3868,7 @@ D7321;ZO;MAT;610309;;10:12:00;Haarlem Garage;IJmuiden Seaport;10:35:00;Haarlem;N
 D7321;ZO;382;610309;7017;10:35:00;IJmuiden Seaport;Amsterdam Sloterdijk;11:17:00;Haarlem;Normaal
 D7321;ZO;382;610309;7018;11:21:00;Amsterdam Sloterdijk;IJmuiden Seaport;12:04:00;Haarlem;Normaal
 D7321;ZO;MAT;610309;;12:04:00;IJmuiden Seaport;IJmuiden Dennekoplaan;12:09:00;Haarlem;Normaal
-D7321;ZO;385;610309;7048;12:12:00;IJmuiden Dennekoplaan;Haarlem Station;12:42:00;Haarlem;Normaal
+V7001;ZO;385;610301;7030;09:56:00;IJmuiden Dennekoplaan;Haarlem Station;10:26:00;Haarlem;Normaal
 D7321;ZO;385;610309;7049;12:44:00;Haarlem Station;Haarlem Delftplein;12:54:00;Haarlem;Normaal
 D7321;ZO;14;610702;7008;13:25:00;Haarlem Delftplein;Heemstede Station;14:00:00;Haarlem;Normaal
 D7321;ZO;14;610702;7009;14:02:00;Heemstede Station;Haarlem Delftplein;14:39:00;Haarlem;Normaal
@@ -3893,7 +3893,7 @@ M7333;ZO;73;610502;7068;15:39:00;Castricum Station;Schalkwijk Centrum;16:55:00;H
 M7333;ZO;73;610515;7077;17:27:00;Schalkwijk Centrum;Haarlem Station;17:53:00;Haarlem;Normaal
 M7333;ZO;3;610515;7079;18:14:00;Haarlem Station;Haarlem Delftplein;18:25:00;Haarlem;Normaal
 M7333;ZO;385;610301;7095;18:39:00;Haarlem Delftplein;IJmuiden Dennekoplaan;18:58:00;Haarlem;Normaal
-M7333;ZO;385;610301;7102;18:58:00;IJmuiden Dennekoplaan;Haarlem Station;19:27:00;Haarlem;Normaal
+V7021;ZO;385;610304;7028;09:41:00;IJmuiden Dennekoplaan;Haarlem Station;10:11:00;Haarlem;Normaal
 M7333;ZO;385;610301;7103;19:29:00;Haarlem Station;IJmuiden Dennekoplaan;19:58:00;Haarlem;Normaal
 M7333;ZO;MAT;610301;;19:58:00;IJmuiden Dennekoplaan;Haarlem Garage;20:19:00;Haarlem;Normaal
 M7335;ZO;MAT;610806;;12:44:00;Haarlem Garage;Haarlem Station;12:56:00;Haarlem;Normaal
@@ -3917,9 +3917,9 @@ V7501;ZO;80;610401;7502;06:21:00;Amsterdam Busstation Elandsgracht;Zandvoort Bus
 V7501;ZO;80;610401;7505;07:24:00;Zandvoort Busstation;Haarlem Station Spaarnwoude;07:52:00;Haarlem;Normaal
 V7501;ZO;MAT;610803;;07:54:00;Haarlem Station Spaarnwoude;Haarlem Garage;08:03:00;Haarlem;Normaal
 V7501;ZO;MAT;610305;;08:36:00;Haarlem Garage;IJmuiden Dennekoplaan;08:57:00;Haarlem;Normaal
-V7501;ZO;385;610305;7022;08:57:00;IJmuiden Dennekoplaan;Haarlem Station;09:25:00;Haarlem;Normaal
+D7537;ZO;385;610306;7026;09:26:00;IJmuiden Dennekoplaan;Haarlem Station;09:56:00;Haarlem;Normaal
 V7501;ZO;385;610305;7023;09:27:00;Haarlem Station;IJmuiden Dennekoplaan;09:54:00;Haarlem;Normaal
-V7501;ZO;385;610302;7032;10:12:00;IJmuiden Dennekoplaan;Haarlem Station;10:42:00;Haarlem;Normaal
+D7303;ZO;385;610303;7024;09:12:00;IJmuiden Dennekoplaan;Haarlem Station;09:41:00;Haarlem;Normaal
 V7501;ZO;385;610302;7033;10:44:00;Haarlem Station;Haarlem Delftplein;10:53:00;Haarlem;Normaal
 V7501;ZO;3;610512;7022;11:11:00;Haarlem Delftplein;Haarlem Station;11:24:00;Haarlem;Normaal
 V7501;ZO;81;610512;5512;11:26:00;Haarlem Station;Zandvoort Busstation;11:56:00;Haarlem;Normaal
@@ -3989,9 +3989,9 @@ L7506;ZO;80;610410;7606;21:53:00;Amsterdam Busstation Elandsgracht;Zandvoort Bus
 L7506;ZO;80;610410;7609;22:56:00;Zandvoort Busstation;Haarlem Station Spaarnwoude;23:23:00;Haarlem;Normaal
 L7506;ZO;MAT;610802;;23:25:00;Haarlem Station Spaarnwoude;Haarlem Garage;23:34:00;Haarlem;Normaal
 V7507;ZO;MAT;610303;;06:53:00;Haarlem Garage;IJmuiden Dennekoplaan;07:14:00;Haarlem;Normaal
-V7507;ZO;385;610303;7008;07:14:00;IJmuiden Dennekoplaan;Haarlem Station;07:42:00;Haarlem;Normaal
+V7501;ZO;385;610305;7022;08:57:00;IJmuiden Dennekoplaan;Haarlem Station;09:25:00;Haarlem;Normaal
 V7507;ZO;385;610303;7009;07:44:00;Haarlem Station;IJmuiden Dennekoplaan;08:11:00;Haarlem;Normaal
-V7507;ZO;385;610303;7016;08:13:00;IJmuiden Dennekoplaan;Haarlem Station;08:41:00;Haarlem;Normaal
+V7015;ZO;385;610304;7020;08:42:00;IJmuiden Dennekoplaan;Haarlem Station;09:10:00;Haarlem;Normaal
 V7507;ZO;385;610303;7017;08:43:00;Haarlem Station;Haarlem Delftplein;08:52:00;Haarlem;Normaal
 V7507;ZO;2;610201;7004;09:14:00;Haarlem Delftplein;Haarlem Station Spaarnwoude;09:55:00;Haarlem;Normaal
 V7507;ZO;80;610402;7518;10:00:00;Haarlem Station Spaarnwoude;Zandvoort Busstation;10:36:00;Haarlem;Normaal
@@ -4083,13 +4083,13 @@ L7514;ZO;MAT;610408;;19:12:00;Haarlem Houtplein;Haarlem Garage;19:24:00;Haarlem;
 L7514;ZO;MAT;610807;;19:33:00;Haarlem Garage;Haarlem Delftplein;19:42:00;Haarlem;Normaal
 L7514;ZO;12;610101;7019;19:45:00;Haarlem Delftplein;Spaarndam Westhoff;19:55:00;Haarlem;Normaal
 L7514;ZO;12;610101;7022;19:57:00;Spaarndam Westhoff;Haarlem Delftplein;20:09:00;Haarlem;Normaal
-L7514;ZO;385;610302;7112;20:31:00;Haarlem Delftplein;Haarlem Station;20:42:00;Haarlem;Normaal
+V7021;ZO;385;610302;7018;08:27:00;IJmuiden Dennekoplaan;Haarlem Station;08:55:00;Haarlem;Normaal
 L7514;ZO;385;610302;7113;20:44:00;Haarlem Station;IJmuiden Dennekoplaan;21:13:00;Haarlem;Normaal
-L7514;ZO;385;610307;7124;21:47:00;IJmuiden Dennekoplaan;Haarlem Station;22:14:00;Haarlem;Normaal
+V7507;ZO;385;610303;7016;08:13:00;IJmuiden Dennekoplaan;Haarlem Station;08:41:00;Haarlem;Normaal
 L7514;ZO;385;610307;7125;22:16:00;Haarlem Station;IJmuiden Dennekoplaan;22:43:00;Haarlem;Normaal
-L7514;ZO;385;610307;7132;22:46:00;IJmuiden Dennekoplaan;Haarlem Station;23:12:00;Haarlem;Normaal
+V7001;ZO;385;610301;7014;07:58:00;IJmuiden Dennekoplaan;Haarlem Station;08:26:00;Haarlem;Normaal
 L7514;ZO;385;610307;7133;23:14:00;Haarlem Station;IJmuiden Dennekoplaan;23:41:00;Haarlem;Normaal
-L7514;ZO;385;610307;7140;23:45:00;IJmuiden Dennekoplaan;Haarlem Station;00:11:00;Haarlem;Normaal
+V7021;ZO;385;610302;7010;07:46:00;Haarlem Delftplein;Haarlem Station;07:56:00;Haarlem;Normaal
 L7514;ZO;MAT;610307;;00:11:00;Haarlem Station;Haarlem Garage;00:23:00;Haarlem;Normaal
 D7515;ZO;MAT;610507;;08:03:00;Haarlem Garage;Schalkwijk Centrum;08:16:00;Haarlem;Normaal
 D7515;ZO;73;610507;7007;08:16:00;Schalkwijk Centrum;Castricum Station;09:29:00;Haarlem;Normaal
@@ -4102,7 +4102,7 @@ D7515;ZO;80;610401;7544;12:43:00;Amsterdam Busstation Elandsgracht;Haarlem Stati
 D7515;ZO;2;610204;7023;13:49:00;Haarlem Station Spaarnwoude;Haarlem Delftplein;14:35:00;Haarlem;Normaal
 D7515;ZO;12;610101;7009;14:45:00;Haarlem Delftplein;Spaarndam Westhoff;14:54:00;Haarlem;Normaal
 D7515;ZO;12;610101;7012;14:56:00;Spaarndam Westhoff;Haarlem Delftplein;15:07:00;Haarlem;Normaal
-D7515;ZO;385;610304;7070;15:15:00;Haarlem Delftplein;Haarlem Station;15:27:00;Haarlem;Normaal
+V7015;ZO;385;610304;7012;07:43:00;IJmuiden Dennekoplaan;Haarlem Station;08:11:00;Haarlem;Normaal
 D7515;ZO;385;610304;7071;15:29:00;Haarlem Station;IJmuiden Dennekoplaan;16:00:00;Haarlem;Normaal
 D7515;ZO;MAT;610803;;16:06:00;IJmuiden Dennekoplaan;Haarlem Delftplein;16:19:00;Haarlem;Normaal
 D7515;ZO;MAT;610803;;16:19:00;Haarlem Delftplein;Haarlem Garage;16:28:00;Haarlem;Normaal
@@ -4112,13 +4112,13 @@ L7516;ZO;80;610407;7582;17:30:00;Amsterdam Busstation Elandsgracht;Zandvoort Bus
 L7516;ZO;80;610407;7591;18:39:00;Zandvoort Busstation;Haarlem Station Spaarnwoude;19:08:00;Haarlem;Normaal
 L7516;ZO;MAT;610407;;19:08:00;Haarlem Station Spaarnwoude;Haarlem Garage;19:17:00;Haarlem;Normaal
 L7516;ZO;MAT;610806;;19:34:00;Haarlem Garage;IJmuiden Dennekoplaan;19:55:00;Haarlem;Normaal
-L7516;ZO;385;610304;7110;19:58:00;IJmuiden Dennekoplaan;Haarlem Station;20:27:00;Haarlem;Normaal
+V7507;ZO;385;610303;7008;07:14:00;IJmuiden Dennekoplaan;Haarlem Station;07:42:00;Haarlem;Normaal
 L7516;ZO;385;610304;7111;20:29:00;Haarlem Station;IJmuiden Dennekoplaan;20:58:00;Haarlem;Normaal
-L7516;ZO;385;610304;7118;21:00:00;IJmuiden Dennekoplaan;Haarlem Station;21:29:00;Haarlem;Normaal
+V7001;ZO;385;610301;7006;06:59:00;IJmuiden Dennekoplaan;Haarlem Station;07:27:00;Haarlem;Normaal
 L7516;ZO;385;610304;7119;21:31:00;Haarlem Station;IJmuiden Dennekoplaan;21:59:00;Haarlem;Normaal
-L7516;ZO;385;610304;7134;23:01:00;IJmuiden Dennekoplaan;Haarlem Station;23:27:00;Haarlem;Normaal
+V7003;ZO;385;610302;7004;06:29:00;IJmuiden Dennekoplaan;Haarlem Station;06:57:00;Haarlem;Normaal
 L7516;ZO;385;610304;7135;23:29:00;Haarlem Station;IJmuiden Dennekoplaan;23:56:00;Haarlem;Normaal
-L7516;ZO;385;610304;7142;00:00:00;IJmuiden Dennekoplaan;Haarlem Station;00:26:00;Haarlem;Normaal
+V7001;ZO;385;610301;7002;05:59:00;IJmuiden Dennekoplaan;Haarlem Station;06:27:00;Haarlem;Normaal
 L7516;ZO;MAT;610304;;00:26:00;Haarlem Station;Haarlem Garage;00:38:00;Haarlem;Normaal
 V7517;ZO;MAT;610802;;07:40:00;Haarlem Garage;Schalkwijk Centrum;07:53:00;Haarlem;Normaal
 V7517;ZO;MAT;610802;;07:53:00;Schalkwijk Centrum;Haarlem Garage;08:06:00;Haarlem;Normaal
@@ -4242,9 +4242,9 @@ D7535;ZO;80;610403;7559;14:42:00;Zandvoort Busstation;Amsterdam Busstation Eland
 D7535;ZO;80;610403;7570;15:55:00;Amsterdam Busstation Elandsgracht;Haarlem Station Spaarnwoude;16:27:00;Haarlem;Normaal
 D7535;ZO;Pass.;610403;;16:29:00;Haarlem Station Spaarnwoude;Haarlem Garage;16:38:00;Haarlem;Normaal
 D7537;ZO;MAT;610306;;09:05:00;Haarlem Garage;IJmuiden Dennekoplaan;09:26:00;Haarlem;Normaal
-D7537;ZO;385;610306;7026;09:26:00;IJmuiden Dennekoplaan;Haarlem Station;09:56:00;Haarlem;Normaal
+L7040;ZO;385;610333;7146;00:30:00;IJmuiden Dennekoplaan;Haarlem Station;00:56:00;Haarlem;Normaal
 D7537;ZO;385;610306;7027;09:58:00;Haarlem Station;IJmuiden Dennekoplaan;10:25:00;Haarlem;Normaal
-D7537;ZO;385;610306;7034;10:27:00;IJmuiden Dennekoplaan;Haarlem Station;10:57:00;Haarlem;Normaal
+L7036;ZO;385;610331;7144;00:15:00;IJmuiden Dennekoplaan;Haarlem Station;00:41:00;Haarlem;Normaal
 D7537;ZO;385;610306;7035;10:59:00;Haarlem Station;Haarlem Delftplein;11:08:00;Haarlem;Normaal
 D7537;ZO;MAT;610541;;11:35:00;Haarlem Delftplein;Haarlem Station;11:44:00;Haarlem;Normaal
 D7537;ZO;73;610541;7030;11:44:00;Haarlem Station;Schalkwijk Centrum;12:06:00;Haarlem;Normaal
@@ -4314,7 +4314,7 @@ D7549;ZO;MAT;610332;;14:09:00;Haarlem Garage;IJmuiden Seaport;14:33:00;Haarlem;N
 D7549;ZO;382;610332;7033;14:33:00;IJmuiden Seaport;Amsterdam Sloterdijk;15:17:00;Haarlem;Normaal
 D7549;ZO;382;610332;7034;15:21:00;Amsterdam Sloterdijk;IJmuiden Seaport;16:04:00;Haarlem;Normaal
 D7549;ZO;MAT;610332;;16:04:00;IJmuiden Seaport;IJmuiden Dennekoplaan;16:09:00;Haarlem;Normaal
-D7549;ZO;385;610301;7084;16:40:00;IJmuiden Dennekoplaan;Haarlem Station;17:12:00;Haarlem;Normaal
+L7516;ZO;385;610304;7142;00:00:00;IJmuiden Dennekoplaan;Haarlem Station;00:26:00;Haarlem;Normaal
 D7549;ZO;385;610301;7085;17:14:00;Haarlem Station;IJmuiden Dennekoplaan;17:45:00;Haarlem;Normaal
 D7549;ZO;MAT;610804;;17:48:00;IJmuiden Dennekoplaan;Haarlem Garage;18:10:00;Haarlem;Normaal
 M7551;ZO;MAT;610410;;12:22:00;Haarlem Garage;Amsterdam Busstation Elandsgracht;12:57:00;Haarlem;Normaal
