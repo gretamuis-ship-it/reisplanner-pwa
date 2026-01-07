@@ -4,9 +4,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const naarInput = document.getElementById('naar-input');
     const naarSuggesties = document.getElementById('naar-suggesties');
     const btnPlan = document.getElementById('btn-plan');
+    const btnSwitch = document.querySelector('.btn-switch');
 
     herstelLaatsteReis();
 
+    // Wissel-knop (Van/Naar omdraaien)
+    if (btnSwitch) {
+        btnSwitch.addEventListener('click', () => {
+            const tempVal = vanInput.value;
+            vanInput.value = naarInput.value;
+            naarInput.value = tempVal;
+            localStorage.setItem('laatsteVan', vanInput.value);
+            localStorage.setItem('laatsteNaar', naarInput.value);
+        });
+    }
+
+    // Geolocation setup
     let userLocation = null;
     navigator.geolocation.getCurrentPosition(pos => {
         userLocation = { lat: pos.coords.latitude, lon: pos.coords.longitude };
@@ -36,6 +49,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 `).join('');
             } catch (err) {
                 console.error("Fout bij ophalen suggesties:", err);
+            }
+        });
+
+        // Klik buiten suggesties = lijst sluiten
+        document.addEventListener('click', (e) => {
+            if (!inputEl.contains(e.target) && !suggestieEl.contains(e.target)) {
+                suggestieEl.innerHTML = '';
             }
         });
     }
@@ -143,8 +163,12 @@ function renderPlannerResultaten(data) {
     data.map(advies => {
         const duurTekst = berekenDuur(advies.vertrek1, advies.aankomst_eind);
 
+        // Zoek deze regel:
         const kaartje = document.createElement('div');
         kaartje.className = 'trip-card';
+
+        // Voeg hieronder deze regel toe:
+        kaartje.onclick = () => openDetails(advies);
 
         kaartje.innerHTML = `
             <div class="card-header-row">
@@ -174,9 +198,6 @@ function renderPlannerResultaten(data) {
                     <i data-lucide="plus"></i> 
                     <span class="line-badge">${advies.lijn2}</span>
                 ` : ''}
-                <span class="dest">
-                    ${advies.isOverstap ? ` via ${advies.overstapHalte}` : ` richting ${advies.richting || 'bestemming'}`}
-                </span>
             </div>
         `;
         container.appendChild(kaartje);
@@ -185,4 +206,160 @@ function renderPlannerResultaten(data) {
     if (window.lucide) {
         lucide.createIcons();
     }
+}
+
+function openDetails(advies) {
+    const overlay = document.getElementById('trip-details-overlay');
+    const timeline = document.getElementById('details-timeline');
+    const summary = document.getElementById('summary-header');
+
+    overlay.style.display = 'block';
+
+    // Bereken werkelijke minuten (bijv. "12 min.")
+    let wachttijdTekst = "";
+    if (advies.isOverstap) {
+        const v = advies.vertrek_over.split(':').map(Number);
+        const a = advies.aankomst_over.split(':').map(Number);
+        const diff = ((v[0] * 60) + v[1]) - ((a[0] * 60) + a[1]);
+        wachttijdTekst = `${diff < 0 ? diff + 1440 : diff} min. wachten`;
+    }
+
+    summary.innerHTML = `
+        <div class="details-route-header prominent">
+            <span class="route-node">${advies.van || document.getElementById('van-input').value}</span>
+            <i data-lucide="move-right" stroke-width="3"></i>
+            <span class="route-node">${advies.naar || document.getElementById('naar-input').value}</span>
+        </div>
+        <div class="details-summary-row">
+            <div class="meta-entry">
+                <i data-lucide="clock"></i>
+                <span>${berekenDuur(advies.vertrek1, advies.aankomst_eind)}</span>
+            </div>
+            <div class="meta-entry">
+                <i data-lucide="shuffle"></i>
+                <span>${advies.isOverstap ? '1x' : '0x'}</span>
+            </div>
+            <div class="meta-entry">
+                <i data-lucide="euro"></i>
+                <span>Vrijvervoer</span>
+            </div>
+        </div>
+    `;
+
+    let html = '';
+    html += renderTrajectBlok({
+        tijdVertrek: advies.vertrek1,
+        halteVertrek: advies.van || document.getElementById('van-input').value,
+        tijdAankomst: advies.isOverstap ? advies.aankomst_over : advies.aankomst_eind,
+        halteAankomst: advies.isOverstap ? "Haarlem, Delftplein" : (advies.naar || document.getElementById('naar-input').value),
+        lijn: advies.lijn1 || "385",
+        richting: "Station Haarlem",
+        isMAT: false
+    });
+
+    if (advies.isOverstap) {
+        html += `<div class="transfer-wait-centered">${wachttijdTekst}</div>`;
+
+        html += renderTrajectBlok({
+            tijdVertrek: advies.vertrek_over,
+            halteVertrek: "Haarlem, Delftplein",
+            tijdAankomst: advies.aankomst_eind,
+            halteAankomst: advies.naar || document.getElementById('naar-input').value,
+            lijn: advies.lijn2 || "2",
+            richting: "Station Spaarnwoude",
+            isMAT: advies.isMAT || false
+        });
+    }
+
+    timeline.innerHTML = html;
+    if (window.lucide) lucide.createIcons();
+}
+
+function renderTrajectBlok(t) {
+    const lineClass = t.isMAT ? 'mat-line' : 'standard-line';
+    return `
+        <div class="traject-card">
+            <div class="time-column">
+                <span class="time">${formatTijd(t.tijdVertrek)}</span>
+                <div class="vertical-line ${lineClass}"></div>
+                <span class="time">${formatTijd(t.tijdAankomst)}</span>
+            </div>
+            <div class="info-column">
+                <div class="stop-name">${t.halteVertrek}</div>
+                <div class="transport-details-box">
+                    <i data-lucide="bus"></i>
+                    <span class="line-badge">${t.lijn}</span>
+                    <span class="direction-text">Richting ${t.richting}</span>
+                </div>
+                <div class="stop-name">${t.halteAankomst}</div>
+            </div>
+        </div>
+    `;
+}
+
+function renderTrajectBlok(t) {
+    // Kleur bepalen: MAT = roze, anders de standaard blauwe kleur
+    const lineClass = t.isMAT ? 'mat-line' : 'standard-line';
+
+    return `
+        <div class="traject-card">
+            <div class="time-column">
+                <span class="time">${formatTijd(t.tijdVertrek)}</span>
+                <div class="vertical-line ${lineClass}"></div>
+                <span class="time">${formatTijd(t.tijdAankomst)}</span>
+            </div>
+            <div class="info-column">
+                <div class="stop-name">${t.halteVertrek}</div>
+                <div class="transport-details">
+                    <div class="line-info">
+                        <i data-lucide="bus"></i>
+                        <strong>${t.lijn}</strong>
+                        <span>Richting ${t.richting}</span>
+                    </div>
+                </div>
+                <div class="stop-name">${t.halteAankomst}</div>
+            </div>
+        </div>
+    `;
+}
+
+// Helper om die witte "traject-kaarten" van NS te maken
+function renderTrajectBlok(t) {
+    // We forceren de class-naamgeving voor maximale CSS-compatibiliteit
+    const lineExtraClass = t.isMAT ? 'mat-line' : 'standard-line';
+
+    return `
+        <div class="traject-card">
+            <div class="time-column">
+                <span class="time">${formatTijd(t.tijdVertrek)}</span>
+                <div class="vertical-line ${lineExtraClass}"></div>
+                <span class="time">${formatTijd(t.tijdAankomst)}</span>
+            </div>
+            <div class="info-column">
+                <div class="stop-name">${t.halteVertrek}</div>
+                <div class="transport-details-box">
+                    <i data-lucide="bus"></i>
+                    <span class="line-badge">${t.lijn}</span>
+                    <span class="direction-text">Richting ${t.richting}</span>
+                </div>
+                <div class="stop-name">${t.halteAankomst}</div>
+            </div>
+        </div>
+    `;
+}
+
+function closeDetails() {
+    document.getElementById('trip-details-overlay').style.display = 'none';
+}
+
+const btnSwitch = document.querySelector('.btn-switch');
+if (btnSwitch) {
+    btnSwitch.addEventListener('click', () => {
+        const van = document.getElementById('van-input');
+        const naar = document.getElementById('naar-input');
+
+        const temp = van.value;
+        van.value = naar.value;
+        naar.value = temp;
+    });
 }

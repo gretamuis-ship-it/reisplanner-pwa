@@ -21,11 +21,10 @@
         color: #888;
         cursor: pointer;
         transition: color 0.2s;
+        margin-bottom: 4px;
 
-        i {
-            width: 24px;
-            height: 24px;
-            margin-bottom: 4px;
+        .lucide {
+            width: a.$lucide-large;
         }
 
         small {
@@ -33,7 +32,7 @@
         }
 
         &.active {
-            color: a.$color-primary; // Gebruikt je Teal variabele
+            color: a.$color-primary;
         }
     }
 }

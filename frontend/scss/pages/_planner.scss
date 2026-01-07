@@ -2,27 +2,26 @@
 
 .planner-card-modern {
     padding: a.$spacing-large 0;
-    text-align: center;
 
     .planner-box {
         background: a.$color-white;
         border-radius: a.$border-radius-main;
         box-shadow: a.$shadow-sm;
-        padding: a.$spacing-small a.$spacing-medium;
-        border: 1px solid #f0f0f0;
+        padding: a.$spacing-extra-small a.$spacing-medium;
+        border: 1px solid a.$color-border-light;
         text-align: left;
+        position: relative;
     }
 
     .input-row {
         display: flex;
         align-items: center;
         gap: a.$spacing-medium;
-        padding: 0.7rem 0;
+        padding: 0.8rem 0;
         position: relative;
 
-        i,
         .lucide {
-            width: 20px;
+            width: a.$lucide-medium;
             color: a.$color-primary;
             flex-shrink: 0;
         }
@@ -34,28 +33,61 @@
             font-size: 1rem;
             font-family: a.$font-main;
             background: transparent;
+            color: a.$color-text-main;
+        }
+
+        .suggesties-lijst {
+            position: absolute;
+            top: 100%;
+            left: -(a.$spacing-medium);
+            right: -(a.$spacing-medium);
+            background: a.$color-white;
+            z-index: 1000;
+            box-shadow: a.$shadow-sm;
+            border: 1px solid a.$color-border-dark;
+            border-top: none;
+
+            &:empty {
+                display: none;
+            }
+
+            .suggestie-item {
+                padding: 12px 15px 12px 51px;
+                cursor: pointer;
+                border-bottom: 1px solid a.$color-bg-light;
+                font-size: 0.95rem;
+                color: a.$color-text-main;
+
+                &:hover {
+                    background-color: a.$color-bg-light;
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
         }
     }
 
     .planner-divider {
         display: flex;
         align-items: center;
-        position: relative;
         height: 1px;
+        position: relative;
 
         .line {
             flex-grow: 1;
             height: 1px;
-            background: #eee;
+            background: a.$color-border-light;
             margin-left: 36px;
         }
 
         .btn-switch {
             background: a.$color-white;
-            border: 1px solid #eee;
+            border: 1px solid a.$color-border-dark;
             border-radius: a.$border-radius-round;
-            width: 32px;
-            height: 32px;
+            width: 34px;
+            height: 34px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -64,6 +96,15 @@
             cursor: pointer;
             color: a.$color-primary;
             z-index: 10;
+            transition: transform a.$transition-speed;
+
+            &:active {
+                transform: scale(0.9) rotate(180deg);
+            }
+
+            .lucide {
+                width: a.$lucide-small;
+            }
         }
     }
 }
@@ -73,7 +114,7 @@
     margin-top: a.$spacing-large;
     padding: 1rem;
     border-radius: a.$border-radius-main;
-    background: a.$color-accent; // De roze kleur
+    background: a.$color-accent;
     color: a.$color-white;
     font-family: a.$font-main;
     font-weight: a.$font-weight-bold;
@@ -88,137 +129,261 @@
     &.active {
         display: block;
     }
-}
 
-// De kaartjes (jouw rechter screenshot)
-.trip-card {
-    background: a.$color-white;
-    margin-bottom: a.$spacing-medium;
-    padding: a.$spacing-medium;
-    border-radius: a.$border-radius-main;
-    box-shadow: a.$shadow-sm;
-    border: 1px solid #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-
-    .card-header-row {
+    .trip-card {
+        background: a.$color-white;
+        margin-bottom: a.$spacing-medium;
+        padding: a.$spacing-medium;
+        border-radius: a.$border-radius-main;
+        box-shadow: a.$shadow-sm;
+        border: 1px solid a.$color-border-light;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        gap: 12px;
+        cursor: pointer;
 
-        .time-container {
+        .card-header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .time-container {
+                display: flex;
+                align-items: center;
+                gap: a.$spacing-small;
+                font-size: 1.1rem;
+                font-weight: a.$font-weight-bold;
+                color: a.$color-text-main;
+            }
+
+            .meta-item {
+                display: flex;
+                align-items: center;
+                gap: a.$spacing-small;
+                color: a.$color-text-muted;
+                font-size: 0.9rem;
+
+                .duration,
+                .transfer-count {
+                    display: flex;
+                    align-items: center;
+                    gap: a.$spacing-extra-small;
+                }
+
+                .lucide {
+                    width: a.$lucide-medium;
+                }
+            }
+        }
+
+        .card-transport-row {
             display: flex;
             align-items: center;
-            gap: 8px;
-            font-size: 1.1rem;
-            font-weight: a.$font-weight-bold;
+            gap: 10px;
+
+            .line-badge {
+                background: a.$color-primary;
+                color: a.$color-white;
+                padding: 2px 8px;
+                border-radius: a.$border-radius-main;
+                font-weight: a.$font-weight-bold;
+            }
 
             .lucide {
-                color: a.$color-primary;
+                width: a.$lucide-medium;
             }
-        }
-
-        .meta-item {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-
-            svg {
-                width: 20px;
-                height: 20px;
-            }
-        }
-
-        .duration,
-        .transfer-count {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            color: a.$color-text-muted;
-            font-size: 0.9rem;
-        }
-    }
-
-    .card-transport-row {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-
-        svg {
-            width: 20px;
-            height: 20px;
-            min-width: 20px;
-            flex-shrink: 0;
-        }
-
-        .line-badge {
-            background: a.$color-primary;
-            color: white;
-            padding: 2px 8px;
-            border-radius: a.$border-radius-main;
-            font-weight: a.$font-weight-bold;
-            font-size: 0.9rem;
-        }
-
-        .dest {
-            font-size: 0.9rem;
-            font-weight: a.$font-weight-standard;
         }
     }
 }
 
-/* Detail modal */
-#trip-details-overlay {
+.details-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: white;
-    z-index: 1000;
+    background: a.$color-white;
+    z-index: a.$z-index-overlay;
     display: none;
     overflow-y: auto;
-}
+    font-family: a.$font-main;
 
-.timeline {
-    position: relative;
-    padding: 20px;
-    list-style: none;
-}
+    .details-header {
+        padding: a.$spacing-medium;
+        background: a.$color-primary;
+        color: a.$color-white;
+        position: sticky;
+        top: 0;
+        z-index: 10;
 
-.timeline::before {
-    content: '';
-    position: absolute;
-    left: 30px;
-    top: 20px;
-    bottom: 20px;
-    width: 4px;
-    background: #e0e0e0;
-    /* De grijze lijn */
-}
+        .btn-close {
+            background: none;
+            border: none;
+            color: a.$color-white;
+            display: flex;
+            align-items: center;
+            gap: a.$spacing-small;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 1.1rem;
+        }
+    }
 
-.timeline-item {
-    position: relative;
-    margin-bottom: 30px;
-    padding-left: 40px;
-}
+    .details-route-header.prominent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: a.$spacing-medium;
+        padding: a.$spacing-large a.$spacing-medium;
+        border-bottom: 1px solid a.$color-border-light;
 
-.timeline-dot {
-    position: absolute;
-    left: -14px;
-    width: 12px;
-    height: 12px;
-    background: white;
-    border: 3px solid #007D8C;
-    border-radius: 50%;
-    z-index: 2;
-}
+        .route-node {
+            font-size: 1.1rem;
+            font-weight: a.$font-weight-extra-bold;
+            color: a.$color-primary;
+            line-height: 1.2;
+        }
 
-.bus-segment {
-    background: #f1f3f4;
-    border-radius: 8px;
-    padding: 15px;
-    margin: 10px 0;
-    border-left: 5px solid #007D8C;
+        .lucide {
+            width: a.$lucide-medium;
+            height: a.$lucide-medium;
+            color: a.$color-primary;
+        }
+    }
+
+    .details-summary-row {
+        display: flex;
+        justify-content: space-around;
+        padding: a.$spacing-medium 0;
+        background: a.$color-white;
+        border-bottom: 1px solid a.$color-border-light;
+
+        .meta-entry {
+            display: flex;
+            align-items: center;
+            gap: a.$spacing-small;
+            font-size: 0.95rem;
+            color: a.$color-text-main;
+
+            .lucide {
+                width: a.$lucide-medium;
+                color: a.$color-text-muted;
+            }
+        }
+    }
+
+    .timeline {
+        padding: a.$spacing-medium;
+        background: a.$color-bg-light;
+        min-height: 100%;
+
+        .traject-card {
+            background: a.$color-white;
+            border-radius: a.$border-radius-main;
+            padding: a.$spacing-medium;
+            margin-bottom: a.$spacing-medium;
+            display: flex;
+            gap: a.$spacing-medium;
+            box-shadow: a.$shadow-sm;
+
+            .time-column {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 50px;
+                flex-shrink: 0;
+
+                .time {
+                    font-weight: a.$font-weight-bold;
+                    color: a.$color-text-main;
+                }
+
+                .vertical-line {
+                    flex-grow: 1;
+                    width: 4px;
+                    border-radius: a.$border-radius-main;
+                    margin: 4px 0;
+                    display: block;
+
+                    &.standard-line {
+                        background-color: a.$color-primary !important;
+                    }
+
+                    &.mat-line {
+                        background-color: a.$color-accent !important;
+                    }
+                }
+            }
+
+            .info-column {
+                flex-grow: 1;
+
+                .stop-name {
+                    font-weight: a.$font-weight-bold;
+                    color: a.$color-text-main;
+                }
+            }
+        }
+
+        .transport-details-box {
+            display: flex;
+            align-items: center;
+            gap: a.$spacing-small;
+            background: a.$color-bg-light;
+            padding: a.$spacing-small a.$spacing-medium;
+            border-radius: a.$border-radius-main;
+            margin: a.$spacing-medium 0;
+            width: 100%;
+
+            .lucide {
+                width: a.$lucide-medium;
+                height: a.$lucide-medium;
+                flex-shrink: 0;
+                margin-top: 2px;
+            }
+
+            .line-badge {
+                background-color: a.$color-primary;
+                color: a.$color-white;
+                padding: 2px 0;
+                border-radius: a.$border-radius-main;
+                font-weight: a.$font-weight-extra-bold;
+                font-size: 0.9rem;
+                width: 45px;
+                text-align: center;
+                flex-shrink: 0;
+                margin-top: 1px;
+            }
+
+            .direction-text {
+                color: a.$color-text-muted;
+                font-size: 0.9rem;
+                line-height: 1.3;
+                word-wrap: break-word;
+                white-space: normal;
+                flex-grow: 1;
+            }
+        }
+
+        .transfer-wait-centered {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: a.$spacing-medium;
+            padding: 0 0 a.$spacing-medium;
+            color: a.$color-text-muted;
+            font-size: 0.9rem;
+            font-style: italic;
+            position: relative;
+
+            &::before,
+            &::after {
+                content: "";
+                height: 1px;
+                background: a.$color-border-dark;
+                flex-grow: 1;
+                max-width: 60px;
+            }
+        }
+    }
 }
