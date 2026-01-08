@@ -201,12 +201,13 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 65px);
     background: a.$color-white;
     z-index: a.$z-index-overlay;
     display: none;
     overflow-y: auto;
     font-family: a.$font-main;
+    box-shadow: a.$shadow-sm;
 
     .details-header {
         padding: a.$spacing-medium;
@@ -386,4 +387,52 @@
             }
         }
     }
+}
+
+.registration-footer {
+    padding: a.$spacing-large a.$spacing-medium;
+    background: a.$color-bg-light;
+    display: flex;
+    justify-content: center;
+
+    .btn-register-trip {
+        width: 100%;
+        max-width: 300px;
+        padding: a.$spacing-medium;
+        background: a.$color-accent;
+        color: a.$color-white;
+        border: none;
+        border-radius: a.$border-radius-main;
+        font-family: a.$font-main;
+        font-weight: a.$font-weight-bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: a.$spacing-small;
+        cursor: pointer;
+        box-shadow: a.$shadow-sm;
+
+        .lucide {
+            width: a.$lucide-medium;
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+}
+
+.btn-delete-icon {
+    background: none;
+    border: none;
+    color: #e91e63;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-delete-icon:hover {
+    color: #c2185b;
 }

@@ -170,3 +170,65 @@ app.get('/api/rit-details/:lijn/:vertrekTijd', async (req, res) => {
         res.status(500).json([]);
     }
 });
+
+import fs from 'fs/promises'; // We gebruiken de promise-versie voor schonere code
+
+// --- HISTORIE API ---
+
+// 1. Rit OPSLAAN in historie.json
+app.post('/api/historie', async (req, res) => {
+    const nieuweRit = req.body;
+    // We slaan het op in de map 'data' naast je database
+    const filePath = path.join(__dirname, 'data/historie.json');
+
+    try {
+        let json = { ritten: [], week_doel: 40, totaal_doel: 52 };
+
+        try {
+            const data = await fs.readFile(filePath, 'utf8');
+            json = JSON.parse(data);
+        } catch (readErr) {
+            console.log("ℹ️ Geen bestaande historie gevonden, nieuwe wordt aangemaakt.");
+        }
+
+        json.ritten.push(nieuweRit);
+        await fs.writeFile(filePath, JSON.stringify(json, null, 2));
+
+        res.json({ message: "Rit opgeslagen in JSON!" });
+    } catch (err) {
+        console.error("❌ Opslaan mislukt:", err);
+        res.status(500).json({ error: "Fout bij opslaan" });
+    }
+});
+
+// 2. Historie OPHALEN voor de Tracker
+app.get('/api/historie', async (req, res) => {
+    const filePath = path.join(__dirname, 'data/historie.json');
+    try {
+        const data = await fs.readFile(filePath, 'utf8');
+        res.json(JSON.parse(data));
+    } catch (err) {
+        // Als bestand niet bestaat, sturen we een lege basisstructuur
+        res.json({ ritten: [], week_doel: 40, totaal_doel: 52 });
+    }
+});
+
+// 3. Rit VERWIJDEREN uit historie.json
+app.delete('/api/historie/:id', async (req, res) => {
+    const id = parseInt(req.params.id);
+    const filePath = path.join(__dirname, 'data/historie.json');
+
+    try {
+        const data = await fs.readFile(filePath, 'utf8');
+        let json = JSON.parse(data);
+
+        // Filter de rit eruit
+        json.ritten = json.ritten.filter(rit => rit.id !== id);
+
+        await fs.writeFile(filePath, JSON.stringify(json, null, 2));
+        res.json({ message: "Rit verwijderd!" });
+    } catch (err) {
+        console.error("Fout bij verwijderen:", err);
+        res.status(500).json({ error: "Verwijderen mislukt" });
+    }
+});
