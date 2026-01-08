@@ -233,3 +233,29 @@ app.delete('/api/historie/:id', async (req, res) => {
         res.status(500).send("Fout bij verwijderen");
     }
 });
+
+app.get('/api/plan', (req, res) => {
+    // 1. Bepaal de dag-kolom op basis van de datum van de reis
+    const datum = new Date();
+    const dagNummer = datum.getDay(); // 0=zon, 1=ma, enz.
+    let dagKolom = "ma_do";
+    if (dagNummer === 5) dagKolom = "vrij";
+    if (dagNummer === 6) dagKolom = "zat";
+    if (dagNummer === 0) dagKolom = "zon";
+
+    // 2. Haal het actieve pakket op (bijv. uit een instelling of default)
+    const actiefPakket = "Normaal";
+
+    // 3. In je query voor de ritten voeg je de koppeling toe:
+    const query = `
+        SELECT r.*, d.dienst, d.omloop 
+        FROM ritten r
+        LEFT JOIN dienstregeling d ON 
+            r.lijn_nummer = d.lijn AND 
+            r.vertrektijd = d.start_tijd AND 
+            d.${dagKolom} = 1 AND 
+            d.pakket = ?
+        WHERE ... `;
+
+    // Voer query uit met [actiefPakket]
+});

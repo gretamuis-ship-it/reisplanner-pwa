@@ -178,13 +178,85 @@ function renderPlannerResultaten(data) {
     if (window.lucide) lucide.createIcons();
 }
 
+// Functie om de juiste dienst/omloop te zoeken in jouw data.csv
+const relevanteLijnen = ["2", "3", "7", "8", "14", "15", "71", "72", "73", "74", "75", "78", "80", "81", "84", "244", "382", "385", "N80"];
+
+function zoekDienstInfo(rit) {
+    // 1. Check of de lijn in jouw lijst voorkomt
+    if (!relevanteLijnen.includes(rit.lijn)) {
+        return null;
+    }
+
+    // 2. We sturen dit naar de backend om in de data.csv te zoeken
+    // Voor nu doen we een 'placeholder' die we later koppelen aan de CSV-hit
+    // De backend gaat kijken naar rit.lijn + rit.tijd + huidige dag
+    return {
+        dienst: rit.dienst_nummer || "Onbekend",
+        omloop: rit.omloop_nummer || "Onbekend"
+    };
+}
+
+function renderTrajectBlok(t) {
+    const stijl = getBusStyle(t.lijn, t.maatschappij, t.kleur, t.tekstKleur);
+    const dienstInfo = zoekDienstInfo(t);
+
+    // Check voor wisselpunten (bijv. Delftplein)
+    const isWisselPunt = t.halteVertrek.includes("Delftplein") || t.halteAankomst.includes("Delftplein");
+    const wisselHTML = isWisselPunt ? `<div class="wissel-indicator"><i data-lucide="arrow-left-right"></i> Chauffeurswissel</div>` : '';
+
+    return `
+        <div class="traject-card ${isWisselPunt ? 'wissel-highlight' : ''}">
+            <div class="time-column">
+                <span class="time">${formatTijd(t.tijdVertrek)}</span>
+                <div class="vertical-line" style="background-color: ${stijl.backgroundColor}"></div>
+                <span class="time">${formatTijd(t.tijdAankomst)}</span>
+            </div>
+            <div class="info-column">
+                <div class="stop-name">${t.halteVertrek}</div>
+                
+                <div class="transport-details-box">
+                    <div class="line-details-box">
+                        <i data-lucide="bus"></i>
+                        <span class="line-badge" style="background-color: ${stijl.backgroundColor}; color: ${stijl.color};">
+                            ${t.lijn}
+                        </span>
+                        <span class="maatschappij-label">${t.maatschappij || ''}</span>
+                    </div>
+
+                    <span class="direction-text">Richting ${t.richting}</span>
+
+                    ${dienstInfo ? `
+                        <div class="rit-info-tags">
+                            <div class="info-groep">
+                                <span class="info-label">Dienst</span>
+                                <span class="info-badge dienst-badge">${dienstInfo.dienst}</span>
+                            </div>
+                            <div class="info-groep">
+                                <span class="info-label">Omloop</span>
+                                <span class="info-badge omloop-badge">${dienstInfo.omloop}</span>
+                            </div>
+                        </div>
+                    ` : ''}
+                    
+                    ${wisselHTML}
+                </div>
+
+                <div class="stop-name">${t.halteAankomst}</div>
+            </div>
+        </div>
+    `;
+}
+
 function openDetails(ritAdvies) {
     const overlay = document.getElementById('trip-details-overlay');
     const timeline = document.getElementById('details-timeline');
     const summary = document.getElementById('summary-header');
     const backBtn = document.getElementById('back-container');
 
-    if (backBtn) backBtn.style.display = 'block';
+    // Toon de terug-knop in de header
+    if (backBtn) backBtn.style.display = 'flex';
+
+    // Toon het detailscherm
     overlay.style.display = 'block';
 
     let wachttijdTekst = "";
@@ -242,49 +314,10 @@ function openDetails(ritAdvies) {
     checkWeekStatusEnToonKnop(ritAdvies, timeline);
 }
 
-function renderTrajectBlok(t) {
-    const lineExtraClass = t.isMAT ? 'mat-line' : 'standard-line';
-    const stijl = getBusStyle(t.lijn, t.maatschappij, t.kleur, t.tekstKleur);
-    return `
-        <div class="traject-card">
-            <div class="time-column">
-                <span class="time">${formatTijd(t.tijdVertrek)}</span>
-                <div class="vertical-line ${lineExtraClass}" style="background-color: ${stijl.backgroundColor}"></div>
-                <span class="time">${formatTijd(t.tijdAankomst)}</span>
-            </div>
-            <div class="info-column">
-                <div class="stop-name">${t.halteVertrek}</div>
-                <div class="transport-details-box">
-                    <div class="line-details-box">
-                        <i data-lucide="bus"></i>
-                        <div class="line-badge-container">
-                            <span class="line-badge" style="background-color: ${stijl.backgroundColor}; color: ${stijl.color};">
-                                ${t.lijn}
-                            </span>
-                            <span class="maatschappij-label">${t.maatschappij || ''}</span>
-                        </div>
-                    </div>
-                    <span class="direction-text">Richting ${t.richting}</span>
-                    <div class="rit-info-tags">
-                        <div class="info-groep">
-                            <span class="info-label">Dienst</span>
-                            <span class="info-badge dienst-badge">V1001</span>
-                        </div>
-                        <div class="info-groep">
-                            <span class="info-label">Omloop</span>
-                            <span class="info-badge omloop-badge">610301</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="stop-name">${t.halteAankomst}</div>
-            </div>
-        </div>
-    `;
-}
-
 function closeDetails() {
     const overlay = document.getElementById('trip-details-overlay');
     const backBtn = document.getElementById('back-container');
+
     if (overlay) overlay.style.display = 'none';
     if (backBtn) backBtn.style.display = 'none';
 }
