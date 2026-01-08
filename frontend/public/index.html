@@ -16,6 +16,11 @@
 <body>
 
     <header class="app-header">
+        <div id="back-container">
+            <button class="btn-back" onclick="closeDetails()">
+                <i data-lucide="chevron-left"></i>
+            </button>
+        </div>
         <div class="header-container">
             <h1>BusPlanner</h1>
         </div>
@@ -26,6 +31,7 @@
         <div id="page-home" class="page active">
             <div class="container">
                 <section class="planner-card-modern">
+                    <h2>Reisplanner</h2>
                     <div class="planner-box">
                         <div class="planner-inputs">
                             <div class="input-row">
@@ -48,7 +54,7 @@
                             </div>
                         </div>
                     </div>
-                    <button id="btn-plan" class="btn-plan-main">Plan mijn reis</button>
+                    <button id="btn-plan" class="btn-primary">Plan mijn reis</button>
                 </section>
 
                 <div id="rit-resultaten" class="results-container"></div>
@@ -130,7 +136,7 @@
 
     <div id="trip-details-overlay" class="details-overlay">
         <div class="details-header">
-            <button onclick="closeDetails()" class="btn-close"><i data-lucide="chevron-left"></i> Tripdetails</button>
+            <button onclick="closeDetails()" class="btn-close"><i data-lucide="chevron-left"></i> Terug</button>
         </div>
 
         <div id="details-map" class="details-map-container">
@@ -146,7 +152,7 @@
 
     <script src="js/api.js"></script>
     <script src="js/00_ui.js"></script>
-    <script src="js/01_planner.js"></script>
+    <script type="module" src="js/01_Planner.js"></script>
     <script src="js/02_diensten.js"></script>
     <script src="js/03_tracker.js"></script>
     <script src="js/04_busmonitor.js"></script>

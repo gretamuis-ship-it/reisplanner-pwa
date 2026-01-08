@@ -3,6 +3,7 @@ import path from 'path';
 import sqlite3 from 'sqlite3';
 import { open } from 'sqlite';
 import { fileURLToPath } from 'url';
+import fs from 'fs/promises';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -31,6 +32,7 @@ startServer();
 
 // --- API ROUTES ---
 
+// 1. Suggesties voor de zoekbalk
 app.get('/api/suggesties/:zoekterm', async (req, res) => {
     try {
         const term = `%${req.params.zoekterm}%`;
@@ -42,6 +44,7 @@ app.get('/api/suggesties/:zoekterm', async (req, res) => {
     }
 });
 
+// 2. De Reisplanner Logica (met slimme overstap en zonder hardcoding)
 app.get('/api/plan', async (req, res) => {
     const { fromName, toName, inputTime } = req.query;
     try {
@@ -50,103 +53,115 @@ app.get('/api/plan', async (req, res) => {
         let planTijd = inputTime || nu.toLocaleTimeString('nl-NL', { hour12: false });
         if (planTijd.length === 5) planTijd += ":00";
 
-        console.log(`\n==========================================`);
-        console.log(`🚀 NIEUWE REISPLANNING`);
-        console.log(`📍 VAN:  ${fromName}`);
-        console.log(`🏁 NAAR: ${toName}`);
-        console.log(`🕒 TIJD: ${planTijd} | DATUM: ${datumVandaag}`);
-        console.log(`==========================================`);
+        console.log(`\n-----------------------------------------`);
+        console.log(`🔔 PLANNING: ${fromName} -> ${toName} om ${planTijd}`);
+        console.log(`-----------------------------------------`);
 
-        let alleReisadviezen = [];
-
-        // 1. DIRECTE RITTEN
-        const directeRitten = await db.all(`
-            SELECT r.route_short_name AS lijn1, st_van.arrival_time AS vertrek1,
-                   st_naar.arrival_time AS aankomst_eind, t.trip_headsign AS richting
-            FROM stop_times st_van
-            JOIN stops s_van ON st_van.stop_id = s_van.stop_id
-            JOIN trips t ON st_van.trip_id = t.trip_id
-            JOIN calendar c ON t.service_id = c.service_id
-            JOIN routes r ON t.route_id = r.route_id
-            JOIN stop_times st_naar ON t.trip_id = st_naar.trip_id
-            JOIN stops s_naar ON st_naar.stop_id = s_naar.stop_id
-            WHERE s_van.stop_name = ? AND s_naar.stop_name = ?
-              AND c.date = ? AND st_van.arrival_time >= ?
-              AND st_van.stop_sequence < st_naar.stop_sequence
-            ORDER BY st_van.arrival_time ASC LIMIT 5`, [fromName, toName, datumVandaag, planTijd]);
-
-        if (directeRitten.length > 0) {
-            console.log(`✅ ${directeRitten.length} directe ritten gevonden.`);
-            directeRitten.forEach(rit => alleReisadviezen.push({ ...rit, isOverstap: false }));
-        }
-
-        // 2. OVERSTAPPEN (Stap 2)
-        console.log(`🔍 Stap 2: Zoeken naar eerste bussen vanaf "${fromName}"...`);
+        // We gebruiken LEFT JOIN agency zodat de rit wel getoond wordt, ook als de maatschappij niet in je lijstje staat
         const eersteRitten = await db.all(`
-            SELECT DISTINCT r.route_short_name AS lijn1, st_over.arrival_time AS aankomst_over, 
-                   s_over.stop_name AS overstapHalte, st_van.arrival_time AS vertrek1, t.trip_id
-            FROM stop_times st_van
-            JOIN stops s_van ON st_van.stop_id = s_van.stop_id
-            JOIN trips t ON st_van.trip_id = t.trip_id
-            JOIN calendar c ON t.service_id = c.service_id
-            JOIN routes r ON t.route_id = r.route_id
-            JOIN stop_times st_over ON t.trip_id = st_over.trip_id
-            JOIN stops s_over ON st_over.stop_id = s_over.stop_id
-            WHERE s_van.stop_name = ? AND c.date = ? AND st_van.arrival_time >= ?
-              AND st_over.stop_sequence > st_van.stop_sequence
-              AND s_over.stop_name != ?
-            ORDER BY st_van.arrival_time ASC LIMIT 100`, [fromName, datumVandaag, planTijd, toName]);
+    SELECT DISTINCT 
+        r.route_short_name AS lijn1, 
+        r.route_color AS kleur1,
+        r.route_text_color AS tekstKleur1,
+        st_over.arrival_time AS aankomst_over, 
+        s_over.stop_name AS overstapHalte,
+        s_over.stop_lat, s_over.stop_lon,
+        st_van.arrival_time AS vertrek1,
+        t.trip_headsign AS richting1,
+        a.agency_name AS maatschappij1
+    FROM stop_times st_van
+    JOIN stops s_van ON st_van.stop_id = s_van.stop_id
+    JOIN trips t ON st_van.trip_id = t.trip_id
+    JOIN calendar c ON t.service_id = c.service_id
+    JOIN routes r ON t.route_id = r.route_id
+    LEFT JOIN agency a ON r.agency_id = a.agency_id
+    JOIN stop_times st_over ON t.trip_id = st_over.trip_id
+    JOIN stops s_over ON st_over.stop_id = s_over.stop_id
+    WHERE s_van.stop_name = ? 
+      AND c.date = ? 
+      AND st_van.arrival_time >= ?
+      AND st_van.arrival_time < time(?, '+3 hours')
+      AND st_over.stop_sequence > st_van.stop_sequence + 2
+    ORDER BY st_van.arrival_time ASC LIMIT 1000`, [fromName, datumVandaag, planTijd, planTijd]);
 
-        if (eersteRitten.length > 0) {
-            console.log(`📍 ${eersteRitten.length} mogelijke eerste etappes gevonden.`);
+        let alleOpties = [];
 
-            for (const rit of eersteRitten) {
-                const aansluiting = await db.get(`
-                    SELECT r.route_short_name AS lijn2, st_over.arrival_time AS vertrek_over, 
-                           st_naar.arrival_time AS aankomst_eind, t.trip_headsign AS richting, t.trip_id AS trip2
-                    FROM stop_times st_over
-                    JOIN stops s_over ON st_over.stop_id = s_over.stop_id
-                    JOIN trips t ON st_over.trip_id = t.trip_id
-                    JOIN calendar c ON t.service_id = c.service_id
-                    JOIN routes r ON t.route_id = r.route_id
-                    JOIN stop_times st_naar ON t.trip_id = st_naar.trip_id
-                    JOIN stops s_naar ON st_naar.stop_id = s_naar.stop_id
-                    WHERE s_over.stop_name = ? AND s_naar.stop_name = ? AND c.date = ?
-                      AND st_over.arrival_time >= ? 
-                      AND st_over.arrival_time < time(?, '+120 minutes')
-                      AND st_over.stop_sequence < st_naar.stop_sequence
-                    ORDER BY st_over.arrival_time ASC LIMIT 1`,
-                    [rit.overstapHalte, toName, datumVandaag, rit.aankomst_over, rit.aankomst_over]);
+        for (const rit of eersteRitten) {
+            const aansluitingen = await db.all(`
+    SELECT 
+        r.route_short_name AS lijn2, 
+        r.route_color AS kleur2,
+        r.route_text_color AS tekstKleur2,
+        st_naar.arrival_time AS aankomst_eind,
+        st_over.arrival_time AS vertrek_over, 
+        t.trip_headsign AS richting2,
+        a.agency_name AS maatschappij2
+    FROM stop_times st_over
+    JOIN stops s_over ON st_over.stop_id = s_over.stop_id
+    JOIN trips t ON st_over.trip_id = t.trip_id
+    JOIN routes r ON t.route_id = r.route_id
+    LEFT JOIN agency a ON r.agency_id = a.agency_id
+    JOIN calendar c ON t.service_id = c.service_id
+    JOIN stop_times st_naar ON t.trip_id = st_naar.trip_id
+    JOIN stops s_naar ON st_naar.stop_id = s_naar.stop_id
+    WHERE s_over.stop_lat BETWEEN ? AND ?
+      AND s_over.stop_lon BETWEEN ? AND ?
+      AND s_naar.stop_name = ? 
+      AND c.date = ?
+      AND st_over.arrival_time >= time(?, '+3 minutes') 
+      AND st_over.arrival_time < time(?, '+45 minutes')
+      AND st_over.stop_sequence < st_naar.stop_sequence
+    ORDER BY st_naar.arrival_time ASC LIMIT 3`,
+                [rit.stop_lat - 0.002, rit.stop_lat + 0.002, rit.stop_lon - 0.002, rit.stop_lon + 0.002, toName, datumVandaag, rit.aankomst_over, rit.aankomst_over]);
 
-                // Alleen toevoegen als het een andere rit is (geen overstap op jezelf)
-                if (aansluiting && rit.trip_id !== aansluiting.trip2) {
-                    const bestaatAl = alleReisadviezen.find(a =>
-                        a.vertrek1 === rit.vertrek1 && a.aankomst_eind === aansluiting.aankomst_eind
-                    );
+            for (const a of aansluitingen) {
+                let schoneHalte = rit.overstapHalte.replace(/ perron\s+[a-z0-9]+/gi, '').replace(/\s+[a-z]$/i, '').trim();
 
-                    if (!bestaatAl) {
-                        console.log(`   ✨ Aansluiting: ${rit.lijn1} (${rit.vertrek1}) ➔ ${aansluiting.lijn2} (${aansluiting.vertrek_over}) via ${rit.overstapHalte}`);
-                        alleReisadviezen.push({
-                            lijn1: rit.lijn1, vertrek1: rit.vertrek1,
-                            overstapHalte: rit.overstapHalte, aankomst_over: rit.aankomst_over,
-                            lijn2: aansluiting.lijn2, vertrek_over: aansluiting.vertrek_over,
-                            aankomst_eind: aansluiting.aankomst_eind, richting: aansluiting.richting,
-                            isOverstap: true
-                        });
-                    }
-                }
-                if (alleReisadviezen.length >= 12) break;
+                // In server.js bij de alleOpties.push:
+                alleOpties.push({
+                    lijn1: rit.lijn1,
+                    kleur1: rit.kleur1,           // Toevoegen
+                    tekstKleur1: rit.tekstKleur1, // Toevoegen
+                    vertrek1: rit.vertrek1,
+                    richting1: rit.richting1,
+                    maatschappij1: rit.maatschappij1 || 'Onbekend',
+                    overstapHalte: schoneHalte,
+                    aankomst_over: rit.aankomst_over,
+                    lijn2: a.lijn2,
+                    kleur2: a.kleur2,           // Toevoegen
+                    tekstKleur2: a.tekstKleur2, // Toevoegen
+                    vertrek_over: a.vertrek_over,
+                    richting2: a.richting2,
+                    maatschappij2: a.maatschappij2 || 'Onbekend',
+                    aankomst_eind: a.aankomst_eind,
+                    isOverstap: true
+                });
             }
         }
 
-        console.log(`🏁 Planning voltooid. ${alleReisadviezen.length} adviezen naar frontend.`);
-        res.json(alleReisadviezen.sort((a, b) => a.vertrek1.localeCompare(b.vertrek1)));
+        // Filter logica (Houdt de lijst schoon)
+        let resultaat = [];
+        alleOpties.sort((a, b) => a.aankomst_eind.localeCompare(b.aankomst_eind));
+        for (const optie of alleOpties) {
+            const alAdvies = resultaat.some(r => r.vertrek1 === optie.vertrek1 && r.lijn1 === optie.lijn1);
+            const isNutteloosVroeg = alleOpties.some(andere => andere.vertrek1 > optie.vertrek1 && andere.aankomst_eind <= optie.aankomst_eind);
+            if (!alAdvies && !isNutteloosVroeg) resultaat.push(optie);
+        }
+        resultaat.sort((a, b) => a.vertrek1.localeCompare(b.vertrek1));
+
+        // Logs in Terminal
+        resultaat.slice(0, 5).forEach(rit => {
+            console.log(`[STAP] ${rit.maatschappij1} Lijn ${rit.lijn1} (${rit.richting1}) -> ${rit.maatschappij2} Lijn ${rit.lijn2} (${rit.richting2})`);
+        });
+
+        res.json(resultaat.slice(0, 10));
     } catch (err) {
         console.error("❌ Planfout:", err);
         res.status(500).json([]);
     }
 });
 
+// 3. Rit details ophalen (voor de lijst met alle haltes)
 app.get('/api/rit-details/:lijn/:vertrekTijd', async (req, res) => {
     const { lijn, vertrekTijd } = req.params;
     const nu = new Date();
@@ -162,73 +177,59 @@ app.get('/api/rit-details/:lijn/:vertrekTijd', async (req, res) => {
             JOIN calendar c ON t.service_id = c.service_id
             WHERE r.route_short_name = ? 
               AND c.date = ?
-              AND t.trip_id IN (SELECT trip_id FROM stop_times WHERE arrival_time = ?)
+              AND t.trip_id = (
+                  SELECT trip_id FROM stop_times 
+                  WHERE arrival_time = ? 
+                  LIMIT 1
+              )
             ORDER BY st.stop_sequence ASC`, [lijn, datumVandaag, vertrekTijd]);
 
         res.json(stops);
     } catch (err) {
+        console.error("❌ Details fout:", err);
         res.status(500).json([]);
     }
 });
 
-import fs from 'fs/promises'; // We gebruiken de promise-versie voor schonere code
-
 // --- HISTORIE API ---
 
-// 1. Rit OPSLAAN in historie.json
 app.post('/api/historie', async (req, res) => {
     const nieuweRit = req.body;
-    // We slaan het op in de map 'data' naast je database
     const filePath = path.join(__dirname, 'data/historie.json');
-
     try {
         let json = { ritten: [], week_doel: 40, totaal_doel: 52 };
-
         try {
             const data = await fs.readFile(filePath, 'utf8');
             json = JSON.parse(data);
-        } catch (readErr) {
-            console.log("ℹ️ Geen bestaande historie gevonden, nieuwe wordt aangemaakt.");
-        }
-
+        } catch (readErr) { }
         json.ritten.push(nieuweRit);
         await fs.writeFile(filePath, JSON.stringify(json, null, 2));
-
-        res.json({ message: "Rit opgeslagen in JSON!" });
+        res.json({ message: "Rit opgeslagen!" });
     } catch (err) {
-        console.error("❌ Opslaan mislukt:", err);
         res.status(500).json({ error: "Fout bij opslaan" });
     }
 });
 
-// 2. Historie OPHALEN voor de Tracker
 app.get('/api/historie', async (req, res) => {
     const filePath = path.join(__dirname, 'data/historie.json');
     try {
         const data = await fs.readFile(filePath, 'utf8');
         res.json(JSON.parse(data));
     } catch (err) {
-        // Als bestand niet bestaat, sturen we een lege basisstructuur
         res.json({ ritten: [], week_doel: 40, totaal_doel: 52 });
     }
 });
 
-// 3. Rit VERWIJDEREN uit historie.json
 app.delete('/api/historie/:id', async (req, res) => {
     const id = parseInt(req.params.id);
     const filePath = path.join(__dirname, 'data/historie.json');
-
     try {
         const data = await fs.readFile(filePath, 'utf8');
         let json = JSON.parse(data);
-
-        // Filter de rit eruit
-        json.ritten = json.ritten.filter(rit => rit.id !== id);
-
+        json.ritten = json.ritten.filter(r => r.id !== id);
         await fs.writeFile(filePath, JSON.stringify(json, null, 2));
-        res.json({ message: "Rit verwijderd!" });
+        res.json({ success: true });
     } catch (err) {
-        console.error("Fout bij verwijderen:", err);
-        res.status(500).json({ error: "Verwijderen mislukt" });
+        res.status(500).send("Fout bij verwijderen");
     }
 });

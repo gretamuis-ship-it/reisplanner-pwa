@@ -61,24 +61,25 @@ function toonRecenteRitten(ritten) {
     const listContainer = document.getElementById('recent-trips-list');
     if (!listContainer) return;
 
+    // Laatste 5 ritten, nieuwste boven
     const laatsteRitten = ritten.slice(-5).reverse();
 
     listContainer.innerHTML = '<h3>Laatste ritten</h3>' + laatsteRitten.map(rit => `
         <div class="trip-log-item enhanced">
             <div class="trip-info">
-                <div class="trip-main-line">
+                <div class="trip-main-info">
                     <strong>Lijn ${rit.lijn}</strong>
                     <span class="trip-date">${rit.datum}</span>
                 </div>
-                <div class="trip-route-detail">
-                    <span class="trip-time">${rit.vertrek || '--:--'}</span> 
-                    ${rit.van ? rit.van.split(',')[0] : '...'} 
-                    <i data-lucide="arrow-right" style="width:12px; height:12px;"></i> 
-                    <span class="trip-time">${rit.aankomst || '--:--'}</span> 
-                    ${rit.naar ? rit.naar.split(',')[0] : '...'}
+                <div class="trip-sub-info">
+                    <span>${rit.vertrek || '--:--'}</span> 
+                    <small>${rit.van ? rit.van.split(',')[0] : 'Vertrek'}</small>
+                    <i data-lucide="arrow-right"></i>
+                    <span>${rit.aankomst || '--:--'}</span>
+                    <small>${rit.naar ? rit.naar.split(',')[0] : 'Aankomst'}</small>
                 </div>
             </div>
-            <button onclick="bevestigVerwijderen(${rit.id})" class="btn-delete-icon">
+            <button onclick="bevestigVerwijderen(${rit.id})" class="btn-delete-small">
                 <i data-lucide="trash-2"></i>
             </button>
         </div>
